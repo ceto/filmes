@@ -1,0 +1,32 @@
+---
+title: Produkciók listája
+description: Alább látható azon produkciók listája, amelyek szerepelnek a Filmesgyakornok rendszerében. A megjelenítés sorrendje megváltoztatható az alábbi legördülő mező segítségével.
+---
+<div class="row">
+  <div class="columns">
+    <h1>{{ title }}</h1>
+    <p class="lead">{{ description }}</p>
+    <table>
+      <thead>
+        <tr>
+          <td>Munkacím</td>
+          <td>Produkciós cég</td>
+          <td>Költségvetés</td>
+          <td>Státusz</td>
+          <td>Gyakornokok</td>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each productions}}
+          <tr>
+            <td>{{ title }}</td>
+            <td>{{ production }}</td>
+            <td>{{ budget }}</td>
+            <td>{{ status }}</td>
+            <td>{{ traniees }}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>

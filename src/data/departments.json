@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Director",
+    "description": "Lorem director kivonat ipsum dolor sit amet, consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x320",
+    "url": "single-department.html",
+    "subdeps": [
+      {
+        "title": "Rendező asszisztens",
+        "description": "Consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+        "thumbnail": "http://placehold.it/480x320"
+      }
+    ]
+  },
+  {
+    "title": "Camera department",
+    "description": "Ipsum kamera kivonat ipsum dolor sit amet, consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x320",
+    "url": "single-department.html",
+    "subdeps": [
+      {
+        "title": "Optikus",
+        "description": "Consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+        "thumbnail": "http://placehold.it/480x320"
+      },
+      {
+        "title": "Fényérzékeny munkatárs",
+        "description": "Lorem ipsum adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+        "thumbnail": "http://placehold.it/480x320"
+      }
+    ]
+  },
+  {
+    "title": "Sound department",
+    "description": "Hangos kivonat ipsum dolor sit amet, consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x320",
+    "url": "single-department.html",
+    "subdeps": [
+      {
+        "title": "hangmérnök",
+        "description": "Consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+        "thumbnail": "http://placehold.it/480x320"
+      },
+      {
+        "title": "boom operator",
+        "description": "Lorem boom onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+        "thumbnail": "http://placehold.it/480x320"
+      },
+      {
+        "title": "Sound mixer",
+        "description": "Lorem onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+        "thumbnail": "http://placehold.it/480x320"
+      }
+    ]
+  },
+
+  {
+    "title": "Art department",
+    "description": "Lorem kivonat ipsum dolor sit amet, consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x320",
+    "url": "single-department.html",
+    "subdeps": [
+      {
+        "title": "Festő mázoló",
+        "description": "Consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+        "thumbnail": "http://placehold.it/480x320"
+      }
+    ]
+  },
+
+  {
+    "title": "SFX",
+    "description": "Effect kivonat ipsum dolor sit amet, consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x320",
+    "url": "single-department.html",
+    "subdeps": [
+      {
+        "title": "3D modellező",
+        "description": "Consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+        "thumbnail": "http://placehold.it/480x320"
+      }
+    ]
+  },
+
+  {
+    "title": "Post production",
+    "description": "Sit amet, consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x320",
+    "url": "single-department.html",
+    "subdeps": [
+      {
+        "title": "Rendező asszisztens",
+        "description": "Consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+        "thumbnail": "http://placehold.it/480x320"
+      }
+    ]
+  }
+]

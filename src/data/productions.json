@@ -1,0 +1,86 @@
+[
+ {
+    "title": "Macskafogó Reloaded",
+    "production": "Café Film",
+    "budget": "1200",
+    "status": "Fejlesztés",
+    "traniees": 4
+  },
+  {
+    "title": "Mielőtt befejezi röptét a denevér",
+    "production": "Macskabölcső",
+    "budget": "200",
+    "status": "Fejlesztés",
+    "traniees": 0
+  },
+  {
+    "title": "VAN valami furcsa és megmagyarázhatatlan",
+    "production": "Kovács András",
+    "budget": "530",
+    "status": "Utómunka",
+    "traniees": 2
+  },
+  {
+    "title": "Utóélet",
+    "production": "Protonfil,",
+    "budget": "80",
+    "status": "Gyártás előkészítés",
+    "traniees": 1
+  },
+  {
+    "title": "A miniszter félrelép",
+    "production": "MAFILM",
+    "budget": "80",
+    "status": "Befejezett",
+    "traniees": 2
+  },
+  {
+    "title": "Aranyélet",
+    "production": "HBO",
+    "budget": "200",
+    "status": "Gyártás",
+    "traniees": 3
+  },
+  {
+    "title": "Kincsem",
+    "production": "Kovács András",
+    "budget": "225",
+    "status": "Utómunka",
+    "traniees": 2
+  },
+    {
+    "title": "VAN valami furcsa és megmagyarázhatatlan",
+    "production": "Kovács András",
+    "budget": "530",
+    "status": "Utómunka",
+    "traniees": 2
+  },
+  {
+    "title": "Utóélet",
+    "production": "Protonfil,",
+    "budget": "80",
+    "status": "Gyártás előkészítés",
+    "traniees": 1
+  },
+  {
+    "title": "A miniszter félrelép",
+    "production": "MAFILM",
+    "budget": "80",
+    "status": "Befejezett",
+    "traniees": 2
+  },
+  {
+    "title": "Macskafogó Reloaded",
+    "production": "Café Film",
+    "budget": "1200",
+    "status": "Fejlesztés",
+    "traniees": 4
+  },
+  {
+    "title": "Mielőtt befejezi röptét a denevér",
+    "production": "Macskabölcső",
+    "budget": "200",
+    "status": "Fejlesztés",
+    "traniees": 0
+  }
+]

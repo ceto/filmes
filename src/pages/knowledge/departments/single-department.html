@@ -1,0 +1,39 @@
+---
+title: Sound department
+description: Lorem sound department excerpt ipsum dolor sit amet, consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
+thumbnail: http://placehold.it/480x320
+---
+<div class="row">
+  <div class="columns">
+    <h2>Filmipar böngésző</h2>
+    <h1><a href="{{root}}knowledge/departments.html">Filmszakmák:</a> {{title}}</h1>
+    <div class="row small-up-2 medium-up-3 large-up-4">
+      {{#each sound-department}}
+        <div class="column">
+          <a href="{{root}}single-role.html">
+            <img src="{{thumbnail}}" alt="{{name}}">
+          </a>
+          <h3><a href="{{root}}single-role.html">{{ title }}</a></h3>
+          <p>{{ description }}</p>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="columns">
+    <h2>Kapcsolódó feladatkörök</h2>
+    <div class="row small-up-2 medium-up-3 large-up-4">
+      {{#each sound-department-related}}
+        <div class="column">
+          <a href="{{root}}single-role.html">
+            <img src="{{thumbnail}}" alt="{{name}}">
+          </a>
+          <h3><a href="{{root}}single-role.html">{{ title }}</a></h3>
+          <p>{{ description }}</p>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
