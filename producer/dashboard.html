@@ -1,0 +1,564 @@
+
+<!doctype html>
+<html class="no-js" lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Filmesgyakornok</title>
+    <link rel="stylesheet" href="../assets/css/app.css">
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <div class="top-bar-title">
+        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <button class="menu-icon dark" type="button" data-toggle></button>
+        </span>
+        <a href="../"><strong>Filmes Gyakornok</strong></a>
+      </div>
+      <div id="responsive-menu">
+    <!--     <div class="top-bar-left">
+          <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+          </ul>
+        </div> -->
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li><a href="../knowledge/departments/">Filmszakmák</a></li>
+            <li><a href="../news.html">Hírek</a></li>
+            <li>
+              <a href="#">Producer Tamás</a>
+              <ul class="menu vertical">
+                <li><a href="../producer/dashboard.html">Gyakornok keresése</a></li>
+                <li><a href="../producer/profile-edit.html">Profilom szerkesztés</a></li>
+                <li><a href="../producer/production-list.html">Produkciók listája</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </div>
+    
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="columns">
+        <div class="callout">
+          <form>
+            <div class="row">
+              <div class="columns tablet-6 large-8">
+                <div class="input-group">
+                  <input class="input-group-field" type="text" placeholder="Keresés név szterint">
+                  <div class="input-group-button">
+                    <input type="submit" class="button" value="OK">
+                  </div>
+                </div>
+              </div>
+              <div class="columns tablet-6 large-4 end text-right">
+                <button class="button">Részletes keresés</button><button class="button secondary">Korábbi keresések</button>
+              </div>
+    
+            </div>
+          </form>
+          <h5>Keresés paraméterek szerint</h5>
+          <form action="post">
+            <div class="row">
+              <fieldset class="small-6 tablet-3 large-2 columns">
+                <legend>Nem</legend>
+                <input type="checkbox" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Fiú</label>
+                <input type="checkbox" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Lány</label>
+              </fieldset>
+              <fieldset class="small-6 tablet-2 large-2 columns">
+                <legend>Kor</legend>
+                <div class="row">
+                  <div class="columns small-6 ">
+                    <input type="text" name="minage" >
+                  </div>
+                  <div class="columns small-6 end">
+                    <input type="text" name="maxage" >
+                  </div>
+                </div>
+              </fieldset>
+              <div class="medium-6 tablet-4 large-3 columns">
+                <label for="langs">Szükséges nyelvek
+                  <input type="text" name="langs" placeholder="ha többet írsz, vesszővel válaszd el">
+                </label>
+              </div>
+              <div class="medium-6 tablet-3 large-3 end columns">
+                <label for="area">Szakterület
+                  <select name="area" id="">
+                    <option value="0">Előny a gyakorlat az alábbi területen</option>
+                    <option value="Director">Director</option>
+                    <option value="Camera department">Camera department</option>
+                    <option value="Sound department">Sound department</option>
+                    <option value="Art department">Art department</option>
+                    <option value="SFX">SFX</option>
+                    <option value="Post production">Post production</option>
+                  </select>
+                </label>
+              </div>
+              <div class="columns large-2">
+                <input type="submit" class="button expanded">
+              </div>
+            </div>
+          </form>
+          <h5>Mentett keresések</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus facere, praesentium provident voluptas, ipsa harum voluptatem fugiat ducimus obcaecati amet vitae sapiente cumque doloribus maiores, exercitationem voluptatum velit nesciunt accusantium.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns tablet-8 xxlarge-9">
+        <h3>Nemrég jelentkeztek</h3>
+        <div class="row small-up-2 medium-up-3 tablet-up-3 large-up-4">
+          <div class="column">
+            <div class="card card--traniee">
+              <figure class="card__fig">
+                <a href="traniee-view.html">
+                  <img src="http://placehold.it/480x480" alt="">
+                </a>
+              </figure>
+              <h4 class="card__title">
+                <a href="traniee-view.html">
+                  Minta Panna <small>(23)</small>
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                  <li>animátor</li>
+                  <li>operatőr</li>
+              </ul>
+              <ul class="inlinelist">
+                  <li>Mephisto</li>
+                  <li>Saul fia</li>
+                  <li>Hegylakó</li>
+              </ul>
+              <p><small>2016. augusztus 5.</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card card--traniee">
+              <figure class="card__fig">
+                <a href="traniee-view.html">
+                  <img src="http://placehold.it/480x480" alt="">
+                </a>
+              </figure>
+              <h4 class="card__title">
+                <a href="traniee-view.html">
+                  Teleki Blanka Olga <small>(23)</small>
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                  <li>operatőr</li>
+              </ul>
+              <ul class="inlinelist">
+                  <li>Hegylakó</li>
+              </ul>
+              <p><small>2014. június 12.</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card card--traniee">
+              <figure class="card__fig">
+                <a href="traniee-view.html">
+                  <img src="http://placehold.it/480x480" alt="">
+                </a>
+              </figure>
+              <h4 class="card__title">
+                <a href="traniee-view.html">
+                  Strosszmájer Aurél <small>(23)</small>
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                  <li>3D Artist</li>
+              </ul>
+              <ul class="inlinelist">
+                  <li>Szabadság és szerelem</li>
+                  <li>Utóélet</li>
+              </ul>
+              <p><small>2014. június 12.</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card card--traniee">
+              <figure class="card__fig">
+                <a href="traniee-view.html">
+                  <img src="http://placehold.it/480x480" alt="">
+                </a>
+              </figure>
+              <h4 class="card__title">
+                <a href="traniee-view.html">
+                  Dolgos Emilia <small>(18)</small>
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                  <li>vágó</li>
+              </ul>
+              <ul class="inlinelist">
+                  <li>Eldorádó</li>
+              </ul>
+              <p><small>2015. september 7.</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card card--traniee">
+              <figure class="card__fig">
+                <a href="traniee-view.html">
+                  <img src="http://placehold.it/480x480" alt="">
+                </a>
+              </figure>
+              <h4 class="card__title">
+                <a href="traniee-view.html">
+                  Minta Panna <small>(23)</small>
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                  <li>animátor</li>
+                  <li>operatőr</li>
+              </ul>
+              <ul class="inlinelist">
+                  <li>Mephisto</li>
+                  <li>Saul fia</li>
+                  <li>Hegylakó</li>
+              </ul>
+              <p><small>2016. augusztus 5.</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card card--traniee">
+              <figure class="card__fig">
+                <a href="traniee-view.html">
+                  <img src="http://placehold.it/480x480" alt="">
+                </a>
+              </figure>
+              <h4 class="card__title">
+                <a href="traniee-view.html">
+                  Teleki Blanka Olga <small>(23)</small>
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                  <li>operatőr</li>
+              </ul>
+              <ul class="inlinelist">
+                  <li>Hegylakó</li>
+              </ul>
+              <p><small>2014. június 12.</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card card--traniee">
+              <figure class="card__fig">
+                <a href="traniee-view.html">
+                  <img src="http://placehold.it/480x480" alt="">
+                </a>
+              </figure>
+              <h4 class="card__title">
+                <a href="traniee-view.html">
+                  Strosszmájer Aurél <small>(23)</small>
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                  <li>3D Artist</li>
+              </ul>
+              <ul class="inlinelist">
+                  <li>Szabadság és szerelem</li>
+                  <li>Utóélet</li>
+              </ul>
+              <p><small>2014. június 12.</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card card--traniee">
+              <figure class="card__fig">
+                <a href="traniee-view.html">
+                  <img src="http://placehold.it/480x480" alt="">
+                </a>
+              </figure>
+              <h4 class="card__title">
+                <a href="traniee-view.html">
+                  Dolgos Emilia <small>(18)</small>
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                  <li>vágó</li>
+              </ul>
+              <ul class="inlinelist">
+                  <li>Eldorádó</li>
+              </ul>
+              <p><small>2015. september 7.</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card card--traniee">
+              <figure class="card__fig">
+                <a href="traniee-view.html">
+                  <img src="http://placehold.it/480x480" alt="">
+                </a>
+              </figure>
+              <h4 class="card__title">
+                <a href="traniee-view.html">
+                  Dolgos Emilia <small>(18)</small>
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                  <li>vágó</li>
+              </ul>
+              <ul class="inlinelist">
+                  <li>Eldorádó</li>
+              </ul>
+              <p><small>2015. september 7.</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card card--traniee">
+              <figure class="card__fig">
+                <a href="traniee-view.html">
+                  <img src="http://placehold.it/480x480" alt="">
+                </a>
+              </figure>
+              <h4 class="card__title">
+                <a href="traniee-view.html">
+                  Minta Panna <small>(23)</small>
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                  <li>animátor</li>
+                  <li>operatőr</li>
+              </ul>
+              <ul class="inlinelist">
+                  <li>Mephisto</li>
+                  <li>Saul fia</li>
+                  <li>Hegylakó</li>
+              </ul>
+              <p><small>2016. augusztus 5.</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card card--traniee">
+              <figure class="card__fig">
+                <a href="traniee-view.html">
+                  <img src="http://placehold.it/480x480" alt="">
+                </a>
+              </figure>
+              <h4 class="card__title">
+                <a href="traniee-view.html">
+                  Teleki Blanka Olga <small>(23)</small>
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                  <li>operatőr</li>
+              </ul>
+              <ul class="inlinelist">
+                  <li>Hegylakó</li>
+              </ul>
+              <p><small>2014. június 12.</small></p>
+            </div>
+          </div>
+        </div>
+        <ul class="pagination" role="navigation" aria-label="Pagination">
+          <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+          <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+          <li><a href="#" aria-label="Page 2">2</a></li>
+          <li><a href="#" aria-label="Page 3">3</a></li>
+          <li><a href="#" aria-label="Page 4">4</a></li>
+          <li class="ellipsis" aria-hidden="true"></li>
+          <li><a href="#" aria-label="Page 12">12</a></li>
+          <li><a href="#" aria-label="Page 13">13</a></li>
+          <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+        </ul>
+      </div>
+      <div class="columns tablet-4 xxlarge-3">
+        <div class="row">
+          <div class="columns medium-6 tablet-12">
+            <h3>Most dolgoznak nálunk</h3>
+            <div class="smallcard smallcard--traniee">
+              <div class="row collapse">
+                <div class="columns small-3">
+                  <figure class="smallcard__fig">
+                    <a href="traniee-view.html">
+                      <img src="http://placehold.it/480x480" alt="">
+                    </a>
+                  </figure>
+                </div>
+                <div class="columns small-9">
+                  <h4 class="smallcard__title">
+                  <a href="traniee-view.html">
+                    Strosszmájer Aurél <small>(23)</small>
+                  </a>
+                </h4>
+                <ul class="inlinelist">
+                    <li>3D Artist</li>
+                </ul>
+                <ul class="inlinelist">
+                    <li>Szabadság és szerelem</li>
+                    <li>Utóélet</li>
+                </ul>
+                <p><small>2014. június 12.</small></p>
+            
+                </div>
+              </div>
+            
+            
+            </div>
+            <div class="smallcard smallcard--traniee">
+              <div class="row collapse">
+                <div class="columns small-3">
+                  <figure class="smallcard__fig">
+                    <a href="traniee-view.html">
+                      <img src="http://placehold.it/480x480" alt="">
+                    </a>
+                  </figure>
+                </div>
+                <div class="columns small-9">
+                  <h4 class="smallcard__title">
+                  <a href="traniee-view.html">
+                    Minta Panna <small>(23)</small>
+                  </a>
+                </h4>
+                <ul class="inlinelist">
+                    <li>animátor</li>
+                    <li>operatőr</li>
+                </ul>
+                <ul class="inlinelist">
+                    <li>Mephisto</li>
+                    <li>Saul fia</li>
+                    <li>Hegylakó</li>
+                </ul>
+                <p><small>2016. augusztus 5.</small></p>
+            
+                </div>
+              </div>
+            
+            
+            </div>
+            <div class="smallcard smallcard--traniee">
+              <div class="row collapse">
+                <div class="columns small-3">
+                  <figure class="smallcard__fig">
+                    <a href="traniee-view.html">
+                      <img src="http://placehold.it/480x480" alt="">
+                    </a>
+                  </figure>
+                </div>
+                <div class="columns small-9">
+                  <h4 class="smallcard__title">
+                  <a href="traniee-view.html">
+                    Teleki Blanka Olga <small>(23)</small>
+                  </a>
+                </h4>
+                <ul class="inlinelist">
+                    <li>operatőr</li>
+                </ul>
+                <ul class="inlinelist">
+                    <li>Hegylakó</li>
+                </ul>
+                <p><small>2014. június 12.</small></p>
+            
+                </div>
+              </div>
+            
+            
+            </div>
+          </div>
+          <div class="columns medium-6 tablet-12">
+            <h3>Gyakornokok akiket bejelöltem</h3>
+            <div class="smallcard smallcard--traniee">
+              <div class="row collapse">
+                <div class="columns small-3">
+                  <figure class="smallcard__fig">
+                    <a href="traniee-view.html">
+                      <img src="http://placehold.it/480x480" alt="">
+                    </a>
+                  </figure>
+                </div>
+                <div class="columns small-9">
+                  <h4 class="smallcard__title">
+                  <a href="traniee-view.html">
+                    Strosszmájer Aurél <small>(23)</small>
+                  </a>
+                </h4>
+                <ul class="inlinelist">
+                    <li>3D Artist</li>
+                </ul>
+                <ul class="inlinelist">
+                    <li>Szabadság és szerelem</li>
+                    <li>Utóélet</li>
+                </ul>
+                <p><small>2014. június 12.</small></p>
+            
+                </div>
+              </div>
+            
+            
+            </div>
+            <div class="smallcard smallcard--traniee">
+              <div class="row collapse">
+                <div class="columns small-3">
+                  <figure class="smallcard__fig">
+                    <a href="traniee-view.html">
+                      <img src="http://placehold.it/480x480" alt="">
+                    </a>
+                  </figure>
+                </div>
+                <div class="columns small-9">
+                  <h4 class="smallcard__title">
+                  <a href="traniee-view.html">
+                    Minta Panna <small>(23)</small>
+                  </a>
+                </h4>
+                <ul class="inlinelist">
+                    <li>animátor</li>
+                    <li>operatőr</li>
+                </ul>
+                <ul class="inlinelist">
+                    <li>Mephisto</li>
+                    <li>Saul fia</li>
+                    <li>Hegylakó</li>
+                </ul>
+                <p><small>2016. augusztus 5.</small></p>
+            
+                </div>
+              </div>
+            
+            
+            </div>
+            <div class="smallcard smallcard--traniee">
+              <div class="row collapse">
+                <div class="columns small-3">
+                  <figure class="smallcard__fig">
+                    <a href="traniee-view.html">
+                      <img src="http://placehold.it/480x480" alt="">
+                    </a>
+                  </figure>
+                </div>
+                <div class="columns small-9">
+                  <h4 class="smallcard__title">
+                  <a href="traniee-view.html">
+                    Teleki Blanka Olga <small>(23)</small>
+                  </a>
+                </h4>
+                <ul class="inlinelist">
+                    <li>operatőr</li>
+                </ul>
+                <ul class="inlinelist">
+                    <li>Hegylakó</li>
+                </ul>
+                <p><small>2014. június 12.</small></p>
+            
+                </div>
+              </div>
+            
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
