@@ -1,0 +1,156 @@
+[
+ {
+    "name": "Minta Panna",
+    "age" : "23",
+    "studies": [
+      "animátor",
+      "operatőr"
+    ],
+    "workedin": [
+      "Mephisto",
+      "Saul fia",
+      "Hegylakó"
+    ],
+    "date": "2016. augusztus 5.",
+    "description": "Consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x480"
+  },
+  {
+    "name": "Teleki Blanka Olga",
+    "age" : "23",
+    "studies": [
+      "operatőr"
+    ],
+    "workedin": [
+      "Hegylakó"
+    ],
+    "date": "2014. június 12.",
+    "description": "Lorem boom onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x480"
+  },
+  {
+    "name": "Strosszmájer Aurél",
+    "age" : "23",
+    "studies": [
+      "3D Artist"
+    ],
+    "workedin": [
+      "Szabadság és szerelem",
+      "Utóélet"
+    ],
+    "date": "2014. június 12.",
+    "description": "Onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x480"
+  },
+  {
+    "name": "Dolgos Emilia",
+    "age" : "18",
+    "studies": [
+      "vágó"
+    ],
+    "workedin": [
+      "Eldorádó"
+    ],
+    "date": "2015. september 7.",
+    "description": "Lorem boom onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x480"
+  },
+  {
+    "name": "Minta Panna",
+    "age" : "23",
+    "studies": [
+      "animátor",
+      "operatőr"
+    ],
+    "workedin": [
+      "Mephisto",
+      "Saul fia",
+      "Hegylakó"
+    ],
+    "date": "2016. augusztus 5.",
+    "description": "Consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x480"
+  },
+  {
+    "name": "Teleki Blanka Olga",
+    "age" : "23",
+    "studies": [
+      "operatőr"
+    ],
+    "workedin": [
+      "Hegylakó"
+    ],
+    "date": "2014. június 12.",
+    "description": "Lorem boom onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x480"
+  },
+  {
+    "name": "Strosszmájer Aurél",
+    "age" : "23",
+    "studies": [
+      "3D Artist"
+    ],
+    "workedin": [
+      "Szabadság és szerelem",
+      "Utóélet"
+    ],
+    "date": "2014. június 12.",
+    "description": "Onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x480"
+  },
+  {
+    "name": "Dolgos Emilia",
+    "age" : "18",
+    "studies": [
+      "vágó"
+    ],
+    "workedin": [
+      "Eldorádó"
+    ],
+    "date": "2015. september 7.",
+    "description": "Lorem boom onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x480"
+  },
+    {
+    "name": "Dolgos Emilia",
+    "age" : "18",
+    "studies": [
+      "vágó"
+    ],
+    "workedin": [
+      "Eldorádó"
+    ],
+    "date": "2015. september 7.",
+    "description": "Lorem boom onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x480"
+  },
+  {
+    "name": "Minta Panna",
+    "age" : "23",
+    "studies": [
+      "animátor",
+      "operatőr"
+    ],
+    "workedin": [
+      "Mephisto",
+      "Saul fia",
+      "Hegylakó"
+    ],
+    "date": "2016. augusztus 5.",
+    "description": "Consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x480"
+  },
+  {
+    "name": "Teleki Blanka Olga",
+    "age" : "23",
+    "studies": [
+      "operatőr"
+    ],
+    "workedin": [
+      "Hegylakó"
+    ],
+    "date": "2014. június 12.",
+    "description": "Lorem boom onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+    "thumbnail": "http://placehold.it/480x480"
+  }
+]
