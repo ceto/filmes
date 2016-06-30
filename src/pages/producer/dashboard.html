@@ -1,73 +1,21 @@
 <div class="row">
   <div class="columns">
-    <div class="callout">
-      <form>
-        <div class="row">
-          <div class="columns tablet-6 large-8">
-            <div class="input-group">
-              <input class="input-group-field" type="text" placeholder="Keresés név szterint">
-              <div class="input-group-button">
-                <input type="submit" class="button" value="OK">
-              </div>
-            </div>
-          </div>
-          <div class="columns tablet-6 large-4 end text-right">
-            <button class="button">Részletes keresés</button><button class="button secondary">Korábbi keresések</button>
-          </div>
-
-        </div>
-      </form>
-      <h5>Keresés paraméterek szerint</h5>
-      <form action="post">
-        <div class="row">
-          <fieldset class="small-6 tablet-3 large-2 columns">
-            <legend>Nem</legend>
-            <input type="checkbox" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Fiú</label>
-            <input type="checkbox" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Lány</label>
-          </fieldset>
-          <fieldset class="small-6 tablet-2 large-2 columns">
-            <legend>Kor</legend>
-            <div class="row">
-              <div class="columns small-6 ">
-                <input type="text" name="minage" >
-              </div>
-              <div class="columns small-6 end">
-                <input type="text" name="maxage" >
-              </div>
-            </div>
-          </fieldset>
-          <div class="medium-6 tablet-4 large-3 columns">
-            <label for="langs">Szükséges nyelvek
-              <input type="text" name="langs" placeholder="ha többet írsz, vesszővel válaszd el">
-            </label>
-          </div>
-          <div class="medium-6 tablet-3 large-3 end columns">
-            <label for="area">Szakterület
-              <select name="area" id="">
-                <option value="0">Előny a gyakorlat az alábbi területen</option>
-                {{#each departments }}
-                <option value="{{ title }}">{{ title }}</option>
-                {{/each}}
-              </select>
-            </label>
-          </div>
-          <div class="columns large-2">
-            <input type="submit" class="button expanded">
-          </div>
-        </div>
-      </form>
-      <h5>Mentett keresések</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus facere, praesentium provident voluptas, ipsa harum voluptatem fugiat ducimus obcaecati amet vitae sapiente cumque doloribus maiores, exercitationem voluptatum velit nesciunt accusantium.</p>
-    </div>
+    {{> prodsearch }}
+    {{> prodfullsearch }}
   </div>
 </div>
+
 <div class="row">
-  <div class="columns tablet-8 xxlarge-9">
+  <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
+    {{> prodsidebar }}
+  </div>
+
+  <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
     <h3>Nemrég jelentkeztek</h3>
-    <div class="row small-up-2 medium-up-3 tablet-up-3 large-up-4">
+    <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
       {{#each traniees}}
       <div class="column">
-        {{> traniee-card }}
+        {{> traniee-smallcard }}
       </div>
       {{/each}}
     </div>
@@ -82,21 +30,5 @@
       <li><a href="#" aria-label="Page 13">13</a></li>
       <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
     </ul>
-  </div>
-  <div class="columns tablet-4 xxlarge-3">
-    <div class="row">
-      <div class="columns medium-6 tablet-12">
-        <h3>Most dolgoznak nálunk</h3>
-        {{#each traniees-three }}
-        {{> traniee-smallcard }}
-        {{/each}}
-      </div>
-      <div class="columns medium-6 tablet-12">
-        <h3>Gyakornokok akiket bejelöltem</h3>
-        {{#each traniees-three }}
-        {{> traniee-smallcard }}
-        {{/each}}
-      </div>
-    </div>
   </div>
 </div>
