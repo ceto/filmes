@@ -1,0 +1,22 @@
+---
+title: Produkciók
+description: "A filmes gyakornok rendszerében lévő aktív produkciók listája. Esetleg 3 hozzáférési szinttel: Public / Logged in users only / Producers only. Funkció kérdés: Lehet e a gyakornokoknak bejelölni produkciókat amiben szivesen dolgoznának. Kvázi jelentkezés"
+---
+
+<div class="row">
+  <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
+    {{> productionsidebar }}
+  </div>
+  <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
+    <h1>{{ title }}</h1>
+    <p class="lead">{{ description }}</p>
+    <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
+      {{#each productions}}
+      <div class="column">
+        {{> production-smallcard }}
+      </div>
+      {{/each}}
+    </div>
+    {{> pagination}}
+  </div>
+</div>

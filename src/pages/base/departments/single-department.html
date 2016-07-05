@@ -5,8 +5,15 @@ thumbnail: http://placehold.it/480x320
 ---
 <div class="row">
   <div class="columns">
-    <h2>Filmipar böngésző</h2>
-    <h1><a href="{{root}}knowledge/departments.html">Filmszakmák:</a> {{title}}</h1>
+    <nav aria-label="Itt vagy:" role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="{{root}}base/departments/">Filmszakmák</a></li>
+        <li>
+          <span class="show-for-sr">Aktív oldal: </span> {{ title }}
+        </li>
+      </ul>
+    </nav>
+    <h1>{{title}}</h1>
     <div class="row small-up-2 medium-up-3 large-up-4">
       {{#each sound-department}}
         <div class="column">

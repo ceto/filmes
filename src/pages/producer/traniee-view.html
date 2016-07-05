@@ -1,9 +1,15 @@
+---
+title: Gyakornok adatlapja
+description: Gyakornokok adatlapja a producer számára
+---
+{{> prodheadsearch }}
 <div class="row">
-  <div class="columns medium-8 medium-push-4">
-    {{> traniee-datasheet }}
+  <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
+    {{> prodsidebar }}
   </div>
-  <div class="columns medium-4 medium-pull-8">
-    <h3>Producer sidebar</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit aliquam neque mollitia placeat, consectetur voluptatum atque non esse iste ducimus temporibus fuga, saepe earum pariatur asperiores sunt! Ex nobis, quasi!</p>
+  <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
+    {{> prodsearchbreadcrumbs }}
+    <h2>{{ title }}</h2>
+    {{> traniee-datasheet }}
   </div>
 </div>

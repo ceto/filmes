@@ -1,34 +1,27 @@
-<div class="row">
-  <div class="columns">
-    {{> prodsearch }}
-    {{> prodfullsearch }}
-  </div>
-</div>
-
+{{> prodheadsearch }}
 <div class="row">
   <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
     {{> prodsidebar }}
   </div>
 
   <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
-    <h3>Nemrég jelentkeztek</h3>
-    <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
-      {{#each traniees}}
-      <div class="column">
-        {{> traniee-smallcard }}
-      </div>
-      {{/each}}
+    <div class="callout alert" data-closable>
+      <h5>Beavatkozás szükséges</h5>
+      <p>Hiányosságokat észleltünk. Az alábbi adminisztráció elvégzése időszerű.</p>
+      <ul>
+        <li>Nem adtál visszajelzést: 1 gyakornok</li>
+        <li>Lejárt az alkalmazási idő: 1 gyakornok</li>
+      </ul>
+      <a href="{{root}}producer/results/alertlist.html" class="button small">Adminisztráció elvégzése</a>
+      <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
-    <ul class="pagination" role="navigation" aria-label="Pagination">
-      <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
-      <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-      <li><a href="#" aria-label="Page 2">2</a></li>
-      <li><a href="#" aria-label="Page 3">3</a></li>
-      <li><a href="#" aria-label="Page 4">4</a></li>
-      <li class="ellipsis" aria-hidden="true"></li>
-      <li><a href="#" aria-label="Page 12">12</a></li>
-      <li><a href="#" aria-label="Page 13">13</a></li>
-      <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
-    </ul>
+    <h3>Regisztrált produkcióim</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae maiores rerum accusantium quas hic explicabo voluptatem recusandae porro! Autem architecto praesentium voluptatum cum, facilis iusto porro. Voluptate repellendus, consequuntur iusto.</p>
+    <p><a href="#" class="button tiny">+ Új produkció felvétele</a></p>
+    <h3>Profilom</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, eveniet, reiciendis labore voluptate unde debitis nihil voluptatum, fugiat officiis perspiciatis ut, deleniti doloribus? Quos obcaecati eos repellat dolorem animi, officiis?</p>
+
   </div>
 </div>
