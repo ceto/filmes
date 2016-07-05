@@ -27,13 +27,23 @@
         </div> -->
         <div class="top-bar-right">
           <ul class="dropdown menu" data-dropdown-menu>
-            <li><a href="../knowledge/departments/">Filmszakmák</a></li>
-            <li><a href="../news.html">Hírek</a></li>
+            <li><a href="../base/productions/">Produkciók</a></li>
+            <li><a href="../base/departments/">Filmszakmák</a></li>
+            <li><a href="../base/news/">Hírek</a></li>
             <li>
-              <a href="#">Producer Tamás</a>
+              <a href="../traniee/dashboard.html">Gyakor Nokedli</a>
               <ul class="menu vertical">
-                <li><a href="../producer/dashboard.html">Gyakornok keresése</a></li>
-                <li><a href="../producer/profile-edit.html">Profilom szerkesztés</a></li>
+                <li><a href="../traniee/dashboard.html">Profilom</a></li>
+                <li><a href="../traniee/reviews.html">Értékeléseim <apan class="badge alert">1</apan></a></li>
+                <li><a href="../traniee/feedback.html">Vélmény az oldalról</a></li>
+              </ul>
+            </li>
+            
+            <li>
+              <a href="../producer/dashboard.html">Producer Tamás</a>
+              <ul class="menu vertical">
+                <li><a href="../producer/dashboard.html">Vezérlőpult</a></li>
+                <li><a href="../producer/results/all.html">Gyakornok keresése</a></li>
                 <li><a href="../producer/production-list.html">Produkciók listája</a></li>
               </ul>
             </li>
@@ -45,8 +55,111 @@
     </div>
 
     <div class="row">
-      <div class="columns medium-8 medium-push-4">
-        <h2>Gyakornok adatai</h2>
+      <div class="columns">
+        <div class="callout">
+          <form>
+            <div class="row">
+              <div class="columns tablet-6 large-8">
+                <div class="input-group">
+                  <input class="input-group-field" type="text" placeholder="Gyakornok keresése név szterint">
+                  <div class="input-group-button">
+                    <input type="submit" class="button" value="OK">
+                  </div>
+                </div>
+              </div>
+              <div class="columns tablet-6 large-4 end text-right">
+                <button class="button expanded secondary">Részletes keresés</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="callout">
+          <h5>Keresés paraméterek szerint</h5>
+          <form action="post">
+            <div class="row">
+              <fieldset class="small-6 tablet-3 large-2 columns">
+                <legend>Nem</legend>
+                <input type="checkbox" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Fiú</label>
+                <input type="checkbox" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Lány</label>
+              </fieldset>
+              <fieldset class="small-6 tablet-2 large-2 columns">
+                <legend>Kor</legend>
+                <div class="row">
+                  <div class="columns small-6 ">
+                    <input type="text" name="minage" >
+                  </div>
+                  <div class="columns small-6 end">
+                    <input type="text" name="maxage" >
+                  </div>
+                </div>
+              </fieldset>
+              <div class="medium-6 tablet-4 large-3 columns">
+                <label for="langs">Szükséges nyelvek
+                  <input type="text" name="langs" placeholder="ha többet írsz, vesszővel válaszd el">
+                </label>
+              </div>
+              <div class="medium-6 tablet-3 large-3 end columns">
+                <label for="area">Szakterület
+                  <select name="area" id="">
+                    <option value="0">Előny a gyakorlat az alábbi területen</option>
+                    <option value="Director">Director</option>
+                    <option value="Camera department">Camera department</option>
+                    <option value="Sound department">Sound department</option>
+                    <option value="Art department">Art department</option>
+                    <option value="SFX">SFX</option>
+                    <option value="Post production">Post production</option>
+                  </select>
+                </label>
+              </div>
+              <div class="columns large-2">
+                <input type="submit" class="button expanded">
+              </div>
+            </div>
+          </form>
+          <a href="#"><small>Mentett keresések</small></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
+        <ul class="accordion" data-accordion data-allow-all-closed="true">
+          <li class="accordion-item is-active" data-accordion-item>
+            <a href="#" class="accordion-title">Saját gyakornoklistáim megnyitása</a>
+            <div class="accordion-content" data-tab-content>
+              <nav>
+                <h4>Gyakornokok listája</h4>
+                <ul class="menu vertical">
+                  <li><a href="../producer/results/all.html">Összes gyakornok</a></li>
+                  <li><a href="../producer/results/ourtraniees.html">Most dolgoznak nálunk</a></li>
+                  <li><a href="../producer/results/starred.html">Bejelölt gyakornokok</a></li>
+                  <li><a href="../producer/results/alertlist.html">Beavatkozást igényelnek <span class="badge alert">2</span></a></li>
+                </ul>
+              </nav>
+              <hr>
+              <nav>
+                <h4>Mentett keresések</h4>
+                <ul class="menu vertical">
+                  <li><a href="../producer/results/prodsearchresults.html">Utóélet hangrészleg <small>(4 találat)</small><span class="badge alert">2</span><br><small>20 éves, angol, német</small></a></li>
+                  <li><a href="../producer/results/prodsearchresults.html">Csinovnyik gyártásba<br><small>fiú, angol, német</small></a></li>
+                  <li><a href="../producer/results/prodsearchresults.html">Tapasztalt csatakancák <small>(10 találat)</small><br><small>lány, 45-50, sfx, sound, production </small></a></a></li>
+                </ul>
+              </nav>
+              <a href="#"><small>Új keresés indítása</small></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
+        <nav aria-label="Itt vagy:" role="navigation">
+          <ul class="breadcrumbs">
+            <li><a href="../producer/dashboard.html">Vezérlőpult</a></li>
+            <li><a href="../producer/results/all.html">Gyakornokok</a></li>
+            <li>
+              <span class="show-for-sr">Aktív oldal: </span> Gyakornok adatlapja
+            </li>
+          </ul>
+        </nav>
+        <h2>Gyakornok adatlapja</h2>
         <div class="row">
           <div class="columns small-6">
             <figure><img src="http://placehold.it/480/320" alt="Minta Panna"></figure>
@@ -113,10 +226,6 @@
             </section>
           </div>
         </div>
-      </div>
-      <div class="columns medium-4 medium-pull-8">
-        <h3>Producer sidebar</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit aliquam neque mollitia placeat, consectetur voluptatum atque non esse iste ducimus temporibus fuga, saepe earum pariatur asperiores sunt! Ex nobis, quasi!</p>
       </div>
     </div>
 
