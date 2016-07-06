@@ -1,12 +1,11 @@
-{{> prodheadsearch }}
+---
+title: Vezérlőpult
+description: A producer vezérlőpultja. Start page.
+---
 <div class="row">
-  <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
-    {{> prodsidebar }}
-  </div>
-
-  <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
+  <div class="columns">
     <div class="callout alert" data-closable>
-      <h5>Beavatkozás szükséges</h5>
+      <h5>Rendszerüzenet: Beavatkozás szükséges</h5>
       <p>Hiányosságokat észleltünk. Az alábbi adminisztráció elvégzése időszerű.</p>
       <ul>
         <li>Nem adtál visszajelzést: 1 gyakornok</li>
@@ -14,14 +13,34 @@
       </ul>
       <a href="{{root}}producer/results/alertlist.html" class="button small">Adminisztráció elvégzése</a>
       <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-        <span aria-hidden="true">&times;</span>
+      <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <h3>Regisztrált produkcióim</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae maiores rerum accusantium quas hic explicabo voluptatem recusandae porro! Autem architecto praesentium voluptatum cum, facilis iusto porro. Voluptate repellendus, consequuntur iusto.</p>
-    <p><a href="#" class="button tiny">+ Új produkció felvétele</a></p>
+  </div>
+</div>
+<div class="row">
+  <div class="columns">
+    <h1>{{title}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
+    <a href="{{root}}producer/results/all.html" class="button large expanded alert">Új gyakornok keresése</a>
+    <hr>
+    {{>prodsidebar }}
+  </div>
+  <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
     <h3>Profilom</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, eveniet, reiciendis labore voluptate unde debitis nihil voluptatum, fugiat officiis perspiciatis ut, deleniti doloribus? Quos obcaecati eos repellat dolorem animi, officiis?</p>
-
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quas iusto error quaerat dolore saepe reiciendis, quo eum doloribus itaque excepturi sed ipsa rerum commodi, voluptate debitis illo quae. Quos!</p>
+    <h3>Regisztrált produkcióim</h3>
+    <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
+      {{#each productions-four}}
+      <div class="column">
+        {{> production-smallcard }}
+      </div>
+      {{/each}}
+    </div>
+    <p><a href="#" class="button tiny">+ Új produkció felvétele</a></p>
   </div>
 </div>

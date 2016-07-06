@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Utóélet",
+    "production": "Protonfil,",
+    "budget": "80",
+    "status": "Gyártás előkészítés",
+    "traniees": 1
+  },
+  {
+    "title": "A miniszter félrelép",
+    "production": "MAFILM",
+    "budget": "80",
+    "status": "Befejezett",
+    "traniees": 2
+  },
+  {
+    "title": "Macskafogó Reloaded",
+    "production": "Café Film",
+    "budget": "1200",
+    "status": "Fejlesztés",
+    "traniees": 4
+  },
+  {
+    "title": "Mielőtt befejezi röptét a denevér",
+    "production": "Macskabölcső",
+    "budget": "200",
+    "status": "Fejlesztés",
+    "traniees": 0
+  }
+]

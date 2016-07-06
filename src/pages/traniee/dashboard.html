@@ -3,9 +3,9 @@ title: Profilom
 description: Gyakornok vezérlőpultja profil szerkesztésével
 ---
 <div class="row">
-  <div class="columns tablet-8 xlarge-9">
+  <div class="columns">
     <div class="alert callout" data-closable>
-      <h5>Néhány adat még hányzik.</h5>
+      <h5>Rendszerüzenet: Néhány adat még hányzik.</h5>
       <p>Profilod élesítéséhez és a filmalapos jóváhagyáshoz az alábbiak megadása kötelező.</p>
       <ul>
         <li>Profilkép feltöltése</li>
@@ -13,19 +13,40 @@ description: Gyakornok vezérlőpultja profil szerkesztésével
         <li>Önéletrajz feltöltése</li>
       </ul>
       <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-        <span aria-hidden="true">&times;</span>
+      <span aria-hidden="true">&times;</span>
       </button>
     </div>
+  </div>
+</div>
+<div class="row">
+  <div class="columns small-6">
+    <h1>{{title}}</h1>
+  </div>
+  <div class="columns small-6 text-right">
+    <a data-open="tranieehelp" class="button small">Segítség</a>
+  </div>
+</div>
+<div class="row">
+  <div class="columns tablet-8 xlarge-9">
     {{> tranieeprofile }}
   </div>
   <div class="columns tablet-4 xlarge-3">
-    <h3>Traniee Sidebar</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat reiciendis eos nihil ipsa, cumque deleniti unde natus earum incidunt consectetur adipisci libero tenetur ratione ab, blanditiis odio in, voluptatibus tempore!</p>
-    <h3>A gyakornokság tudnivalói</h3>
-    <h4>Hogyan jelentkezhetek?</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-    <h4>Mi kell ahhoz, hogy bejussak?</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+    <h3>Legújabb produkciók</h3>
+    {{#each productions-four }}
+    {{> production-smallcard }}
+    {{/each}}
+    <a href="{{root}}base/productions/">Mutasd mindet</a>
   </div>
+</div>
+<div class="reveal" id="tranieehelp" data-reveal>
+  <h1>A gyakornokság tudnivalói</h1>
+  <p class="lead">Your couch. It is mine. I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  <h2>Hogyan jelentkezhetek?</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+  <h4>Mi kell ahhoz, hogy bejussak?</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+  <button class="close-button" data-close aria-label="Felugró bezárása" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>

@@ -4,13 +4,17 @@ description: Producer által megcsillagozott gyakornokok listája
 ---
 {{> prodheadsearch }}
 <div class="row">
+  <div class="columns">
+    {{> prodsearchbreadcrumbs }}
+    <h1>{{ title }}</h1>
+  </div>
+</div>
+<div class="row">
   <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
     {{> prodsidebar }}
   </div>
 
   <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
-    {{> prodsearchbreadcrumbs }}
-    <h1>{{ title }}</h1>
     <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
       {{#each traniees}}
       <div class="column">
