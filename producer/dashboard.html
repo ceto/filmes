@@ -27,6 +27,7 @@
         </div> -->
         <div class="top-bar-right">
           <ul class="dropdown menu" data-dropdown-menu>
+            <li><a href="../producer/results/all.html">Gyakornokok(&times;)</a></li>
             <li><a href="../base/productions/">Produkciók</a></li>
             <li><a href="../base/departments/">Filmszakmák</a></li>
             <li><a href="../base/news/">Hírek</a></li>
@@ -43,8 +44,6 @@
               <a href="../producer/dashboard.html">Producer Tamás</a>
               <ul class="menu vertical">
                 <li><a href="../producer/dashboard.html">Vezérlőpult</a></li>
-                <li><a href="../producer/results/all.html">Gyakornok keresése</a></li>
-                <li><a href="../producer/production-list.html">Produkciók listája</a></li>
               </ul>
             </li>
             
@@ -56,103 +55,8 @@
 
     <div class="row">
       <div class="columns">
-        <div class="callout">
-          <form>
-            <div class="row">
-              <div class="columns tablet-6 large-8">
-                <div class="input-group">
-                  <input class="input-group-field" type="text" placeholder="Gyakornok keresése név szterint">
-                  <div class="input-group-button">
-                    <input type="submit" class="button" value="OK">
-                  </div>
-                </div>
-              </div>
-              <div class="columns tablet-6 large-4 end text-right">
-                <button class="button expanded secondary">Részletes keresés</button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="callout">
-          <h5>Keresés paraméterek szerint</h5>
-          <form action="post">
-            <div class="row">
-              <fieldset class="small-6 tablet-3 large-2 columns">
-                <legend>Nem</legend>
-                <input type="checkbox" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Fiú</label>
-                <input type="checkbox" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Lány</label>
-              </fieldset>
-              <fieldset class="small-6 tablet-2 large-2 columns">
-                <legend>Kor</legend>
-                <div class="row">
-                  <div class="columns small-6 ">
-                    <input type="text" name="minage" >
-                  </div>
-                  <div class="columns small-6 end">
-                    <input type="text" name="maxage" >
-                  </div>
-                </div>
-              </fieldset>
-              <div class="medium-6 tablet-4 large-3 columns">
-                <label for="langs">Szükséges nyelvek
-                  <input type="text" name="langs" placeholder="ha többet írsz, vesszővel válaszd el">
-                </label>
-              </div>
-              <div class="medium-6 tablet-3 large-3 end columns">
-                <label for="area">Szakterület
-                  <select name="area" id="">
-                    <option value="0">Előny a gyakorlat az alábbi területen</option>
-                    <option value="Director">Director</option>
-                    <option value="Camera department">Camera department</option>
-                    <option value="Sound department">Sound department</option>
-                    <option value="Art department">Art department</option>
-                    <option value="SFX">SFX</option>
-                    <option value="Post production">Post production</option>
-                  </select>
-                </label>
-              </div>
-              <div class="columns large-2">
-                <input type="submit" class="button expanded">
-              </div>
-            </div>
-          </form>
-          <a href="#"><small>Mentett keresések</small></a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
-        <ul class="accordion" data-accordion data-allow-all-closed="true">
-          <li class="accordion-item is-active" data-accordion-item>
-            <a href="#" class="accordion-title">Saját gyakornoklistáim megnyitása</a>
-            <div class="accordion-content" data-tab-content>
-              <nav>
-                <h4>Gyakornokok listája</h4>
-                <ul class="menu vertical">
-                  <li><a href="../producer/results/all.html">Összes gyakornok</a></li>
-                  <li><a href="../producer/results/ourtraniees.html">Most dolgoznak nálunk</a></li>
-                  <li><a href="../producer/results/starred.html">Bejelölt gyakornokok</a></li>
-                  <li><a href="../producer/results/alertlist.html">Beavatkozást igényelnek <span class="badge alert">2</span></a></li>
-                </ul>
-              </nav>
-              <hr>
-              <nav>
-                <h4>Mentett keresések</h4>
-                <ul class="menu vertical">
-                  <li><a href="../producer/results/prodsearchresults.html">Utóélet hangrészleg <small>(4 találat)</small><span class="badge alert">2</span><br><small>20 éves, angol, német</small></a></li>
-                  <li><a href="../producer/results/prodsearchresults.html">Csinovnyik gyártásba<br><small>fiú, angol, német</small></a></li>
-                  <li><a href="../producer/results/prodsearchresults.html">Tapasztalt csatakancák <small>(10 találat)</small><br><small>lány, 45-50, sfx, sound, production </small></a></a></li>
-                </ul>
-              </nav>
-              <a href="#"><small>Új keresés indítása</small></a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    
-      <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
         <div class="callout alert" data-closable>
-          <h5>Beavatkozás szükséges</h5>
+          <h5>Rendszerüzenet: Beavatkozás szükséges</h5>
           <p>Hiányosságokat észleltünk. Az alábbi adminisztráció elvégzése időszerű.</p>
           <ul>
             <li>Nem adtál visszajelzést: 1 gyakornok</li>
@@ -160,18 +64,114 @@
           </ul>
           <a href="../producer/results/alertlist.html" class="button small">Adminisztráció elvégzése</a>
           <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <h3>Regisztrált produkcióim</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae maiores rerum accusantium quas hic explicabo voluptatem recusandae porro! Autem architecto praesentium voluptatum cum, facilis iusto porro. Voluptate repellendus, consequuntur iusto.</p>
-        <p><a href="#" class="button tiny">+ Új produkció felvétele</a></p>
-        <h3>Profilom</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, eveniet, reiciendis labore voluptate unde debitis nihil voluptatum, fugiat officiis perspiciatis ut, deleniti doloribus? Quos obcaecati eos repellat dolorem animi, officiis?</p>
-    
       </div>
     </div>
-    
+    <div class="row">
+      <div class="columns">
+        <h1>Vezérlőpult</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
+        <a href="../producer/results/all.html" class="button large expanded alert">Új gyakornok keresése</a>
+        <hr>
+        <a href="#" class="button success expanded hide-for-tablet" data-toggle="listnav">Gyakornoklista szűrése</a>
+        <div id="listnav" class="show-for-tablet" data-toggler="show-for-tablet">
+          <nav>
+            <h4>Gyakornokok listája</h4>
+            <ul class="menu vertical">
+              <li><a href="../producer/results/all.html">Összes gyakornok</a></li>
+              <li><a href="../producer/results/ourtraniees.html">Most dolgoznak nálunk</a></li>
+              <li><a href="../producer/results/starred.html">Bejelölt gyakornokok</a></li>
+              <li><a href="../producer/results/alertlist.html">Beavatkozást igényelnek <span class="badge alert">2</span></a></li>
+            </ul>
+          </nav>
+          <hr>
+          <nav id="savedsearches">
+            <h4>Mentett keresések</h4>
+            <ul class="menu vertical">
+              <li><a href="../producer/results/prodsearchresults.html">Utóélet hangrészleg <small>(4 találat)</small><span class="badge alert">2</span><br><small>20 éves, angol, német</small></a></li>
+              <li><a href="../producer/results/prodsearchresults.html">Csinovnyik gyártásba<br><small>fiú, angol, német</small></a></li>
+              <li><a href="../producer/results/prodsearchresults.html">Tapasztalt csatakancák <small>(10 találat)</small><br><small>lány, 45-50, sfx, sound, production </small></a></a></li>
+            </ul>
+          </nav>
+          <a href="#prodfullsearch" data-toggle="listnav prodfullsearch"><small>Új keresés indítása</small></a>
+        </div>
+        
+      </div>
+      <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
+        <h3>Profilom</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, eveniet, reiciendis labore voluptate unde debitis nihil voluptatum, fugiat officiis perspiciatis ut, deleniti doloribus? Quos obcaecati eos repellat dolorem animi, officiis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quas iusto error quaerat dolore saepe reiciendis, quo eum doloribus itaque excepturi sed ipsa rerum commodi, voluptate debitis illo quae. Quos!</p>
+        <h3>Regisztrált produkcióim</h3>
+        <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
+          <div class="column">
+            <div class="smallcard smallcard--production callout">
+              <p><span class="label">Protonfil,</span></p>
+              <h4 class="smallcard__title">
+                <a href="/base/productions/single.html">
+                  Utóélet
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                <li>Fázis: Gyártás előkészítés</li>
+                <li>Büdzsé 80m Ft.</li>
+              </ul>
+              <p><strong>1</strong> <small>gyakornoki hely szabad</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="smallcard smallcard--production callout">
+              <p><span class="label">MAFILM</span></p>
+              <h4 class="smallcard__title">
+                <a href="/base/productions/single.html">
+                  A miniszter félrelép
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                <li>Fázis: Befejezett</li>
+                <li>Büdzsé 80m Ft.</li>
+              </ul>
+              <p><strong>2</strong> <small>gyakornoki hely szabad</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="smallcard smallcard--production callout">
+              <p><span class="label">Café Film</span></p>
+              <h4 class="smallcard__title">
+                <a href="/base/productions/single.html">
+                  Macskafogó Reloaded
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                <li>Fázis: Fejlesztés</li>
+                <li>Büdzsé 1200m Ft.</li>
+              </ul>
+              <p><strong>4</strong> <small>gyakornoki hely szabad</small></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="smallcard smallcard--production callout">
+              <p><span class="label">Macskabölcső</span></p>
+              <h4 class="smallcard__title">
+                <a href="/base/productions/single.html">
+                  Mielőtt befejezi röptét a denevér
+                </a>
+              </h4>
+              <ul class="inlinelist">
+                <li>Fázis: Fejlesztés</li>
+                <li>Büdzsé 200m Ft.</li>
+              </ul>
+              <p><strong>0</strong> <small>gyakornoki hely szabad</small></p>
+            </div>
+          </div>
+        </div>
+        <p><a href="#" class="button tiny">+ Új produkció felvétele</a></p>
+      </div>
+    </div>
 
     
 
