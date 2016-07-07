@@ -1,0 +1,56 @@
+---
+title: Mielőtt befejezi röptét a denevér
+description: "A rendszerében lévő önálló produkció adatlapja látható itt. Ha saját tulajdon akkor engedélyezett a szerkesztés / törlés. illetve. láthatók azok a gyakornokok akik érdeklődnek a produkcióban való részvételre."
+---
+<div class="row">
+  <div class="columns">
+    <h1>Produkció adatlapja</h1>
+    <p class="lead">{{ description }}</p>
+    <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="columns tablet-8 xlarge-9">
+    <h1 data-editable>{{title}}</h1>
+    <p data-editable>Valami ismertető nem kellene ide? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorum officiis soluta, iste nemo quisquam earum enim explicabo rem natus, facilis dolores consectetur laborum perspiciatis quis ut quam at doloremque?</p>
+    <hr>
+    <div class="row">
+      <div class="columns medium-6">
+        <h2>A produkció adatai</h2>
+        <ul>
+          <li data-editable>Fázis: Gyártás</li>
+          <li data-editable>Büdzsé 54m Ft.</li>
+        </ul>
+      </div>
+      <div class="columns medium-6">
+        <h2>Gyakornoki helyek</h2>
+        <ul>
+          <li data-editable>Gyakornoki helyek: 3</li>
+          <li>Ebből szabad: 1</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <h3>A produkcióban résztvevő gyakornokok<br><small>(ha saját produkció)</small></h3>
+    <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
+      {{#each traniees-two}}
+      <div class="column">
+        {{> traniee-smallcard }}
+      </div>
+      {{/each}}
+    </div>
+    <h3>A produkció iránt érdeklődő gyakornokok<br><small>(ha saját produkció)</small></h3>
+    <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
+      {{#each traniees-three}}
+      <div class="column">
+        {{> traniee-smallcard }}
+      </div>
+      {{/each}}
+    </div>
+
+  </div>
+  <div class="columns tablet-4 xlarge-3">
+    <p><small><a href="javascript:history.back();">Vissza az előző oldalra</a></small></p>
+    <a href="#" class="button expanded large alert">Szeretnék ebben dolgozni<br><small>(opcionális.)</small></a>
+  </div>
+</div>

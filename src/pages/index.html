@@ -7,19 +7,23 @@ thumbnail: http://placehold.it/480x320
 <header class="hero">
   <div class="row">
     <div class="columns medium-8">
-      <h1>Jelentkezés a gyakornoki programba</h1>
+      <h1>Gyakornokokat a magyar filmgyártásba</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quo tempore deleniti delectus rem voluptate quisquam cupiditate mollitia ea omnis distinctio atque illum at, tenetur dolorum ullam. Assumenda alias, amet!</p>
       <p>
-        <a href="#" class="button small">Gyakornoknak jelentkezem</a>
-        <a href="#" class="button small secondary">Gyakornokot szeretnék alkalmazni</a>
+        <a href="#howitworks" class="button small">Hogyan működik</a>
+        <a href="{{root}}registration.html" class="button small alert">Regisztrálok a programba</a>
       </p>
-    </div>
-    <div class="columns medium-4">
-      {{> loginbox }}
     </div>
   </div>
 </header>
-<div class="row">
+<div class="callout secondary">
+  <div class="row">
+    <div class="columns text-center">
+      <h4><strong>15 produkció / 120 gyakornok /  21 pozició /  8 produkciós iroda <br>van jelenleg a filmesgyakornok rendszerben</strong></h4>
+    </div>
+  </div>
+</div>
+<div id="howitworks" class="row">
   <div class="columns medium-6">
     <img src="http://placehold.it/768x320" alt="">
     <h2>Leendő gyakornokoknak</h2>
@@ -29,7 +33,7 @@ thumbnail: http://placehold.it/480x320
       Mivel ez ennél több szöveget tartalmaz, innentől ál-latinul folytatjuk: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur.
     </p>
     <p>
-      <a href="{{root}}traniee/reglogin.html" class="button">Gyakornoknak jelentkezek</a>
+      <a href="{{root}}registration.html" class="button alert">Gyakornoknak jelentkezek</a>
     </p>
   </div>
   <div class="columns medium-6">
@@ -41,12 +45,32 @@ thumbnail: http://placehold.it/480x320
       Mivel ez ennél több szöveget tartalmaz, innentől ál-latinul folytatjuk: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur.
     </p>
      <p>
-      <a href="{{root}}producer/reglogin.html" class="button">Gyakornokot szeretnék alkalmazni</a>
+      <a href="{{root}}registration.html" class="button">Gyakornokot szeretnék alkalmazni</a>
     </p>
   </div>
   <div class="row">
     <div class="columns medium-6 medium-centered text-center">
       <p><small><a href="#">Filmalap bejelentkezés</a></small></p>
     </div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="columns medium-6">
+    <h3>Hírek</h3>
+    <h4>Megkezdődőtt az Aranyélet 2. évadának a forgatása</h4>
+    <time>2016. október 7.</time>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius temporibus maxime? Est, distinctio, optio. Sint beatae dolorum, vero a. Recusandae nostrum et ullam ut sunt quisquam repellat aspernatur perspiciatis.</p>
+    <a href="#" class="button small">Bővebben</a>
+    <h4>Elindult a filmesgyakornok program magyarországon</h4>
+    <time>2016. november 11.</time>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius temporibus maxime? Est, distinctio, optio. Sint beatae dolorum, vero a. Recusandae nostrum et ullam ut sunt quisquam repellat aspernatur perspiciatis.</p>
+    <a href="#" class="button small">Bővebben</a>
+  </div>
+  <div class="columns medium-6">
+    <h3>Friss gyakornoki pozíciók</h3>
+    {{#each productions-four}}
+      {{>production-smallcard}}
+    {{/each}}
   </div>
 </div>

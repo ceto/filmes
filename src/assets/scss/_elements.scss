@@ -9,3 +9,25 @@
     }
   }
 }
+
+[data-editable] {
+  position: relative;
+  &:hover, &:focus {
+    background-color: $light-gray;
+    outline:5px solid $light-gray;
+  }
+  &:hover:after {
+    content:'Szerkeszt';
+    background-color: $medium-gray;
+    border-left: .5em solid $light-gray;
+    border-bottom: .5em solid $light-gray;
+    padding:.5em;
+    display: inline-block;
+    position: absolute;
+    top:-5px;
+    right:-5px;
+    font-size: .666rem;
+    line-height: 1;
+
+  }
+}

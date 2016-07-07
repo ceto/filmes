@@ -26,7 +26,8 @@
     ],
     "date": "2014. június 12.",
     "description": "Lorem boom onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-    "thumbnail": "http://placehold.it/480x480"
+    "thumbnail": "http://placehold.it/480x480",
+    "marked": true
   },
   {
     "name": "Strosszmájer Aurél",
@@ -96,7 +97,8 @@
     ],
     "date": "2014. június 12.",
     "description": "Onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-    "thumbnail": "http://placehold.it/480x480"
+    "thumbnail": "http://placehold.it/480x480",
+    "marked": true
   },
   {
     "name": "Dolgos Emilia",
@@ -122,7 +124,8 @@
     ],
     "date": "2015. september 7.",
     "description": "Lorem boom onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-    "thumbnail": "http://placehold.it/480x480"
+    "thumbnail": "http://placehold.it/480x480",
+    "marked": "true"
   },
   {
     "name": "Minta Panna",

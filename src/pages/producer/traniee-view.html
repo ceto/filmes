@@ -4,12 +4,53 @@ description: Gyakornokok adatlapja a producer számára
 ---
 {{> prodheadsearch }}
 <div class="row">
-  <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
-    {{> prodsidebar }}
-  </div>
-  <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
+  <div class="columns tablet-8 xlarge-9">
     {{> prodsearchbreadcrumbs }}
     <h2>{{ title }}</h2>
     {{> traniee-datasheet }}
   </div>
+  <div class="columns tablet-4 xlarge-3 text-center">
+    <p><small><a href="javascript:history.back();">Vissza az előző oldalra</a></small></p>
+    <button class="button expanded large alert">Kikérem az adatait</button>
+    vagy.
+    <button data-toggle="alkalmazom-dropdown" class="button expanded large warning">Alkalmazom &or;</button>
+    <div class="dropdown-pane" id="alkalmazom-dropdown" data-dropdown data-auto-focus="true">
+      <form action="#">
+        <label for="alkprod">Melyik produkcióban alkalmazod?
+          <select name="alkprod" id="alkprod">
+            <option value="">Válassz produkciót</option>
+            {{#each productions-four}}
+            <option value="">{{title}}</option>
+            {{/each}}
+          </select>
+        </label>
+        <button type="submit" class="button small">Felveszem</button>
+        <button type="reset" data-toggle="alkalmazom-dropdown" class="button small secondary">Mégsem</button>
+      </form>
+    </div>
+    vagy.
+    <button class="button expanded large success" data-toggle="lezarom-dropdown">Lezárom az alkalmazását &or;</button>
+    <div class="dropdown-pane" id="lezarom-dropdown" data-dropdown data-auto-focus="true">
+      <form action="#">
+        <label for="alkprod">Értékeld
+          <select name="lezarprod-stars" id="lezarprod-stars">
+            <option value="">Hány csillagot adsz neki?</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </label>
+        <label for="lezarfeedback">
+          <textarea name="lezarfeedback" id="lezarfeedback" rows="5" placeholder="Értékeld néhány mondatban"></textarea>
+        </label>
+        <button type="submit" class="button small">Lezárom</button>
+        <button type="reset" data-toggle="lezarom-dropdown" class="button small secondary">Mégsem</button>
+      </form>
+    </div>
+    és
+    <button class="button expanded large secondary">Bejelölöm</button>
+  </div>
+
 </div>

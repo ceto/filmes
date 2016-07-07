@@ -1,0 +1,84 @@
+<div class="callout">
+  <form>
+    <div class="row">
+      <div class="small-12 columns">
+        <label>Név
+          <input type="text" placeholder=".small-12.columns">
+        </label>
+      </div>
+      <div class="small-12 columns">
+        <label>E-mail
+          <input type="text" placeholder=".small-12.columns">
+        </label>
+      </div>
+      <div class="small-6 columns">
+        <label>Jelszó
+          <input type="password" placeholder=".small-12.columns">
+        </label>
+      </div>
+      <div class="small-6 columns">
+        <label>Jelszó újra
+          <input type="password" placeholder=".small-12.columns">
+        </label>
+      </div>
+      <hr>
+      <fieldset class="small-12 columns">
+        <legend>Alábbi szerpkörben kívánok részt venni a programban</legend>
+        <input data-toggle-focus="tranieedata" type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Gyakornok szeretnék lenni</label>
+        <input data-toggle-focus="proddata" type="radio" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Producer vagyok</label>
+      </fieldset>
+    </div>
+    <div id="tranieedata" class="row is-hidden" data-toggler="is-hidden">
+      <div class="small-12 columns">
+        <h4>Az alábbi adatokra még szükség van</h4>
+      </div>
+      <div class="small-12 columns">
+        <label>Születésnap
+          <input type="text" placeholder="Mikor születtél">
+        </label>
+      </div>
+      <div class="small-12 columns">
+        <label>Telefon
+          <input type="text" placeholder="Add meg a számodat">
+        </label>
+      </div>
+      <div class="small-12 columns">
+        <label>Skype
+          <input type="text" placeholder="Skype ID">
+        </label>
+      </div>
+      <fieldset class="small-12 columns">
+        <legend>Nem</legend>
+        <input type="radio" name="gender" value="boy" id="genderBoy"><label for="genderBoy">Fiú vagyok</label>
+        <input type="radio" name="gender" value="girl" id="genderGirl" required><label for="genderGirl">Lány vagyok</label>
+        <input type="radio" name="gender" value="other" id="genderOther" required><label for="genderOther">Egyéb</label>
+      </fieldset>
+    </div>
+    <div id="proddata" class="row is-hidden" data-toggler="is-hidden">
+      <div class="small-12 columns">
+        <h4>Az alábbi adatokra még szükség van</h4>
+      </div>
+      <div class="small-12 columns">
+        <label>Képviselt cég
+          <input type="text" placeholder=".small-12.columns">
+        </label>
+      </div>
+      <div class="small-12 columns">
+        <label>Beosztás
+          <input type="text" placeholder=".small-12.columns">
+        </label>
+      </div>
+      <div class="small-12 columns">
+        <label>Telefon
+          <input type="text" placeholder=".small-12.columns">
+        </label>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="small-12 columns">
+        <button class="button expanded" type="submit" value="Submit">Regisztráció elküldése</button>
+      </div>
+    </div>
+  </form>
+</div>

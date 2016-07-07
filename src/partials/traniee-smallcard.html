@@ -6,24 +6,29 @@
           <img src="{{ thumbnail}}" alt="">
         </a>
       </figure>
+      {{#if marked}}
+        <a href="#" class="button tiny success">Megjelölt</a>
+        {{else}}
+        <a href="#" class="button tiny">Megjelölöm</a>
+      {{/if}}
     </div>
     <div class="columns small-9 medium-8 xlarge-9">
       <h4 class="smallcard__title">
-      <a href="{{ root }}/producer/traniee-view.html">
-        {{ name }} <small>({{ age }})</small>
-      </a>
-    </h4>
-    <ul class="inlinelist">
-      {{#each studies}}
-        <li>{{ this }}</li>
-      {{/each}}
-    </ul>
-    <ul class="inlinelist">
-      {{#each workedin}}
-        <li>{{ this }}</li>
-      {{/each}}
-    </ul>
-    <p><small>{{ date }}</small></p>
+        <a href="{{ root }}/producer/traniee-view.html">
+          {{ name }} <small>({{ age }})</small>
+        </a>
+      </h4>
+      <ul class="inlinelist">
+        {{#each studies}}
+          <li>{{ this }}</li>
+        {{/each}}
+      </ul>
+      <ul class="inlinelist">
+        {{#each workedin}}
+          <li>{{ this }}</li>
+        {{/each}}
+      </ul>
+      <p><small>{{ date }}</small></p>
 
     </div>
   </div>
