@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <div class="top-bar">
+    <div class="top-bar dark">
       <div class="top-bar-title">
         <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
           <button class="menu-icon dark" type="button" data-toggle></button>
@@ -22,9 +22,9 @@
         <div class="top-bar-left">
           <ul class="dropdown menu" data-dropdown-menu>
             <li><a href="../producer/results/all.html">Gyakornokok(&times;)</a></li>
-            <li><a href="../base/productions/">Produkciók</a></li>
-            <li><a href="../base/departments/">Filmszakmák</a></li>
-            <li><a href="../base/news/">Hírek</a></li>
+            <li><a href="../base/productions/index.html">Produkciók</a></li>
+            <li><a href="../base/departments/index.html">Filmszakmák</a></li>
+            <li><a href="../base/news/index.html">Hírek</a></li>
           </ul>
         </div>
       </div>
@@ -52,156 +52,99 @@
     
     </div>
 
-    <div class="row">
-      <div class="columns">
-        <div class="callout">
-          <form>
-            <div class="row">
-              <div class="columns tablet-6 large-8">
-                <div class="input-group">
-                  <input class="input-group-field" type="text" placeholder="Gyakornok keresése név szterint">
-                  <div class="input-group-button">
-                    <input type="submit" class="button" value="OK">
-                  </div>
-                </div>
-              </div>
-              <div class="columns tablet-6 large-4 end text-right">
-                <a href="#" class="button expanded secondary" data-toggle="prodfullsearch">Részletes keresés</a>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div id="prodfullsearch" class="callout is-hidden" data-closable data-toggler="is-hidden">
-          <h5>Keresés paraméterek szerint</h5>
-          <form action="post">
-            <div class="row">
-              <fieldset class="small-6 tablet-3 large-2 columns">
-                <legend>Nem</legend>
-                <input type="checkbox" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Fiú</label>
-                <input type="checkbox" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Lány</label>
-              </fieldset>
-              <fieldset class="small-6 tablet-2 large-2 columns">
-                <legend>Kor</legend>
-                <div class="row">
-                  <div class="columns small-6 ">
-                    <input type="text" name="minage" >
-                  </div>
-                  <div class="columns small-6 end">
-                    <input type="text" name="maxage" >
-                  </div>
-                </div>
-              </fieldset>
-              <div class="medium-6 tablet-4 large-3 columns">
-                <label for="langs">Szükséges nyelvek
-                  <input type="text" name="langs" placeholder="ha többet írsz, vesszővel válaszd el">
-                </label>
-              </div>
-              <div class="medium-6 tablet-3 large-3 end columns">
-                <label for="area">Szakterület
-                  <select name="area" id="">
-                    <option value="0">Előny a gyakorlat az alábbi területen</option>
-                    <option value="Director">Director</option>
-                    <option value="Camera department">Camera department</option>
-                    <option value="Sound department">Sound department</option>
-                    <option value="Art department">Art department</option>
-                    <option value="SFX">SFX</option>
-                    <option value="Post production">Post production</option>
-                  </select>
-                </label>
-              </div>
-              <div class="columns large-2">
-                <input type="submit" class="button expanded">
-              </div>
-            </div>
-          </form>
-          <a href="#savedsearches" data-toggle="listnav"><small>Mentett keresések</small></a>
-          <button class="close-button" aria-label="Dismiss alert" type="button" data-toggle="prodfullsearch">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <header class="phead phead--inverse">
+      <div class="row">
+        <div class="columns tablet-8 xlarge-9">
+         
+         <nav aria-label="Itt vagy:" role="navigation">
+           <ul class="breadcrumbs">
+             <li><a href="../">Filmesgyakornok</a></li>
+               <li><a href="../producer/results/all.html">Gyakornokok</a></li>
+         
+             <li>
+               <span class="show-for-sr">Aktív oldal: </span> Gyakornok adatlapja
+             </li>
+           </ul>
+         </nav>
+          <h2 class="phead__title">Gyakornok adatlapja</h2>
         </div>
       </div>
-    </div>
+    </header>
     <div class="row">
       <div class="columns tablet-8 xlarge-9">
-        <nav aria-label="Itt vagy:" role="navigation">
-          <ul class="breadcrumbs">
-            <li><a href="../producer/dashboard.html">Vezérlőpult</a></li>
-            <li><a href="../producer/results/all.html">Gyakornokok</a></li>
-            <li>
-              <span class="show-for-sr">Aktív oldal: </span> Gyakornok adatlapja
-            </li>
-          </ul>
-        </nav>
-        <h2>Gyakornok adatlapja</h2>
-        <div class="row">
-          <div class="columns small-6">
-            <figure><img src="http://placehold.it/480/320" alt="Minta Panna"></figure>
-          </div>
-          <div class="columns small-6">
-            <h4>Minta Panna</h4>
-            <p>21 éves lány</p>
-            <p>
-              <a href="#">mintapanna@gmail.com</a><br>
-              <a href="tel:0036303217654">+36 30 321 7654</a><br>
-              skype: mintapanna
-            </p>
-            <p>angol, német, <strong>francia</strong></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="columns">
-            <section>
-              <h3>Szivesen kipróbálná</h3>
-              <p>
-                <span class="label">Camera</span>
-                <span class="label">Post production</span>
-                <span class="label">SFX</span>
-              </p>
-            </section>
-            <section>
-              <h3>Iskolák</h3>
-              <ul>
-                <li>MOME animáció szak, <strong>animátor</strong> 2013-2015</li>
-                <li>Filmművészeti Egyetem, <strong>operatőr</strong> 2009-2013</li>
-              </ul>
-            </section>
-            <section>
-              <h3>Produkciók, ahol már dolgozott</h3>
-              <ul>
-                <li>
-                  <h4>Félvilág <small>(2015, 2 hét)</small></h4>
-                  <p>Elsősorban a gafferek ebédjét szállítottam, illetve a produkció pénzügyi asszisztensének hordtam kávékat egy nagyon drága kávézóból. Szerencsémre ráláttam az operatőr munkájára is.</p>
-                </li>
-                <li>
-                  <h4>Szegénylegények <small>(1969, 9 hónap)</small></h4>
-                  <p>Itt még csak elképzelés voltam, de állítólag már ebben a formában is nagy hatással voltam a film akkori gyártásvezetőjére, aki az apám.</p>
-                </li>
-              </ul>
-            </section>
-            <section>
-              <h3>Önéletrajz</h3>
-              <p><a href="#">minta_cv.docx</a></p>
-            </section>
-            <section>
-              <h3>Motívációs levél</h3>
-              <p>Híres rendező akarok lenni, aki alulról kezdte. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit similique iure eius, quidem iste harum omnis explicabo eum obcaecati officiis voluptas provident earum quo molestiae quia vel cum ex. Reprehenderit.</p>
-            </section>
-            <section>
-              <h3>Róla írták</h3>
-              <blockquote>
-                <p>Híres rendező akarok lenni, aki alulról kezdte. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit similique iure eius, quidem iste harum omnis explicabo eum obcaecati officiis voluptas provident earum quo molestiae quia vel cum ex. Reprehenderit.</p>
-                <cite>Lajos Tamás, producer (Szegénylegények)</cite>
-              </blockquote>
-              <blockquote>
-                <p>Panka csodálatosan hord kávét, mindenkinek ilyen gyakornokot kívánok, legközelebb is szívesen dolgoznék vele.</p>
-                <cite>Pintér Béla, gyártásvezető (Mephisto)</cite>
-              </blockquote>
-            </section>
-          </div>
-        </div>
+         <section class="plead">
+           <div class="row">
+           <div class="columns small-6">
+             <figure><img src="http://placehold.it/480/320" alt="Minta Panna"></figure>
+           </div>
+           <div class="columns small-6">
+             <h4>Minta Panna</h4>
+             <p>21 éves lány</p>
+             <p>
+               <a href="#">mintapanna@gmail.com</a><br>
+               <a href="tel:0036303217654">+36 30 321 7654</a><br>
+               skype: mintapanna
+             </p>
+             <p>angol, német, <strong>francia</strong></p>
+           </div>
+         </div>
+         </section>
+         
+         <div class="row">
+           <div class="columns">
+             <section>
+               <h3>Szivesen kipróbálná</h3>
+               <p>
+                 <span class="label">Camera</span>
+                 <span class="label">Post production</span>
+                 <span class="label">SFX</span>
+               </p>
+             </section>
+             <section>
+               <h3>Iskolák</h3>
+               <ul>
+                 <li>MOME animáció szak, <strong>animátor</strong> 2013-2015</li>
+                 <li>Filmművészeti Egyetem, <strong>operatőr</strong> 2009-2013</li>
+               </ul>
+             </section>
+             <section>
+               <h3>Produkciók, ahol már dolgozott</h3>
+               <ul>
+                 <li>
+                   <h4>Félvilág <small>(2015, 2 hét)</small></h4>
+                   <p>Elsősorban a gafferek ebédjét szállítottam, illetve a produkció pénzügyi asszisztensének hordtam kávékat egy nagyon drága kávézóból. Szerencsémre ráláttam az operatőr munkájára is.</p>
+                 </li>
+                 <li>
+                   <h4>Szegénylegények <small>(1969, 9 hónap)</small></h4>
+                   <p>Itt még csak elképzelés voltam, de állítólag már ebben a formában is nagy hatással voltam a film akkori gyártásvezetőjére, aki az apám.</p>
+                 </li>
+               </ul>
+             </section>
+             <section>
+               <h3>Önéletrajz</h3>
+               <p><a href="#">minta_cv.docx</a></p>
+             </section>
+             <section>
+               <h3>Motívációs levél</h3>
+               <p>Híres rendező akarok lenni, aki alulról kezdte. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit similique iure eius, quidem iste harum omnis explicabo eum obcaecati officiis voluptas provident earum quo molestiae quia vel cum ex. Reprehenderit.</p>
+             </section>
+             <section>
+               <h3>Róla írták</h3>
+               <blockquote>
+                 <p>Híres rendező akarok lenni, aki alulról kezdte. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit similique iure eius, quidem iste harum omnis explicabo eum obcaecati officiis voluptas provident earum quo molestiae quia vel cum ex. Reprehenderit.</p>
+                 <cite>Lajos Tamás, producer (Szegénylegények)</cite>
+               </blockquote>
+               <blockquote>
+                 <p>Panka csodálatosan hord kávét, mindenkinek ilyen gyakornokot kívánok, legközelebb is szívesen dolgoznék vele.</p>
+                 <cite>Pintér Béla, gyártásvezető (Mephisto)</cite>
+               </blockquote>
+             </section>
+           </div>
+         </div>
       </div>
       <div class="columns tablet-4 xlarge-3 text-center">
-        <p><small><a href="javascript:history.back();">Vissza az előző oldalra</a></small></p>
+        <aside class="sidebar">
+        <small><a href="javascript:history.back();">Vissza az előző oldalra</a></small><br>
         <button class="button expanded large alert">Kikérem az adatait</button>
         vagy.
         <button data-toggle="alkalmazom-dropdown" class="button expanded large warning">Alkalmazom &or;</button>
@@ -243,6 +186,7 @@
         </div>
         és
         <button class="button expanded large secondary">Bejelölöm</button>
+        </aside>
       </div>
     
     </div>
