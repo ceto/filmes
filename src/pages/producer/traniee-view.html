@@ -2,15 +2,21 @@
 title: Gyakornok adatlapja
 description: Gyakornokok adatlapja a producer számára
 ---
-{{> prodheadsearch }}
+<header class="phead phead--inverse">
+  <div class="row">
+    <div class="columns tablet-8 xlarge-9">
+     {{>breadcrumbs prodsearch=true }}
+      <h2 class="phead__title">{{ title }}</h2>
+    </div>
+  </div>
+</header>
 <div class="row">
   <div class="columns tablet-8 xlarge-9">
-    {{> prodsearchbreadcrumbs }}
-    <h2>{{ title }}</h2>
-    {{> traniee-datasheet }}
+     {{> traniee-datasheet }}
   </div>
   <div class="columns tablet-4 xlarge-3 text-center">
-    <p><small><a href="javascript:history.back();">Vissza az előző oldalra</a></small></p>
+    <aside class="sidebar">
+    <small><a href="javascript:history.back();">Vissza az előző oldalra</a></small><br>
     <button class="button expanded large alert">Kikérem az adatait</button>
     vagy.
     <button data-toggle="alkalmazom-dropdown" class="button expanded large warning">Alkalmazom &or;</button>
@@ -51,6 +57,7 @@ description: Gyakornokok adatlapja a producer számára
     </div>
     és
     <button class="button expanded large secondary">Bejelölöm</button>
+    </aside>
   </div>
 
 </div>

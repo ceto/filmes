@@ -3,19 +3,26 @@ title: Hangmérnök
 description: Lorem sound department excerpt ipsum dolor sit amet, consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
 thumbnail: http://placehold.it/480x320
 ---
+<header class="phead phead--inverse">
+  <div class="row">
+    <div class="columns medium-8">
+      {{> breadcrumbs departments2=true}}
+      <h1 class="phead--title">{{title}}</h1>
+    </div>
+  </div>
+</header>
+
 <div class="row">
-  <div class="columns medium-8">
-    <nav aria-label="Itt vagy:" role="navigation">
-      <ul class="breadcrumbs">
-        <li><a href="{{root}}base/departments/">Filmszakmák</a></li>
-        <li><a href="{{root}}base/departments/single-department.html">Sound department</a></li>
-        <li>
-          <span class="show-for-sr">Aktív oldal: </span> {{ title }}
-        </li>
-      </ul>
-    </nav>
-    <h1>{{title}}</h1>
-    <p class="lead">{{descreption}}</p>
+  <div class="columns tablet-4 tablet-push-8 tablet-text-center xlarge-3 xlarge-push-9">
+    <aside class="sidebar">
+      <small>Tedd fel a kívánságlistádra</small><br>
+      <a href="#" class="button secondary large expanded">Szivesen dolgoznék benne</a>
+    </aside>
+  </div>
+  <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
+    <div class="plead">
+      <p>{{description}}</p>
+    </div>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam sed, voluptas reiciendis alias nobis atque autem, libero laboriosam animi voluptatem adipisci soluta aliquid harum vero repellat, labore aut eveniet nostrum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quas rem illum amet dignissimos, officiis, laborum in totam placeat, inventore perspiciatis dolore quisquam ab nulla! Similique, dolore sit impedit sed.</p>
     <h2>Kettes címsor formája</h2>

@@ -1,0 +1,37 @@
+.phead {
+  @include clearfix();
+  padding:1rem 0;
+  .breadcrumbs {
+    margin-bottom: 0;
+  }
+}
+
+.phead--inverse {
+  background-color:$primary-color;
+  color:$white;
+  .breadcrumbs {
+    a {
+      color:$white;
+    }
+  }
+
+}
+
+.phead__title {
+  margin-bottom: 0;
+}
+
+
+.plead {
+  @include clearfix();
+  padding:1rem 0;
+
+  font-size: $lead-font-size;
+  line-height: $lead-lineheight;
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  @include breakpoint(tablet){
+      padding:5vh 0;
+  }
+}

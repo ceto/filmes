@@ -49,7 +49,9 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-
 @import 'elements';
+@import 'components/hero';
+@import 'components/pageheader';
+@import 'components/sidebar';
 @import 'components/card';
 @import 'components/smallcard';

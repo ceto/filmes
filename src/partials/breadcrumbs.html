@@ -1,0 +1,20 @@
+
+<nav aria-label="Itt vagy:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="{{root}}">Filmesgyakornok</a></li>
+    {{#if prodsearch}}
+      <li><a href="{{ root }}producer/results/all.html">Gyakornokok</a></li>
+    {{/if }}
+    {{#if departments1}}
+      <li><a href="{{root}}base/departments/index.html">Filmszakmák</a></li>
+    {{/if}}
+    {{#if departments2}}
+      <li><a href="{{root}}base/departments/index.html">Filmszakmák</a></li>
+      <li><a href="{{root}}base/departments/single-department.html">Sound department</a></li>
+    {{/if}}
+
+    <li>
+      <span class="show-for-sr">Aktív oldal: </span> {{ title }}
+    </li>
+  </ul>
+</nav>

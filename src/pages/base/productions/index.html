@@ -2,12 +2,22 @@
 title: Produkciók
 description: "A filmes gyakornok rendszerében lévő aktív produkciók listája. Esetleg 3 hozzáférési szinttel: Public / Logged in users only / Producers only. Funkció kérdés: Lehet e a gyakornokoknak bejelölni produkciókat amiben szivesen dolgoznának. Kvázi jelentkezés"
 ---
-<div class="row">
-  <div class="columns">
-    <h1>{{ title }}</h1>
-    <p class="lead">{{ description }}</p>
+
+<header class="phead phead--inverse">
+  <div class="row">
+    <div class="columns tablet-8 xlarge-9">
+      <h2 class="phead__title">{{ title }}</h2>
+    </div>
   </div>
-</div>
+</header>
+
+<section class="plead">
+  <div class="row">
+    <div class="columns tablet-8 xlarge-9">
+      <p>{{ description }}</p>
+    </div>
+  </div>
+</section>
 
 <div class="row">
   <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">

@@ -1,11 +1,26 @@
 ---
 title: Filmszakmák
-description: Filmipari szakmák gyűjtőoldala
+description: Filmipari szakmák gyűjtőoldala. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, quod magnam assumenda reiciendis iste fugit quam? Commodi sunt ad, tempora deserunt, amet quisquam, laborum aliquam asperiores, eaque obcaecati sed ipsam.
 ---
+<header class="phead phead--inverse">
+  <div class="row">
+    <div class="columns medium-8">
+      {{> breadcrumbs}}
+      <h1 class="phead__title">{{ title }}</h1>
+    </div>
+  </div>
+</header>
+
+<section class="plead">
+  <div class="row">
+    <div class="columns medium-8">
+      <p>{{ description }}</p>
+    </div>
+  </div>
+</section>
+
 <div class="row">
   <div class="columns">
-    <h1>{{ title }}</h1>
-    <p class="lead">{{ description }}</p>
     <div class="row small-up-2 medium-up-3 large-up-4">
       {{#each departments}}
         <div class="column">

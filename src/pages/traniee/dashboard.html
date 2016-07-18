@@ -2,6 +2,16 @@
 title: Profilom
 description: Gyakornok vezérlőpultja profil szerkesztésével
 ---
+<header class="phead phead--inverse">
+  <div class="row">
+    <div class="columns small-6">
+      <h1 class="phead__title">{{title}}</h1>
+    </div>
+    <div class="columns small-6 text-right">
+      <a data-open="tranieehelp" class="button secondary">Segítség</a>
+    </div>
+  </div>
+</header>
 <div class="row">
   <div class="columns">
     <div class="alert callout" data-closable>
@@ -19,21 +29,15 @@ description: Gyakornok vezérlőpultja profil szerkesztésével
   </div>
 </div>
 <div class="row">
-  <div class="columns small-6">
-    <h1>{{title}}</h1>
-  </div>
-  <div class="columns small-6 text-right">
-    <a data-open="tranieehelp" class="button small">Segítség</a>
-  </div>
-</div>
-<div class="row">
   <div class="columns tablet-8 xlarge-9">
     {{> tranieeprofile }}
   </div>
   <div class="columns tablet-4 xlarge-3">
-    <button class="button expanded large alert">Felfüggesztem a profilom</button>
-    És / Vagy.
-    <button class="button expanded large warning">Kész vagyok. Filmalapos jóváhagyást kérek</button>
+    <aside class="sidebar">
+      <button class="button expanded large alert">Felfüggesztem a profilom</button>
+      És / Vagy.
+      <button class="button expanded large warning">Kész vagyok. Filmalapos jóváhagyást kérek</button>
+    </aside>
   </div>
 </div>
 <div class="reveal" id="tranieehelp" data-reveal>

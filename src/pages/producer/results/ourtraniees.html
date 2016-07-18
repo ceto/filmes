@@ -2,13 +2,15 @@
 title: Most dolgoznak nálunk
 description: producer alkalmazásában lévő aktiv gyakornokok listája
 ---
+<header class="phead phead--inverse">
+  <div class="row">
+    <div class="columns medium-8">
+        {{> breadcrumbs prodsearch=true }}
+        <h1 class="phead__title">{{ title }}</h1>
+      </div>
+    </div>
+</header>
 {{> prodheadsearch }}
-<div class="row">
-  <div class="columns">
-    {{> prodsearchbreadcrumbs }}
-    <h1>{{ title }}</h1>
-  </div>
-</div>
 <div class="row">
   <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
     {{> prodsidebar }}

@@ -1,0 +1,10 @@
+.sidebar {
+  padding:1rem 0;
+  @include breakpoint(tablet){
+      padding:5vh 0;
+  }
+
+  .button {
+    margin-bottom: 0;
+  }
+}
