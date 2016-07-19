@@ -1,0 +1,18 @@
+.datablock {
+  // @include clearfix();
+  margin-bottom: $paragraph-margin-bottom;
+  padding:1rem 0;
+  @include breakpoint(tablet) {
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.datablock__title {
+  font-size:1.25rem;
+  line-height: 1;
+  font-weight: $global-weight-bold;
+  margin-bottom: 1em;
+}

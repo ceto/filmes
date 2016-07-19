@@ -1,0 +1,13 @@
+.trsheet__head {
+  @include clearfix();
+  padding:1rem 0;
+  @include breakpoint(tablet){
+      padding:5vh 0;
+  }
+}
+.trsheet__fig {
+  text-align: center;
+  margin:0;
+  padding:0;
+
+}
