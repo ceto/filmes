@@ -11,46 +11,95 @@
   </head>
   <body>
 
-    <div class="top-bar dark">
-      <div class="top-bar-title">
-        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-          <button class="menu-icon dark" type="button" data-toggle></button>
-        </span>
-        <a href="../index.html"><strong>Filmes Gyakornok</strong></a>
-      </div>
-      <div id="responsive-menu">
-        <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+    
+        <!-- off-canvas title bar for 'small' screen -->
+        <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="tablet">
+          <div class="title-bar-left">
+            <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+            <span class="title-bar-title">Filmes Gyakornok (m)</span>
+          </div>
+          <div class="title-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <!-- <li><a href="../login.html">Bejelentkezés</a></li> -->
+              <li>
+                <a href="../traniee/dashboard.html">v. Gyakor Nokedli</a>
+                <ul class="menu vertical">
+                  <li><a href="../traniee/dashboard.html">Profilom</a></li>
+                  <li><a href="../traniee/reviews.html">Értékeléseim <apan class="badge alert">1</apan></a></li>
+                  <li><a href="../traniee/feedback.html">Vélmény az oldalról</a></li>
+                </ul>
+              </li>
+              
+            <!--
+              <li>
+                <a href="../producer/dashboard.html">v. Producer Tamás</a>
+                <ul class="menu vertical">
+                  <li><a href="../producer/dashboard.html">Vezérlőpult</a></li>
+                </ul>
+              </li>
+              
+             -->
+             </ul>
+          </div>
+        </div>
+    
+        <!-- off-canvas left menu -->
+        <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+          <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <ul class="dropdown menu vertical" data-dropdown-menu>
             <li><a href="../producer/results/all.html">Gyakornokok(&times;)</a></li>
             <li><a href="../base/productions/index.html">Produkciók</a></li>
             <li><a href="../base/departments/index.html">Filmszakmák</a></li>
             <li><a href="../base/news/index.html">Hírek</a></li>
           </ul>
         </div>
-      </div>
-      <div class="top-bar-right">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li><a href="../login.html">Bejelentkezés</a></li>
-          <li>
-            <a href="../traniee/dashboard.html">v. Gyakor Nokedli</a>
-            <ul class="menu vertical">
-              <li><a href="../traniee/dashboard.html">Profilom</a></li>
-              <li><a href="../traniee/reviews.html">Értékeléseim <apan class="badge alert">1</apan></a></li>
-              <li><a href="../traniee/feedback.html">Vélmény az oldalról</a></li>
-            </ul>
-          </li>
-          
-          <li>
-            <a href="../producer/dashboard.html">v. Producer Tamás</a>
-            <ul class="menu vertical">
-              <li><a href="../producer/dashboard.html">Vezérlőpult</a></li>
-            </ul>
-          </li>
-          
-        </ul>
-      </div>
     
-    </div>
+        <div id="widemenu" class="top-bar dark ashow-for-tablet">
+          <div class="top-bar-title">
+            <a href="../index.html">Filmes Gyakornok</a>
+          </div>
+          <div id="responsive-menu">
+            <div class="top-bar-left">
+              <ul class="dropdown menu " data-dropdown-menu>
+                <li><a href="../producer/results/all.html">Gyakornokok(&times;)</a></li>
+                <li><a href="../base/productions/index.html">Produkciók</a></li>
+                <li><a href="../base/departments/index.html">Filmszakmák</a></li>
+                <li><a href="../base/news/index.html">Hírek</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <!-- <li><a href="../login.html">Bejelentkezés</a></li> -->
+              <li>
+                <a href="../traniee/dashboard.html">v. Gyakor Nokedli</a>
+                <ul class="menu vertical">
+                  <li><a href="../traniee/dashboard.html">Profilom</a></li>
+                  <li><a href="../traniee/reviews.html">Értékeléseim <apan class="badge alert">1</apan></a></li>
+                  <li><a href="../traniee/feedback.html">Vélmény az oldalról</a></li>
+                </ul>
+              </li>
+              
+            <!--
+              <li>
+                <a href="../producer/dashboard.html">v. Producer Tamás</a>
+                <ul class="menu vertical">
+                  <li><a href="../producer/dashboard.html">Vezérlőpult</a></li>
+                </ul>
+              </li>
+              
+             -->
+             </ul>
+          </div>
+        </div>
+    
+        <div class="off-canvas-content" data-off-canvas-content>
+    
+    
 
     <header class="phead phead--inverse">
       <div class="row">
@@ -192,6 +241,10 @@
       </div>
     </div>
 
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper-inner -->
+    <div><!-- /.off-canvas-wrapper -->
+    
     
 
     <script src="../assets/js/app.js"></script>
