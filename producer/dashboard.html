@@ -130,29 +130,30 @@
         <aside class="sidebar">
           <a href="../producer/results/all.html" class="button large expanded alert">Új gyakornok keresése</a>
           <hr>
-          <a href="#" class="button success expanded hide-for-tablet" data-toggle="listnav">Gyakornoklista szűrése</a>
-          <div id="listnav" class="show-for-tablet" data-toggler="show-for-tablet">
-            <nav>
-              <h4>Gyakornokok listája</h4>
-              <ul class="menu vertical">
-                <li><a href="../producer/results/all.html">Összes gyakornok</a></li>
-                <li><a href="../producer/results/ourtraniees.html">Most dolgoznak nálunk</a></li>
-                <li><a href="../producer/results/starred.html">Bejelölt gyakornokok</a></li>
-                <li><a href="../producer/results/alertlist.html">Beavatkozást igényelnek <span class="badge alert">2</span></a></li>
-              </ul>
-            </nav>
-            <hr>
-            <nav id="savedsearches">
-              <h4>Mentett keresések</h4>
-              <ul class="menu vertical">
-                <li><a href="../producer/results/prodsearchresults.html">Utóélet hangrészleg <small>(4 találat)</small><span class="badge alert">2</span><br><small>20 éves, angol, német</small></a></li>
-                <li><a href="../producer/results/prodsearchresults.html">Csinovnyik gyártásba<br><small>fiú, angol, német</small></a></li>
-                <li><a href="../producer/results/prodsearchresults.html">Tapasztalt csatakancák <small>(10 találat)</small><br><small>lány, 45-50, sfx, sound, production </small></a></a></li>
-              </ul>
-            </nav>
-            <a href="#prodfullsearch" data-toggle="listnav prodfullsearch"><small>Új keresés indítása</small></a>
-          </div>
+          <aside class="sidebar">
+            <a href="#" class="button success expanded hide-for-tablet" data-toggle="listnav">Gyakornoklista szűrése</a>
+            <div id="listnav" class="show-for-tablet" data-toggler="show-for-tablet">
+              <nav>
+                <h4>Gyakornokok listája</h4>
+                <ul class="menu menu--side vertical">
+                  <li class="active"><a href="../producer/results/all.html">Összes gyakornok</a></li>
+                  <li><a href="../producer/results/ourtraniees.html">Most dolgoznak nálunk</a></li>
+                  <li><a href="../producer/results/starred.html">Bejelölt gyakornokok</a></li>
+                  <li><a href="../producer/results/alertlist.html">Beavatkozást igényelnek <span class="badge alert">2</span></a></li>
+                </ul>
+              </nav>
           
+              <nav id="savedsearches">
+                <h4>Mentett keresések</h4>
+                <ul class="menu menu--side vertical">
+                  <li><a href="../producer/results/prodsearchresults.html">Utóélet hangrészleg <small>(4 találat)</small><span class="badge alert">2</span><br><small>20 éves, angol, német</small></a></li>
+                  <li><a href="../producer/results/prodsearchresults.html">Csinovnyik gyártásba<br><small>fiú, angol, német</small></a></li>
+                  <li><a href="../producer/results/prodsearchresults.html">Tapasztalt csatakancák <small>(10 találat)</small><br><small>lány, 45-50, sfx, sound, production </small></a></a></li>
+                </ul>
+              </nav>
+              <a href="#prodfullsearch" data-toggle="listnav prodfullsearch"><small>Új keresés indítása</small></a>
+            </div>
+          </aside>
         </aside>
       </div>
       <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
@@ -244,7 +245,13 @@
         </div><!-- /.off-canvas-content -->
       </div><!-- /.off-canvas-wrapper-inner -->
     <div><!-- /.off-canvas-wrapper -->
-    
+    <footer class="sitefooter" role="contentinfo">
+      <div class="row">
+        <div class="columns">
+          &copy; 2016 &middot; Minden jog fenntartva &middot; <a href="http://mnf.hu" target="_blank">Magyar Nemzeti Filmalap</a>
+        </div>
+      </div>
+    </footer>
     
 
     <script src="../assets/js/app.js"></script>
