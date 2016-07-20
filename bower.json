@@ -16,7 +16,10 @@
   ],
   "dependencies": {
     "foundation-sites": "~6.2.3",
-    "motion-ui": "~1.2.2"
+    "motion-ui": "~1.2.2",
+    "x-editable": "^1.5.1",
+    "poshytip": "*",
+    "select2": "^4.0.3"
   },
   "private": true
 }

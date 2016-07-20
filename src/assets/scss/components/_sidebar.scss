@@ -7,4 +7,15 @@
   .button {
     margin-bottom: 0;
   }
+
+  nav {
+    margin-bottom: 4rem;
+    h4 {
+      font-weight: $global-weight-bold;
+      text-transform: uppercase;
+      font-size: 1rem;
+      margin-bottom: 1em;
+
+    }
+  }
 }

@@ -1,14 +1,43 @@
+.mosaic {
+  padding:3rem 0;
+}
 .smallcard {
-
+  position: relative;
+  border-radius: 3px;
+  border:1px solid $medium-gray;
+  padding:.875rem;
 
   .inlinelist {
-    font-size: .75rem;
+    font-size: .875rem;
+  }
+  margin-bottom: 1.875rem;
+  &:hover, &:focus {
+    border-color: $primary-color;
+  }
+
+  .marker {
+    position: absolute;
+    right:.875rem;
+    top:.875rem;
   }
 }
 .smallcard__title {
-  font-size: 1rem;
-  margin:0;
+  font-size: 1.333rem;
+  margin:0 0 .5em;
 }
 .smallcard__fig {
   margin:0 10% 0 0;
+}
+.sc__studies {
+  text-transform: uppercase;
+}
+
+.smallcard__footer {
+  border-top:1px solid $primary-color;
+  font-size: .875rem;
+  color:$dark-gray;
+  font-weight: $global-weight-bold;
+  line-height: 1;
+  margin-top: .875rem;
+  padding:.875rem 0 0;
 }

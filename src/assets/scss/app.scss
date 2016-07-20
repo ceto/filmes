@@ -49,6 +49,12 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+
+@import 'vendor/jquery-editable';
+@import 'vendor/select2';
+
+@import '../../../bower_components/select2/src/scss/core';
+@import 'layouts/footer';
 @import 'elements';
 @import 'components/hero';
 @import 'components/pageheader';
@@ -57,3 +63,4 @@
 @import 'components/smallcard';
 @import 'components/trsheet';
 @import 'components/datablock';
+@import 'components/navigations';

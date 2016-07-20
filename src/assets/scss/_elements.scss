@@ -4,21 +4,33 @@
   margin:0 0 0;
   > li {
     display: inline-block;
-    &:after {
+    &:not(:last-child):after {
       content:' | ';
     }
   }
 }
 
-[data-editable] {
+.editable-click, [data-editable] {
   position: relative;
   &:hover, &:focus {
+    //background-color: $light-gray;
+    //outline:5px solid $light-gray;
+    cursor: pointer;
+  }
+  &:before {
+    position: absolute;
+    left:-.75rem;
+    top:.125rem;
+    bottom:.125rem;
+    width:.333rem;
     background-color: $light-gray;
-    outline:5px solid $light-gray;
+  }
+  &:hover:before {
+    content:'';
   }
   &:hover:after {
     content:'Szerkeszt';
-    background-color: $medium-gray;
+    background-color: $primary-color;
     border-left: .5em solid $light-gray;
     border-bottom: .5em solid $light-gray;
     padding:.5em;

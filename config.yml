@@ -17,7 +17,7 @@ UNCSS_OPTIONS:
 # Gulp will reference these paths when it copies files
 PATHS:
   # Path to dist folder
-  dist: "dist"  
+  dist: "dist"
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"
@@ -55,6 +55,11 @@ PATHS:
     - "bower_components/foundation-sites/js/foundation.tabs.js"
     - "bower_components/foundation-sites/js/foundation.toggler.js"
     - "bower_components/foundation-sites/js/foundation.tooltip.js"
+    # vendor scripts: poshytip x-editable select2
+    - "bower_components/poshytip/src/jquery.poshytip.js"
+    - "bower_components/x-editable/dist/jquery-editable/js/jquery-editable-poshytip.js"
+    - "bower_components/select2/dist/js/select2.full.js"
     # Paths to your own project code are here
+    - "src/assets/js/xeditables.js"
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"

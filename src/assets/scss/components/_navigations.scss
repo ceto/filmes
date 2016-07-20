@@ -1,0 +1,27 @@
+.menu--side {
+  > li {
+    border-top:1px solid $medium-gray;
+    > a {
+      color:$body-font-color;
+      position: relative;
+      border-left: .25em solid transparent;
+      padding:1.125rem 1.25rem;
+
+      &:hover, &:focus {
+        border-left-color:$medium-gray;
+        color:$primary-color;
+
+      }
+    }
+
+    &.active {
+      > a {
+        background-color: transparent;
+        font-weight: $global-weight-bold;
+
+        border-left-color:$primary-color;
+        color:inherit;
+      }
+    }
+  }
+}
