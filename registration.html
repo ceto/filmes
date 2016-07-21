@@ -15,16 +15,16 @@
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
     
         <!-- off-canvas title bar for 'small' screen -->
-        <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="tablet">
+        <div class="title-bar hide-for-tablet" data-responsive-toggle="widemenu" data-hide-for="tablet">
           <div class="title-bar-left">
             <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-            <span class="title-bar-title">Filmes Gyakornok (m)</span>
+            <span class="title-bar-title">FilmesGyakorn<span>ok</span></span>
           </div>
-          <div class="title-bar-right">
+          <nav class="title-bar-right usernav usernav--mobile">
             <ul class="dropdown menu" data-dropdown-menu>
               <!-- <li><a href="login.html">Bejelentkezés</a></li> -->
               <li>
-                <a href="traniee/dashboard.html">v. Gyakor Nokedli</a>
+                <a href="traniee/dashboard.html">Gyakor Nokedli</a>
                 <ul class="menu vertical">
                   <li><a href="traniee/dashboard.html">Profilom</a></li>
                   <li><a href="traniee/reviews.html">Értékeléseim <apan class="badge alert">1</apan></a></li>
@@ -42,7 +42,7 @@
               
              -->
              </ul>
-          </div>
+          </nav>
         </div>
     
         <!-- off-canvas left menu -->
@@ -50,33 +50,36 @@
           <button class="close-button" aria-label="Close menu" type="button" data-close>
             <span aria-hidden="true">&times;</span>
           </button>
-          <ul class="dropdown menu vertical" data-dropdown-menu>
-            <li><a href="producer/results/all.html">Gyakornokok(&times;)</a></li>
-            <li><a href="base/productions/index.html">Produkciók</a></li>
-            <li><a href="base/departments/index.html">Filmszakmák</a></li>
-            <li><a href="base/news/index.html">Hírek</a></li>
-          </ul>
+          <nav class="mainnav mainnav--mobile">
+            <ul class="dropdown menu vertical" data-dropdown-menu>
+              <li><a href="producer/results/all.html">Gyakornokok</a></li>
+              <li><a href="base/productions/index.html">Produkciók</a></li>
+              <li><a href="base/departments/index.html">Filmszakmák</a></li>
+              <li><a href="base/news/index.html">Hírek</a></li>
+            </ul>
+          </nav>
+    
         </div>
     
         <div id="widemenu" class="top-bar dark ashow-for-tablet">
           <div class="top-bar-title">
-            <a href="index.html">Filmes Gyakornok</a>
+            <a href="index.html">FilmesGyakorn<span>ok</span></a>
           </div>
           <div id="responsive-menu">
-            <div class="top-bar-left">
+            <nav class="mainnav top-bar-left">
               <ul class="dropdown menu " data-dropdown-menu>
-                <li><a href="producer/results/all.html">Gyakornokok(&times;)</a></li>
+                <li><a href="producer/results/all.html">Gyakornokok</a></li>
                 <li><a href="base/productions/index.html">Produkciók</a></li>
                 <li><a href="base/departments/index.html">Filmszakmák</a></li>
                 <li><a href="base/news/index.html">Hírek</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
-          <div class="top-bar-right">
+          <nav class="usernav top-bar-right">
             <ul class="dropdown menu" data-dropdown-menu>
               <!-- <li><a href="login.html">Bejelentkezés</a></li> -->
               <li>
-                <a href="traniee/dashboard.html">v. Gyakor Nokedli</a>
+                <a href="traniee/dashboard.html">Gyakor Nokedli</a>
                 <ul class="menu vertical">
                   <li><a href="traniee/dashboard.html">Profilom</a></li>
                   <li><a href="traniee/reviews.html">Értékeléseim <apan class="badge alert">1</apan></a></li>
@@ -94,7 +97,7 @@
               
              -->
              </ul>
-          </div>
+          </nav>
         </div>
     
         <div class="off-canvas-content" data-off-canvas-content>

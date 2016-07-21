@@ -15,16 +15,16 @@
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
     
         <!-- off-canvas title bar for 'small' screen -->
-        <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="tablet">
+        <div class="title-bar hide-for-tablet" data-responsive-toggle="widemenu" data-hide-for="tablet">
           <div class="title-bar-left">
             <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-            <span class="title-bar-title">Filmes Gyakornok (m)</span>
+            <span class="title-bar-title">FilmesGyakorn<span>ok</span></span>
           </div>
-          <div class="title-bar-right">
+          <nav class="title-bar-right usernav usernav--mobile">
             <ul class="dropdown menu" data-dropdown-menu>
               <!-- <li><a href="../../login.html">Bejelentkezés</a></li> -->
               <li>
-                <a href="../../traniee/dashboard.html">v. Gyakor Nokedli</a>
+                <a href="../../traniee/dashboard.html">Gyakor Nokedli</a>
                 <ul class="menu vertical">
                   <li><a href="../../traniee/dashboard.html">Profilom</a></li>
                   <li><a href="../../traniee/reviews.html">Értékeléseim <apan class="badge alert">1</apan></a></li>
@@ -42,7 +42,7 @@
               
              -->
              </ul>
-          </div>
+          </nav>
         </div>
     
         <!-- off-canvas left menu -->
@@ -50,33 +50,36 @@
           <button class="close-button" aria-label="Close menu" type="button" data-close>
             <span aria-hidden="true">&times;</span>
           </button>
-          <ul class="dropdown menu vertical" data-dropdown-menu>
-            <li><a href="../../producer/results/all.html">Gyakornokok(&times;)</a></li>
-            <li><a href="../../base/productions/index.html">Produkciók</a></li>
-            <li><a href="../../base/departments/index.html">Filmszakmák</a></li>
-            <li><a href="../../base/news/index.html">Hírek</a></li>
-          </ul>
+          <nav class="mainnav mainnav--mobile">
+            <ul class="dropdown menu vertical" data-dropdown-menu>
+              <li><a href="../../producer/results/all.html">Gyakornokok</a></li>
+              <li><a href="../../base/productions/index.html">Produkciók</a></li>
+              <li><a href="../../base/departments/index.html">Filmszakmák</a></li>
+              <li><a href="../../base/news/index.html">Hírek</a></li>
+            </ul>
+          </nav>
+    
         </div>
     
         <div id="widemenu" class="top-bar dark ashow-for-tablet">
           <div class="top-bar-title">
-            <a href="../../index.html">Filmes Gyakornok</a>
+            <a href="../../index.html">FilmesGyakorn<span>ok</span></a>
           </div>
           <div id="responsive-menu">
-            <div class="top-bar-left">
+            <nav class="mainnav top-bar-left">
               <ul class="dropdown menu " data-dropdown-menu>
-                <li><a href="../../producer/results/all.html">Gyakornokok(&times;)</a></li>
+                <li><a href="../../producer/results/all.html">Gyakornokok</a></li>
                 <li><a href="../../base/productions/index.html">Produkciók</a></li>
                 <li><a href="../../base/departments/index.html">Filmszakmák</a></li>
                 <li><a href="../../base/news/index.html">Hírek</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
-          <div class="top-bar-right">
+          <nav class="usernav top-bar-right">
             <ul class="dropdown menu" data-dropdown-menu>
               <!-- <li><a href="../../login.html">Bejelentkezés</a></li> -->
               <li>
-                <a href="../../traniee/dashboard.html">v. Gyakor Nokedli</a>
+                <a href="../../traniee/dashboard.html">Gyakor Nokedli</a>
                 <ul class="menu vertical">
                   <li><a href="../../traniee/dashboard.html">Profilom</a></li>
                   <li><a href="../../traniee/reviews.html">Értékeléseim <apan class="badge alert">1</apan></a></li>
@@ -94,7 +97,7 @@
               
              -->
              </ul>
-          </div>
+          </nav>
         </div>
     
         <div class="off-canvas-content" data-off-canvas-content>
@@ -103,42 +106,46 @@
 
     <header class="phead phead--inverse">
       <div class="row">
-        <div class="columns">
-            
-            <nav aria-label="Itt vagy:" role="navigation">
-              <ul class="breadcrumbs">
-                <li><a href="../../">Filmesgyakornok</a></li>
-                  <li><a href="../../producer/results/all.html">Gyakornokok</a></li>
-            
-                <li>
-                  <span class="show-for-sr">Aktív oldal: </span> Összes gyakornok
-                </li>
-              </ul>
-            </nav>
-            <h1 class="phead__title">Összes gyakornok</h1>
-          </div>
+        <div class="columns tablet-8  xlarge-9">
+          
+          <nav aria-label="Itt vagy:" role="navigation">
+            <ul class="breadcrumbs">
+              <li><a href="../../">Filmesgyakornok</a></li>
+                <li><a href="../../producer/results/all.html">Gyakornokok</a></li>
+          
+              <li>
+                <span class="show-for-sr">Aktív oldal: </span> Összes gyakornok
+              </li>
+            </ul>
+          </nav>
+          <h1 class="phead__title">Összes gyakornok</h1>
         </div>
+        <div class="columns tablet-4  xlarge-3 tablet-text-right">
+          <a href="#" class="button secondary" data-toggle="searchblock">Részletes keresés</a>
+        </div>
+      </div>
     </header>
-    <div class="row">
-      <div class="columns">
-        <div class="callout">
-          <form>
-            <div class="row">
-              <div class="columns tablet-6 large-8">
-                <div class="input-group">
-                  <input class="input-group-field" type="text" placeholder="Gyakornok keresése név szterint">
-                  <div class="input-group-button">
-                    <input type="submit" class="button" value="OK">
-                  </div>
-                </div>
-              </div>
-              <div class="columns tablet-6 large-4 end text-right">
-                <a href="#" class="button expanded secondary" data-toggle="prodfullsearch">Részletes keresés</a>
+    <div id="searchblock" class="searchblock is-hidden " data-closable data-toggler="is-hidden"">
+    <aside class="simplesearch">
+      <form>
+        <div class="row">
+          <div class="columns">
+            <label for="">Gyakornok keresése név szerint</label>
+            <div class="input-group">
+              <input class="input-group-field" type="text" placeholder="Kezdejn el gépelni">
+              <div class="input-group-button">
+                <input type="submit" class="button" value="OK">
               </div>
             </div>
-          </form>
+          </div>
+    
         </div>
-        <div id="prodfullsearch" class="callout " data-closable data-toggler="is-hidden">
+      </form>
+    </aside>
+    <aside id="prodfullsearch" class="complexsearch " data-closable data-toggler="is-hidden">
+      <div class="row">
+        <div class="columns">
+          <hr>
           <h5>Keresés paraméterek szerint</h5>
           <form action="post">
             <div class="row">
@@ -182,12 +189,14 @@
             </div>
           </form>
           <a href="#savedsearches" data-toggle="listnav"><small>Mentett keresések</small></a>
-          <button class="close-button" aria-label="Dismiss alert" type="button" data-toggle="prodfullsearch">
-            <span aria-hidden="true">&times;</span>
-          </button>
         </div>
       </div>
+    </aside>
+          <button class="close-button" aria-label="Dismiss alert" type="button" data-toggle="searchblock">
+          <span aria-hidden="true">&times;</span>
+          </button>
     </div>
+    
     <div class="row">
       <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
         <aside class="sidebar">
