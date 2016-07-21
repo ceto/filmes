@@ -2,7 +2,6 @@
 title: Produkciók
 description: "A filmes gyakornok rendszerében lévő aktív produkciók listája. Esetleg 3 hozzáférési szinttel: Public / Logged in users only / Producers only. Funkció kérdés: Lehet e a gyakornokoknak bejelölni produkciókat amiben szivesen dolgoznának. Kvázi jelentkezés"
 ---
-
 <header class="phead phead--inverse">
   <div class="row">
     <div class="columns tablet-8 xlarge-9">
@@ -10,27 +9,27 @@ description: "A filmes gyakornok rendszerében lévő aktív produkciók listáj
     </div>
   </div>
 </header>
-
-<section class="plead">
+<!-- <section class="plead">
   <div class="row">
     <div class="columns tablet-8 xlarge-9">
       <p>{{ description }}</p>
     </div>
   </div>
-</section>
-
+</section> -->
 <div class="row">
   <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
     {{> productionsidebar }}
   </div>
   <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
-    <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
-      {{#each productions}}
-      <div class="column">
-        {{> production-smallcard }}
+    <section class="mosaic">
+      <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
+        {{#each productions}}
+        <div class="column">
+          {{> production-smallcard }}
+        </div>
+        {{/each}}
       </div>
-      {{/each}}
-    </div>
+    </section>
     {{> pagination}}
   </div>
 </div>

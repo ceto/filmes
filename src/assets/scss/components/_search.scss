@@ -1,16 +1,17 @@
 .searchblock {
   position: relative;
   border-top: 1px solid $white;
+  background-color: $light-gray;
 }
 .simplesearch {
   padding:3rem 0 2rem;
-  background-color: $light-gray;
+  //background-color: $white;
 }
 
 
 .complexsearch {
   padding:0 0 3rem;
-  background-color: $light-gray;
+  //background-color: $light-gray;
 
   hr {
     border-color: $primary-color;

@@ -30,3 +30,14 @@ html {
     max-width: $global-width;
   }
 }
+
+.ps {
+  padding:2rem 0;
+}
+.ps--light {
+  background-color: $light-gray;
+}
+.ps--inverse {
+  background-color: $primary-color;
+  color:$white;
+}

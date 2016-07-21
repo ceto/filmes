@@ -1,0 +1,37 @@
+.simplecard {
+  margin-bottom: 3.5rem;
+  &:hover {
+    .simplecard__title {
+      border-color: $anchor-color-hover;
+      //color: map-get($foundation-palette, success);
+    }
+  }
+}
+
+.simplecard__fig {
+  margin:0 0 .5rem;
+  padding:0;
+}
+
+.simplecard__title {
+  text-transform: uppercase;
+  padding:0 5%;
+  border-bottom: 1px solid $primary-color;
+  font-size: 1.125rem;
+  margin:0 0 .5rem;
+  a {
+    color:inherit;
+    &:hover, &:focus {
+      color:$primary-color;
+    }
+  }
+}
+
+.simplecard__body {
+  font-size: .875rem;
+  padding:0 5%;
+  >  *:last-child {
+    margin-bottom:0;
+
+  }
+}

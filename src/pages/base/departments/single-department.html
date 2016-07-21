@@ -5,7 +5,7 @@ thumbnail: http://placehold.it/480x320
 ---
 <header class="phead phead--inverse">
   <div class="row">
-    <div class="columns medium-8">
+    <div class="columns phead__inner">
       {{> breadcrumbs departments1=true}}
       <h1 class="phead__title">{{title}}</h1>
     </div>
@@ -23,11 +23,7 @@ thumbnail: http://placehold.it/480x320
     <div class="row small-up-2 medium-up-3 large-up-4">
       {{#each sound-department}}
         <div class="column">
-          <a href="{{root}}single-role.html">
-            <img src="{{thumbnail}}" alt="{{name}}">
-          </a>
-          <h3><a href="{{root}}single-role.html">{{ title }}</a></h3>
-          <p>{{ description }}</p>
+          {{>simplecard url="single-role.html" }}
         </div>
       {{/each}}
     </div>
@@ -40,11 +36,7 @@ thumbnail: http://placehold.it/480x320
     <div class="row small-up-2 medium-up-3 large-up-4">
       {{#each sound-department-related}}
         <div class="column">
-          <a href="{{root}}single-role.html">
-            <img src="{{thumbnail}}" alt="{{name}}">
-          </a>
-          <h3><a href="{{root}}single-role.html">{{ title }}</a></h3>
-          <p>{{ description }}</p>
+           {{>simplecard url="single-role.html" }}
         </div>
       {{/each}}
     </div>

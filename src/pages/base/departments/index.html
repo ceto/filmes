@@ -4,7 +4,7 @@ description: Filmipari szakmák gyűjtőoldala. Lorem ipsum dolor sit amet, cons
 ---
 <header class="phead phead--inverse">
   <div class="row">
-    <div class="columns medium-8">
+    <div class="columns phead__inner">
       {{> breadcrumbs}}
       <h1 class="phead__title">{{ title }}</h1>
     </div>
@@ -24,12 +24,7 @@ description: Filmipari szakmák gyűjtőoldala. Lorem ipsum dolor sit amet, cons
     <div class="row small-up-2 medium-up-3 large-up-4">
       {{#each departments}}
         <div class="column">
-          <a href="{{root}}{{url}}">
-            <img src="{{thumbnail}}" alt="{{name}}">
-          </a>
-          <a href="#" class="button tiny warning">Kipróbálnám</a>
-          <h3><a href="{{this.root}}{{url}}">{{ title }}</a></h3>
-          <p>{{ description }}</p>
+          {{>simplecard url="single-department.html" }}
         </div>
       {{/each}}
     </div>

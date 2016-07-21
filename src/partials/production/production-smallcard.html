@@ -1,15 +1,15 @@
-<div class="smallcard smallcard--production callout">
-  <span class="label secondary">{{ production }}</span>
+<div class="smallcard smallcard--production">
+  <span class="sc__prodfirm">{{ production }}</span>
   <h4 class="smallcard__title">
     <a href="{{ root }}/base/productions/single.html">
       {{ title }}
     </a>
   </h4>
-  <ul class="inlinelist">
+  <ul class="inlinelist sc__studies">
     <li>Fázis: {{ status }}</li>
     <li>Büdzsé {{ budget }}m Ft.</li>
   </ul>
-  <p>
-    <strong>{{ traniees }}</strong> <small>gyakornoki hely szabad</small>
-  </p>
+  <footer class="smallcard__footer">
+    <strong>{{ traniees }}</strong> gyakornoki hely szabad
+  </footer>
 </div>

@@ -51,9 +51,10 @@
 
 
 @import 'vendor/jquery-editable';
-@import 'vendor/select2';
-
+//@import 'vendor/select2';
 @import '../../../bower_components/select2/src/scss/core';
+
+@import 'fonts';
 @import 'layouts/layouthack';
 @import 'layouts/footer';
 @import 'elements';
@@ -62,7 +63,9 @@
 @import 'components/sidebar';
 @import 'components/card';
 @import 'components/smallcard';
+@import 'components/simplecard';
 @import 'components/trsheet';
 @import 'components/datablock';
 @import 'components/navigations';
 @import 'components/search';
+

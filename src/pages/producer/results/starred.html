@@ -2,14 +2,7 @@
 title: Bejelölt gyakornokok
 description: Producer által megcsillagozott gyakornokok listája
 ---
-<header class="phead phead--inverse">
-  <div class="row">
-    <div class="columns medium-8">
-        {{> breadcrumbs prodsearch=true }}
-        <h1 class="phead__title">{{ title }}</h1>
-      </div>
-    </div>
-</header>
+{{> resultspagehead}}
 {{> prodheadsearch }}
 <div class="row">
   <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
@@ -17,13 +10,15 @@ description: Producer által megcsillagozott gyakornokok listája
   </div>
 
   <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
-    <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
-      {{#each traniees}}
-      <div class="column">
-        {{> traniee-smallcard }}
+    <section class="mosaic">
+      <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
+        {{#each traniees}}
+        <div class="column">
+          {{> traniee-smallcard }}
+        </div>
+        {{/each}}
       </div>
-      {{/each}}
-    </div>
+    </section>
     {{> pagination }}
   </div>
 </div>
