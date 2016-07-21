@@ -1,26 +1,100 @@
+.top-bar-title {
+  color:$white;
+  font-weight: $global-weight-bold;
+  padding:.4rem 0 .25rem 1rem;
+  line-height: 1;
+  font-size: 1.25rem;
+  a {
+    color:inherit;
+  }
+  span {
+    color:map-get($foundation-palette, alert);
+  }
+
+}
+.mainnav {
+  .menu {
+    > li {
+      a {
+        color:$white;
+        font-weight: $global-weight-bold;
+        text-transform: uppercase;
+        font-size: .75rem;
+        &:hover, &:focus {
+         color: map-get($foundation-palette, alert);
+        }
+      }
+      &.active {
+        > a {
+          color:$primary-color;
+        }
+      }
+    }
+  }
+}
+
+.usernav {
+  .menu {
+    > li {
+      > a {
+        font-size: .875rem;
+        padding:.6rem 1rem;
+        font-weight: $global-weight-bold;
+        color: $white;
+      }
+    }
+  }
+}
 .menu--side {
   > li {
-    border-top:1px solid $medium-gray;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+    position: relative;
+    &:first-child {
+      border-top-color:transparent;
+    }
+    &:before {
+      content:'';
+      position: absolute;
+      left:0;
+      top:-1px;
+      bottom:-1px;
+      width:.25rem;
+      background-color: transparent;
+
+    }
     > a {
       color:$body-font-color;
       position: relative;
-      border-left: .25em solid transparent;
+      border-left: .25rem solid transparent;
       padding:1.125rem 1.25rem;
+      transition:all .2s;
 
       &:hover, &:focus {
-        border-left-color:$medium-gray;
         color:$primary-color;
-
+        transform:translateX(.666rem);
       }
+    }
+    + li {
+      border-top:1px solid $medium-gray;
     }
 
     &.active {
+      border-color: $medium-gray;
+      &:before {
+        background-color: $primary-color;
+        z-index: 1;
+      }
+      + li {
+        border-top-color: transparent;
+      }
       > a {
         background-color: transparent;
         font-weight: $global-weight-bold;
-
-        border-left-color:$primary-color;
         color:inherit;
+        &:hover, &:focus {
+          transform:translateX(0);
+        }
       }
     }
   }

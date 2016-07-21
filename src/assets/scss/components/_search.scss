@@ -1,0 +1,19 @@
+.searchblock {
+  position: relative;
+  border-top: 1px solid $white;
+}
+.simplesearch {
+  padding:3rem 0 2rem;
+  background-color: $light-gray;
+}
+
+
+.complexsearch {
+  padding:0 0 3rem;
+  background-color: $light-gray;
+
+  hr {
+    border-color: $primary-color;
+    margin:0 auto 2rem;
+  }
+}

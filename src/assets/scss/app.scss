@@ -54,6 +54,7 @@
 @import 'vendor/select2';
 
 @import '../../../bower_components/select2/src/scss/core';
+@import 'layouts/layouthack';
 @import 'layouts/footer';
 @import 'elements';
 @import 'components/hero';
@@ -64,3 +65,4 @@
 @import 'components/trsheet';
 @import 'components/datablock';
 @import 'components/navigations';
+@import 'components/search';

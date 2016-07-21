@@ -5,11 +5,14 @@ allmenu: true
 ---
 <header class="phead phead--inverse">
   <div class="row">
-    <div class="columns">
-        {{> breadcrumbs prodsearch=true }}
-        <h1 class="phead__title">{{ title }}</h1>
-      </div>
+    <div class="columns tablet-8  xlarge-9">
+      {{> breadcrumbs prodsearch=true }}
+      <h1 class="phead__title">{{ title }}</h1>
     </div>
+    <div class="columns tablet-4  xlarge-3 tablet-text-right">
+      <a href="#" class="button secondary" data-toggle="searchblock">Részletes keresés</a>
+    </div>
+  </div>
 </header>
 {{> prodheadsearch }}
 <div class="row">

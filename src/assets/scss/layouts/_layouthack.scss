@@ -1,0 +1,32 @@
+html {
+  @media screen and (min-width: 100em) {
+    font-size: 112.5%;
+  }
+}
+
+
+.row {
+  @include breakpoint(medium){
+
+  }
+  @include breakpoint(tablet){
+    max-width: 90%;
+  }
+  @include breakpoint(large){
+    //max-width: 85%;
+  }
+  @include breakpoint(xlarge){
+    //max-width: 80%;
+  }
+  @include breakpoint(xxlarge){
+    max-width: 85%;
+  }
+  @media screen and (min-width: 100em) {
+    max-width: $global-width;
+  }
+
+
+  .row {
+    max-width: $global-width;
+  }
+}
