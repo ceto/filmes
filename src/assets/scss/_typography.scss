@@ -1,0 +1,10 @@
+blockquote {
+  font-style: italic;
+  font-size: 1.125rem;
+}
+cite {
+  font-family: $header-font-family;
+  font-weight: $global-weight-bold;
+  //color:$body-font-color;
+  font-style: normal;
+}

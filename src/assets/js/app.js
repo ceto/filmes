@@ -2,13 +2,13 @@ $(document).foundation();
 
 
 $(document).ready(function() {
-    $('.tr_name').editable({
+    $('.tr_name.xeditable').editable({
       tpl: '<label>Neved</label><input type="text">'
     });
-    $('.tr_about').editable({
+    $('.tr_about.xeditable').editable({
       tpl: '<label>Magamról</label><textarea></textarea>'
     });
-    $('.tr_langs').editable({
+    $('.tr_langs.xeditable').editable({
       source: [
               {id: 'en', text: 'Angol'},
               {id: 'de', text: 'Német'},
@@ -22,7 +22,7 @@ $(document).ready(function() {
       }
     });
 
-    $('.tr_prodref').editable({
+    $('.tr_prodref.xeditable').editable({
         url: '/post',
         value: {
             tr_prodref_title: "Szegénylegények",
@@ -39,8 +39,8 @@ $(document).ready(function() {
                 return;
             }
             var html = '<h4>' + $('<div>').text(value.tr_prodref_title).html() +
-              ' <small>(' + $('<div>').text(value.tr_prodref_year).html() + ' ' +
-              $('<div>').text(value.tr_prodref_length).html() + ' hét)</small>' +
+              ' <small>' + $('<div>').text(value.tr_prodref_year).html() + ', ' +
+              $('<div>').text(value.tr_prodref_length).html() + ' hét</small>' +
               '</h4>' +
               '<p>' + $('<div>').text(value.tr_prodref_descr).html() +'</p>';
             $(this).html(html);
@@ -48,7 +48,7 @@ $(document).ready(function() {
     });
 
 
-    $('.tr_contact').editable({
+    $('.tr_contact.xeditable').editable({
         url: '/post',
         value: {
             tr_contact_email: "mintapanna@gmail.com",

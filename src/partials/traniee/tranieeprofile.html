@@ -7,14 +7,17 @@
         </figure>
       </div>
       <div class="columns small-8 tablet-6 large-8">
-        <h4 id="tr_name" class="tr_name" data-type="text" data-pk="1" data-tite="Név" data-url="/post">Minta Panna</h4>
-        <p data-editable>21 éves lány</p>
-        <p id="tr_contact" class="tr_contact" data-type="contact">
+        <h4 id="tr_name" class="tr_name xeditable" data-type="text" data-pk="1" data-tite="Név" data-url="/post">Minta Panna</h4>
+        <p class="xeditable">21 éves lány</p>
+        <p id="tr_contact" class="tr_contact xeditable" data-type="contact">
           <a href="#">mintapanna@gmail.com</a><br>
           <a href="tel:0036303217654">+36 30 321 7654</a><br>
           skype: mintapanna
         </p>
-        <p id="tr_langs" class="tr_langs" data-type="select2" data-pk="1" data-value="en,de">angol, német</p>
+        <ul id="tr_langs" class="tr_langs xeditable inlinelist" data-type="select2" data-pk="1" data-value="en,de">
+          <li>angol</li>
+          <li>német</li>
+        </ul>
       </div>
     </div>
   </header>
@@ -22,42 +25,57 @@
     <div class="columns">
       <section class="datablock">
         <h3 class="datablock__title">Szivesen kipróbálnám</h3>
-        <p>
-          <span class="label">Camera</span>
-          <span class="label">Post production</span>
-          <span class="label">SFX</span>
-        </p>
+        <div class="datablock__body">
+          <p>
+            <span class="label">Camera</span>
+            <span class="label">Post production</span>
+            <span class="label">SFX</span>
+          </p>
+        </div>
       </section>
       <section class="datablock">
         <h3 class="datablock__title">Iskolák</h3>
-        <ul>
-          <li data-editable>MOME animáció szak, <strong>animátor</strong> 2013-2015</li>
-          <li data-editable>Filmművészeti Egyetem, <strong>operatőr</strong> 2009-2013</li>
-        </ul>
-        <button class="button small">+ Új iskola felvétele</button>
-      </section>
-      <section class="datablock">
-        <h3 class="datablock__title">Produkciók, ahol már dolgoztam</h3>
-        <ul>
-          <li id="tr_prodref_1" class="tr_prodref" data-pk="1" data-type="prodref">
-            <h4>Félvilág <small>(2015, 2 hét)</small></h4>
-            <p>Elsősorban a gafferek ebédjét szállítottam, illetve a produkció pénzügyi asszisztensének hordtam kávékat egy nagyon drága kávézóból. Szerencsémre ráláttam az operatőr munkájára is.</p>
-          </li>
-          <li id="tr_prodref_2" class="tr_prodref" data-pk="2"  data-type="prodref">
-            <h4>Szegénylegények <small>(1969, 9 hónap)</small></h4>
-            <p>Itt még csak elképzelés voltam, de állítólag már ebben a formában is nagy hatással voltam a film akkori gyártásvezetőjére, aki az apám.</p>
-          </li>
-        </ul>
-        <button class="button small">+ Új iskola felvétele</button>
-      </section>
-      <section class="datablock">
-        <h3 class="datablock__title">Önéletrajz</h3>
-        <p><a href="#">minta_cv.docx</a></p>
-      </section>
-      <section class="datablock">
-        <h3 class="datablock__title">Motívációs levél</h3>
-        <p id="tr_about" class="tr_about" data-type="textarea">Híres rendező akarok lenni, aki alulról kezdte. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit similique iure eius, quidem iste harum omnis explicabo eum obcaecati officiis voluptas provident earum quo molestiae quia vel cum ex. Reprehenderit.</p>
-      </section>
+        <div class="datablock__body">
+          <ul>
+            <li>
+              <h4>MOME animáció szak <small>2013-2015</small></h4>
+              <p>animátor</p></li>
+              <li>
+                <h4>Filmművészeti Egyetem <small>2014-2016</small></h4>
+                <p>operatőr</p>
+              </li>
+            </ul>
+            <button class="button small">+ Új iskola felvétele</button>
+          </div>
+        </section>
+        <section class="datablock">
+          <h3 class="datablock__title">Produkciók, ahol már dolgoztam</h3>
+          <div class="datablock__body">
+            <ul>
+              <li id="tr_prodref_1" class="tr_prodref xeditable" data-pk="1" data-type="prodref">
+                <h4>Félvilág <small>2015, 2 hét</small></h4>
+                <p>Elsősorban a gafferek ebédjét szállítottam, illetve a produkció pénzügyi asszisztensének hordtam kávékat egy nagyon drága kávézóból. Szerencsémre ráláttam az operatőr munkájára is.</p>
+              </li>
+              <li id="tr_prodref_2" class="tr_prodref xeditable" data-pk="2"  data-type="prodref">
+                <h4>Szegénylegények <small>1969, 9 hónap</small></h4>
+                <p>Itt még csak elképzelés voltam, de állítólag már ebben a formában is nagy hatással voltam a film akkori gyártásvezetőjére, aki az apám.</p>
+              </li>
+            </ul>
+            <button class="button small">+ Új iskola felvétele</button>
+          </div>
+        </section>
+        <section class="datablock">
+          <h3 class="datablock__title">Önéletrajz</h3>
+          <div class="datablock__body">
+            <p><a href="#">minta_cv.docx</a></p>
+          </div>
+        </section>
+        <section class="datablock">
+          <h3 class="datablock__title">Motívációs levél</h3>
+          <div class="datablock__body">
+            <p id="tr_about" class="tr_about xeditable" data-type="textarea">Híres rendező akarok lenni, aki alulról kezdte. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit similique iure eius, quidem iste harum omnis explicabo eum obcaecati officiis voluptas provident earum quo molestiae quia vel cum ex. Reprehenderit.</p>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
-</div>

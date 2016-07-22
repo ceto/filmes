@@ -3,11 +3,37 @@
   padding:1rem 0;
   @include breakpoint(tablet){
       padding:5vh 0;
+
+  }
+  @include breakpoint(large){
+      font-size: 112.5%;
+  }
+
+  p {
+    margin-bottom: 0;
+    //font-family: $header-font-family;
+  }
+  .inlinelist {
+    margin-bottom: $paragraph-margin-bottom;
   }
 }
 .trsheet__userphoto {
   text-align: center;
   margin:0;
   padding:0;
+
+}
+
+.tr_name {
+  font-family: $body-font-family;
+  font-weight: $global-weight-normal;
+  font-size: 1.25rem;
+
+  @include breakpoint(large) {
+    font-size: 2rem;
+  }
+}
+
+.tr_contact {
 
 }
