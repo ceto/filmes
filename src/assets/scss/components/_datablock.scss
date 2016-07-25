@@ -74,3 +74,19 @@
     padding: 2rem 1rem 1.5rem;
   }
 }
+
+.datablock__new {
+  font-size: .875rem;
+  line-height: 1;
+  font-family: $header-font-family;
+  font-weight: $global-weight-bold;
+  color:$primary-color;
+  //font-style: italic;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+  i:before{
+    padding-right: .25em;
+  }
+}

@@ -2,6 +2,9 @@ $(document).foundation();
 
 
 $(document).ready(function() {
+
+    $('.xeditable').append('<div class="xeditable__action"><i class="fi-pencil"></i><a href="#">Módosítás</a></div>');
+
     $('.tr_name.xeditable').editable({
       tpl: '<label>Neved</label><input type="text">'
     });
@@ -21,6 +24,33 @@ $(document).ready(function() {
            multiple: true
       }
     });
+
+    $('.tr_school.xeditable').editable({
+        url: '/post',
+        value: {
+            tr_school_name: "Moholy-Nagy Iparművészeti Egyetem",
+            tr_school_yearstart: "2012",
+            tr_school_yearend: "2015",
+            tr_school_grad: "operatőr",
+        },
+        validate: function(value) {
+            if(value.tr_school_name == '') return 'Iskola neve kötelező!';
+        },
+        display: function(value) {
+            if(!value) {
+                $(this).empty();
+                return;
+            }
+            var html = '<h4>' + $('<div>').text(value.tr_school_name).html() +
+              ' <small>' + $('<div>').text(value.tr_school_yearstart).html() + '-' +
+              $('<div>').text(value.tr_school_yearend).html() + '</small>' +
+              '</h4>' +
+              '<p>' + $('<div>').text(value.tr_school_grad).html() +'</p>'+
+              '<div class="xeditable__action"><i class="fi-pencil"></i><a href="#">Módosítás</a></div>';
+            $(this).html(html);
+        }
+    });
+
 
     $('.tr_prodref.xeditable').editable({
         url: '/post',
@@ -42,7 +72,8 @@ $(document).ready(function() {
               ' <small>' + $('<div>').text(value.tr_prodref_year).html() + ', ' +
               $('<div>').text(value.tr_prodref_length).html() + ' hét</small>' +
               '</h4>' +
-              '<p>' + $('<div>').text(value.tr_prodref_descr).html() +'</p>';
+              '<p>' + $('<div>').text(value.tr_prodref_descr).html() +'</p>'+
+              '<div class="xeditable__action"><i class="fi-pencil"></i><a href="#">Módosítás</a></div>';
             $(this).html(html);
         }
     });
@@ -63,9 +94,10 @@ $(document).ready(function() {
                 $(this).empty();
                 return;
             }
-            var html = '<p>' + $('<div>').text(value.tr_contact_email).html() + '<br>' +
-              'Telefon: '+ $('<div>').text(value.tr_contact_tel).html() + '<br>' +
-              'Skype: ' + $('<div>').text(value.tr_contact_skype).html() + '</p>';
+            var html = '<label>E-mail</label>' + $('<div>').text(value.tr_contact_email).html() + '<br>' +
+              '<label>Telefon</label>'+ $('<div>').text(value.tr_contact_tel).html() + '<br>' +
+              '<label>Skype</label>' + $('<div>').text(value.tr_contact_skype).html() +
+              '<div class="xeditable__action"><i class="fi-pencil"></i><a href="#">Módosítás</a></div>';
             $(this).html(html);
         }
     });

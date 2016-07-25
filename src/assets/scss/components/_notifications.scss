@@ -1,0 +1,10 @@
+.notifications {
+  background-color: rgba(map-get($foundation-palette, success),.125);
+  background-color: $light-gray;
+}
+.noti {
+  position: relative;
+  padding:2rem 0;
+  font-size: .875rem;
+
+}

@@ -4,28 +4,34 @@ description: Gyakornok vezérlőpultja profil szerkesztésével
 ---
 <header class="phead phead--inverse">
   <div class="row">
-    <div class="columns phead__inner">
+    <div class="columns phead__inner tablet-8 xlarge-9">
       <h1 class="phead__title">{{title}}</h1>
-      <a data-open="tranieehelp" class="button secondary">Segítség</a>
+
     </div>
+    <div class="columns tablet-4 xlarge-3">
+      <a data-open="tranieehelp" class="button expanded">Segítség</a>
+    </div>
+
   </div>
 </header>
-<div class="row">
-  <div class="columns">
-    <div class="alert callout" data-closable>
-      <h5>Rendszerüzenet: Néhány adat még hányzik.</h5>
-      <p>Profilod élesítéséhez és a filmalapos jóváhagyáshoz az alábbiak megadása kötelező.</p>
-      <ul>
-        <li>Profilkép feltöltése</li>
-        <li>Iskolák megadása</li>
-        <li>Önéletrajz feltöltése</li>
-      </ul>
-      <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-      <span aria-hidden="true">&times;</span>
-      </button>
+<aside class="notifications">
+  <div class="noti noti--alert" data-closable>
+    <div class="row">
+      <div class="columns">
+        <h5>Rendszerüzenet: Néhány adat még hányzik.</h5>
+        <p>Profilod élesítéséhez és a filmalapos jóváhagyáshoz az alábbiak megadása kötelező.</p>
+        <ul>
+          <li>Profilkép feltöltése</li>
+          <li>Iskolák megadása</li>
+          <li>Önéletrajz feltöltése</li>
+        </ul>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     </div>
   </div>
-</div>
+</aside>
 <div class="row">
   <div class="columns tablet-8 xlarge-9">
     {{> tranieeprofile }}
@@ -47,6 +53,6 @@ description: Gyakornok vezérlőpultja profil szerkesztésével
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
   <button class="close-button" data-close aria-label="Felugró bezárása" type="button">
-    <span aria-hidden="true">&times;</span>
+  <span aria-hidden="true">&times;</span>
   </button>
 </div>

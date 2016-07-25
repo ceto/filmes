@@ -6,10 +6,20 @@
   }
   .button {
     margin:1rem 0 0;
+    background-color:$anchor-color-hover;
+    border:none;
+    &:hover, &:focus {
+      background-color:$black;
+    }
+    i {
+      font-size:3rem;
+      //color: $body-font-color;
+    }
     @include breakpoint(tablet) {
-      position: absolute;
-      right:15px;
-      bottom:.5rem;
+      //position: absolute;
+      //right:15px;
+      //bottom:.5rem;
+      margin-top:0;
     }
   }
 }

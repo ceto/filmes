@@ -4,13 +4,15 @@
   margin:0 0 0;
   > li {
     display: inline-block;
-    &:not(:last-child):after {
+    &:not(:last-of-type):after {
       content:' | ';
       color:$primary-color;
     }
   }
 }
-
+.xeditable {
+  position: relative;
+}
 .editable-click, [data-editable] {
   position: relative;
   &:hover, &:focus {
@@ -20,27 +22,56 @@
   }
   &:before {
     position: absolute;
-    left:-.75rem;
-    top:.125rem;
-    bottom:.125rem;
-    width:.333rem;
-    background-color: $light-gray;
+    top:.666rem;
+    left:-.875rem;
+    width:.5rem;
+    height:.5rem;
+    background-color: $medium-gray;
   }
   &:hover:before {
     content:'';
   }
-  &:hover:after {
-    content:'Szerkeszt';
-    background-color: $primary-color;
-    border-left: .5em solid $light-gray;
-    border-bottom: .5em solid $light-gray;
-    padding:.5em;
-    display: inline-block;
-    position: absolute;
-    top:-5px;
-    right:-5px;
-    font-size: .666rem;
-    line-height: 1;
+  // &:hover:after {
+  //   content:'Szerkeszt';
+  //   background-color: $primary-color;
+  //   border-left: .5em solid $light-gray;
+  //   border-bottom: .5em solid $light-gray;
+  //   padding:.5em;
+  //   display: inline-block;
+  //   position: absolute;
+  //   top:-5px;
+  //   right:-5px;
+  //   font-size: .666rem;
+  //   line-height: 1;
+
+  // }
+}
+
+.xeditable__action {
+  position: absolute;
+  top:.25rem;
+  right:0;
+  font-size: .875rem;
+  line-height: 1;
+  display: none;
+  padding:.25rem;
+  background-color: rgba($white,.875);
+  font-family: $header-font-family;
+  font-weight: $global-weight-bold;
+  .xeditable:hover &{
+    display: block;
+  }
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
 
   }
+
+  i {
+    font-size: 1.25em;
+    margin-right: .25em;
+    color:$dark-gray;
+  }
+
 }

@@ -26,6 +26,27 @@ function loadConfig() {
   return yaml.load(ymlFile);
 }
 
+
+var svgstore = require('gulp-svgstore');
+var inject = require('gulp-inject');
+
+gulp.task('svgstore', function () {
+    var svgs = gulp
+        .src('src/assets/svg/*.svg')
+        .pipe(svgstore({ inlineSvg: true, prefix : 'shape-' }));
+
+    function fileContents (filePath, file) {
+        return file.contents.toString();
+    }
+
+    return gulp
+        .src('src/partials/inline-svg.html')
+        .pipe(inject(svgs, { transform: fileContents }))
+        .pipe(gulp.dest('src/partials'));
+});
+
+
+
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
  gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
