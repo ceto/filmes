@@ -107,28 +107,34 @@
 
     <header class="phead phead--inverse">
       <div class="row">
-        <div class="columns phead__inner">
+        <div class="columns phead__inner tablet-8 xlarge-9">
           <h1 class="phead__title">Profilom</h1>
-          <a data-open="tranieehelp" class="button secondary">Segítség</a>
+    
         </div>
+        <div class="columns tablet-4 xlarge-3">
+          <a data-open="tranieehelp" class="button expanded">Segítség</a>
+        </div>
+    
       </div>
     </header>
-    <div class="row">
-      <div class="columns">
-        <div class="alert callout" data-closable>
-          <h5>Rendszerüzenet: Néhány adat még hányzik.</h5>
-          <p>Profilod élesítéséhez és a filmalapos jóváhagyáshoz az alábbiak megadása kötelező.</p>
-          <ul>
-            <li>Profilkép feltöltése</li>
-            <li>Iskolák megadása</li>
-            <li>Önéletrajz feltöltése</li>
-          </ul>
-          <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-          <span aria-hidden="true">&times;</span>
-          </button>
+    <aside class="notifications">
+      <div class="noti noti--alert" data-closable>
+        <div class="row">
+          <div class="columns">
+            <h5>Rendszerüzenet: Néhány adat még hányzik.</h5>
+            <p>Profilod élesítéséhez és a filmalapos jóváhagyáshoz az alábbiak megadása kötelező.</p>
+            <ul>
+              <li>Profilkép feltöltése</li>
+              <li>Iskolák megadása</li>
+              <li>Önéletrajz feltöltése</li>
+            </ul>
+            <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </aside>
     <div class="row">
       <div class="columns tablet-8 xlarge-9">
         <div class="trsheet">
@@ -142,15 +148,16 @@
               <div class="columns small-8 tablet-6 large-8">
                 <h4 id="tr_name" class="tr_name xeditable" data-type="text" data-pk="1" data-tite="Név" data-url="/post">Minta Panna</h4>
                 <p class="xeditable">21 éves lány</p>
-                <p id="tr_contact" class="tr_contact xeditable" data-type="contact">
-                  <a href="#">mintapanna@gmail.com</a><br>
-                  <a href="tel:0036303217654">+36 30 321 7654</a><br>
-                  skype: mintapanna
-                </p>
                 <ul id="tr_langs" class="tr_langs xeditable inlinelist" data-type="select2" data-pk="1" data-value="en,de">
                   <li>angol</li>
                   <li>német</li>
                 </ul>
+                <p id="tr_contact" class="tr_contact xeditable" data-type="contact">
+                  <label>E-mail</label><a href="#">mintapanna@gmail.com</a><br>
+                  <label>Telefon</label><a href="tel:0036303217654">+36 30 321 7654</a><br>
+                  <label>Skype</label>minta.anna21
+                </p>
+        
               </div>
             </div>
           </header>
@@ -170,15 +177,15 @@
                 <h3 class="datablock__title">Iskolák</h3>
                 <div class="datablock__body">
                   <ul>
-                    <li>
+                    <li id="tr_school_1" class="tr_school xeditable" data-pk="1" data-type="school">
                       <h4>MOME animáció szak <small>2013-2015</small></h4>
                       <p>animátor</p></li>
-                      <li>
+                      <li id="tr_school_2" class="tr_school xeditable" data-pk="1" data-type="school">
                         <h4>Filmművészeti Egyetem <small>2014-2016</small></h4>
                         <p>operatőr</p>
                       </li>
                     </ul>
-                    <button class="button small">+ Új iskola felvétele</button>
+                    <button class="datablock__new"><i class="fi-plus"></i>Iskola hozzáadása</button>
                   </div>
                 </section>
                 <section class="datablock">
@@ -194,7 +201,7 @@
                         <p>Itt még csak elképzelés voltam, de állítólag már ebben a formában is nagy hatással voltam a film akkori gyártásvezetőjére, aki az apám.</p>
                       </li>
                     </ul>
-                    <button class="button small">+ Új iskola felvétele</button>
+                    <button class="datablock__new"><i class="fi-plus"></i>Produkció hozzáadása</button>
                   </div>
                 </section>
                 <section class="datablock">
@@ -230,7 +237,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
       <button class="close-button" data-close aria-label="Felugró bezárása" type="button">
-        <span aria-hidden="true">&times;</span>
+      <span aria-hidden="true">&times;</span>
       </button>
     </div>
 
@@ -240,7 +247,7 @@
     <footer class="sitefooter" role="contentinfo">
       <div class="row">
         <div class="columns">
-          &copy; 2016 &middot; Minden jog fenntartva &middot; <a href="http://mnf.hu" target="_blank">Magyar Nemzeti Filmalap</a>
+        &copy; 2016 &middot; Minden jog fenntartva &middot; <a href="http://mnf.hu" target="_blank">Magyar Nemzeti Filmalap</a>
         </div>
       </div>
     </footer>
