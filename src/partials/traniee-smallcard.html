@@ -6,11 +6,6 @@
           <img src="{{ thumbnail}}" alt="">
         </a>
       </figure>
-      {{#if marked}}
-        <a href="#" class="marker button tiny success">*</a>
-        {{else}}
-        <a href="#" class="marker button tiny">-</a>
-      {{/if}}
     </div>
     <div class="columns small-9 xlarge-9">
       <h4 class="smallcard__title">
@@ -34,6 +29,13 @@
   </div>
   <footer class="smallcard__footer">
     {{ date }}
+    <div class="markers">
+      {{#if marked}}
+        <a href="#" class="marker marker--ison"><i class="fi-star"></i></a>
+        {{else}}
+        <a href="#" class="marker"><i class="fi-star"></i></a>
+      {{/if}}
+    </div>
   </footer>
 
 

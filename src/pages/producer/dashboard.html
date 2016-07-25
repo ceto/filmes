@@ -4,28 +4,32 @@ description: A producer vezérlőpultja. Start page.
 ---
 <header class="phead phead--inverse">
   <div class="row">
-    <div class="columns">
+    <div class="columns phead__inner tablet-8 xlarge-9">
       <h1 class="phead__title">{{title}}</h1>
+    </div>
+    <div class="columns tablet-4 xlarge-3">
+      <a data-open="prodhelp" class="button expanded">Segítség</a>
     </div>
   </div>
 </header>
-<div class="row">
-  <div class="columns">
-    <div class="callout alert" data-closable>
-      <h5>Rendszerüzenet: Beavatkozás szükséges</h5>
-      <p>Hiányosságokat észleltünk. Az alábbi adminisztráció elvégzése időszerű.</p>
-      <ul>
-        <li>Nem adtál visszajelzést: 1 gyakornok</li>
-        <li>Lejárt az alkalmazási idő: 1 gyakornok</li>
-      </ul>
-      <a href="{{root}}producer/results/alertlist.html" class="button small">Adminisztráció elvégzése</a>
-      <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-      <span aria-hidden="true">&times;</span>
-      </button>
+<aside class="notifications">
+  <div class="noti noti--alert" data-closable>
+    <div class="row">
+      <div class="columns">
+        <h5>Rendszerüzenet: Beavatkozás szükséges</h5>
+        <p>Hiányosságokat észleltünk. Az alábbi adminisztráció elvégzése időszerű.</p>
+        <ul>
+          <li>Nem adtál visszajelzést: 1 gyakornok</li>
+          <li>Lejárt az alkalmazási idő: 1 gyakornok</li>
+        </ul>
+        <a href="{{root}}producer/results/alertlist.html" class="button small">Adminisztráció elvégzése</a>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     </div>
   </div>
-</div>
-
+</aside>
 <div class="row">
   <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
     <aside class="sidebar">
@@ -35,24 +39,18 @@ description: A producer vezérlőpultja. Start page.
     </aside>
   </div>
   <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
-    <div class="plead">
-      <h3>Profilom</h3>
-      <h4 data-editable>Producer Tamás</h4>
-      <p data-editable>Protonfilm</p>
-      <p data-editable>
-        <a href="#">prodtomia@gmail.com</a><br>
-        <a href="tel:0036303217654">+36 30 321 7654</a><br>
-        skype: tomi-star
-    </p>
-    </div>
-    <h3>Saját produkciók</h3>
-    <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
-      {{#each productions-four}}
-      <div class="column">
-        {{> production-smallcard }}
-      </div>
-      {{/each}}
-    </div>
-    <p><a href="#" class="button small">+ Új produkció felvétele</a></p>
+    {{> producerprofile }}
   </div>
+</div>
+<div class="reveal" id="prodhelp" data-reveal>
+  <h1>Produceri tudnivalók</h1>
+  <p class="lead">Your couch. It is mine. I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  <h2>Hogyan keressek gyakornokot?</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+  <h4>Mi kell ahhoz, hogy bejussak?</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+  <button class="close-button" data-close aria-label="Felugró bezárása" type="button">
+  <span aria-hidden="true">&times;</span>
+  </button>
 </div>

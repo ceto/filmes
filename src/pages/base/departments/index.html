@@ -10,23 +10,23 @@ description: Filmipari szakmák gyűjtőoldala. Lorem ipsum dolor sit amet, cons
     </div>
   </div>
 </header>
-
-<section class="plead">
-  <div class="row">
-    <div class="columns medium-8">
-      <p>{{ description }}</p>
+<div class="ps">
+  <section class="plead">
+    <div class="row">
+      <div class="columns medium-8">
+        <p>{{ description }}</p>
+      </div>
     </div>
-  </div>
-</section>
-
-<div class="row">
-  <div class="columns">
-    <div class="row small-up-2 medium-up-3 large-up-4">
-      {{#each departments}}
+  </section>
+  <div class="row">
+    <div class="columns">
+      <div class="row small-up-2 medium-up-3 large-up-4">
+        {{#each departments}}
         <div class="column">
           {{>simplecard url="single-department.html" }}
         </div>
-      {{/each}}
+        {{/each}}
+      </div>
     </div>
   </div>
 </div>

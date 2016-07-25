@@ -362,11 +362,11 @@ $input-radius: $global-radius;
 // 20. Label
 // ---------
 
-$label-background: $primary-color;
+$label-background: $body-font-color;
 $label-color: foreground($label-background);
-$label-font-size: 0.8rem;
-$label-padding: 0.33333rem 0.5rem;
-$label-radius: $global-radius;
+$label-font-size: 0.875rem;
+$label-padding: 0.5rem 0.5rem 0.333rem;
+$label-radius: 3px;
 
 // 21. Media Object
 // ----------------
@@ -427,13 +427,13 @@ $orbit-control-zindex: 10;
 // --------------
 
 $pagination-font-size: rem-calc(14);
-$pagination-margin-bottom: $global-margin;
-$pagination-item-color: $black;
+$pagination-margin-bottom: $global-margin*4;
+$pagination-item-color: $dark-gray;
 $pagination-item-padding: rem-calc(3 10);
 $pagination-item-spacing: rem-calc(1);
 $pagination-radius: $global-radius;
-$pagination-item-background-hover: $light-gray;
-$pagination-item-background-current: $primary-color;
+$pagination-item-background-hover: $medium-gray;
+$pagination-item-background-current: map-get($foundation-palette,alert);
 $pagination-item-color-current: foreground($pagination-item-background-current);
 $pagination-item-color-disabled: $medium-gray;
 $pagination-ellipsis-color: $black;

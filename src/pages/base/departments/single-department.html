@@ -11,28 +11,28 @@ thumbnail: http://placehold.it/480x320
     </div>
   </div>
 </header>
-<section class="plead">
+<div class="ps">
+  <section class="plead">
+    <div class="row">
+      <div class="columns medium-8">
+        <p>{{description}}</p>
+      </div>
+    </div>
+  </section>
   <div class="row">
-    <div class="columns medium-8">
-      <p>{{description}}</p>
+    <div class="columns">
+      <div class="row small-up-2 medium-up-3 large-up-4">
+        {{#each sound-department}}
+          <div class="column">
+            {{>simplecard url="single-role.html" }}
+          </div>
+        {{/each}}
+      </div>
     </div>
   </div>
-</section>
 <div class="row">
   <div class="columns">
-    <div class="row small-up-2 medium-up-3 large-up-4">
-      {{#each sound-department}}
-        <div class="column">
-          {{>simplecard url="single-role.html" }}
-        </div>
-      {{/each}}
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="columns">
-    <h2>Kapcsolódó feladatkörök</h2>
+    <h2 class="sectitle">Kapcsolódó feladatkörök</h2>
     <div class="row small-up-2 medium-up-3 large-up-4">
       {{#each sound-department-related}}
         <div class="column">
@@ -41,4 +41,5 @@ thumbnail: http://placehold.it/480x320
       {{/each}}
     </div>
   </div>
+</div>
 </div>

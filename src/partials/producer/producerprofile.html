@@ -1,0 +1,36 @@
+<div class="trsheet">
+  <header class="trsheet__head">
+    <h4 id="tr_name" class="tr_name xeditable" data-type="text" data-pk="1" data-tite="Név" data-url="/post">Producer Tamás</h4>
+    <p id="tr_contact" class="tr_contact xeditable" data-type="contact">
+      <label>Produkciós cég:</label><a href="#">Protonfilm</a><br>
+      <label>E-mail</label><a href="#">prodtamas@protonfilm.hu</a><br>
+      <label>Telefon</label><a href="tel:0036303217654">+36 30 321 7654</a><br>
+      <label>Skype</label>tomi.star
+    </p>
+  </header>
+  <section class="datablock">
+    <h3 class="datablock__title">Produkciók ahova gyakornokot keresek</h3>
+    <div class="datablock__body">
+      <ul>
+        <li id="tr_prodref_1" class="tr_prodref" data-pk="1" data-type="prodref">
+          <h4>VAN valami furcsa és megmagyarázhatatlan  <small>Gyártás</small> <small>3 gyakornok</small></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit amet ea impedit accusamus eveniet et dignissimos laudantium nihil quia qui ipsum eos, id dolore commodi, eius placeat reprehenderit doloremque quis?</p>
+        </li>
+        <li id="tr_prodref_2" class="tr_prodref xeditable" data-pk="2"  data-type="prodref">
+          <h4>Szegénylegények <small>1969, 9 hónap</small></h4>
+          <p>Itt még csak elképzelés voltam, de állítólag már ebben a formában is nagy hatással voltam a film akkori gyártásvezetőjére, aki az apám.</p>
+        </li>
+      </ul>
+      <button class="datablock__new"><i class="fi-plus"></i>Produkció hozzáadása</button>
+    </div>
+  </section>
+  <h3>vagy így: Saját produkciók</h3>
+  <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
+    {{#each productions-four}}
+    <div class="column">
+      {{> production-smallcard }}
+    </div>
+    {{/each}}
+  </div>
+  <button class="datablock__new"><i class="fi-plus"></i>Produkció hozzáadása</button>
+</div>

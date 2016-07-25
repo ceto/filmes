@@ -17,4 +17,14 @@
     border-color: $primary-color;
     margin:0 auto 2rem;
   }
+  legend {
+    margin-bottom: 0;
+    font-size: .875rem;
+    line-height: 1.5;
+    font-family: $header-font-family;
+    font-weight: $global-weight-bold;
+  }
+  .button {
+    margin-top: 1.25rem;
+  }
 }

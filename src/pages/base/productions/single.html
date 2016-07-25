@@ -4,16 +4,17 @@ description: "A rendszerében lévő önálló produkció adatlapja látható it
 ---
 <header class="phead phead--inverse">
   <div class="row">
-    <div class="columns tablet-8 xlarge-9">
+    <div class="columns tablet-8 xlarge-9 phead__inner">
       <h1 class="phead__title">Produkció adatlap</h2>
     </div>
   </div>
 </header>
 <div class="row">
   <div class="columns tablet-8 xlarge-9">
+    <div class="ps">
     <div class="plead">
-    <h1 data-editable>{{title}}</h1>
-    <p data-editable>Valami ismertető nem kellene ide? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorum officiis soluta, iste nemo quisquam earum enim explicabo rem natus, facilis dolores consectetur laborum perspiciatis quis ut quam at doloremque?</p>
+      <h1 class="plead__title">{{title}}</h1>
+      <p>Valami ismertető nem kellene ide? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorum officiis soluta, iste nemo quisquam earum enim explicabo rem natus, facilis dolores consectetur laborum perspiciatis quis ut quam at doloremque?</p>
     </div>
     <div class="row">
       <div class="columns medium-6">
@@ -31,24 +32,28 @@ description: "A rendszerében lévő önálló produkció adatlapja látható it
         </ul>
       </div>
     </div>
-    <hr>
-    <h3>A produkcióban résztvevő gyakornokok<br><small>(ha saját produkció)</small></h3>
-    <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
-      {{#each traniees-two}}
-      <div class="column">
-        {{> traniee-smallcard }}
+    <div class="ps ps--narrow">
+      <h3 class="sectitle">A produkcióban résztvevő gyakornokok<br><small>(ha saját produkció)</small></h3>
+      <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
+        {{#each traniees-two}}
+        <div class="column">
+          {{> traniee-smallcard }}
+        </div>
+        {{/each}}
       </div>
-      {{/each}}
-    </div>
-    <h3>A produkció iránt érdeklődő gyakornokok<br><small>(ha saját produkció)</small></h3>
-    <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
-      {{#each traniees-three}}
-      <div class="column">
-        {{> traniee-smallcard }}
-      </div>
-      {{/each}}
     </div>
 
+    <div class="ps ps--narrow">
+      <h3 class="sectitle">A produkció iránt érdeklődő gyakornokok<br><small>(ha saját produkció)</small></h3>
+      <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
+        {{#each traniees-three}}
+        <div class="column">
+          {{> traniee-smallcard }}
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
   </div>
   <div class="columns tablet-4 xlarge-3">
     <aside class="sidebar">

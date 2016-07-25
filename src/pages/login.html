@@ -1,11 +1,16 @@
 ---
-title: Filmesgyakornok bejelentkezés
+title: Bejelentkezés az oldalra
 description: Ezen az oldalon jelentkezik be mindenki. ha valmi védett területre ér böngészés közben, akkor is ide irányítjuk.
 ---
-
-<div class="row">
-  <div class="columns medium-8 medium-centered">
-    <h1 class="text-center">{{title}}</h1>
-    {{> loginbox }}
+<div class="ps ps--full ps--inverse">
+  <div class="ps__inner">
+    <div class="row">
+      <div class="columns medium-8 medium-centered tablet-6 xlarge-5">
+          <h1 class="text-center boxx__title">{{title}}</h1>
+        <div class="box box--transparent">
+          {{> loginbox }}
+        </div>
+      </div>
+    </div>
   </div>
 </div>

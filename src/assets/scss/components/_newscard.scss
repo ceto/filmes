@@ -1,0 +1,45 @@
+.nc {
+  @include clearfix();
+  //padding-bottom: 1rem;
+  margin-bottom: 3rem;
+//  border-bottom: 1px solid $medium-gray;
+}
+
+.nc__title {
+  margin-bottom: .125em;
+  a {
+    color:inherit;
+    &:hover, &:focus {
+      color:$primary-color;
+    }
+  }
+}
+.nc__excerpt {
+  font-size: .875rem;
+  p {
+    margin-bottom: 0;
+  }
+}
+.nc__meta {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+.nc__fig {
+  margin:0;
+  padding:0 2.5% .125rem 0;
+  float:left;
+  width: 20%;
+  max-width: 8rem;
+
+}
+
+.nc__more {
+  font-family: $header-font-family;
+  font-weight: $global-weight-bold;
+  font-size: .875rem;
+  margin-top: .75rem;
+  display: inline-block;
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
