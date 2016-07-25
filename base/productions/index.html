@@ -28,7 +28,6 @@
                 <a href="../../traniee/dashboard.html">Gyakor Nokedli</a>
                 <ul class="menu vertical">
                   <li><a href="../../traniee/dashboard.html">Profilom</a></li>
-                  <li><a href="../../traniee/reviews.html">Értékeléseim <apan class="badge alert">1</apan></a></li>
                   <li><a href="../../traniee/feedback.html">Vélmény az oldalról</a></li>
                 </ul>
               </li>
@@ -83,7 +82,6 @@
                 <a href="../../traniee/dashboard.html">Gyakor Nokedli</a>
                 <ul class="menu vertical">
                   <li><a href="../../traniee/dashboard.html">Profilom</a></li>
-                  <li><a href="../../traniee/reviews.html">Értékeléseim <apan class="badge alert">1</apan></a></li>
                   <li><a href="../../traniee/feedback.html">Vélmény az oldalról</a></li>
                 </ul>
               </li>
@@ -107,8 +105,8 @@
 
     <header class="phead phead--inverse">
       <div class="row">
-        <div class="columns tablet-8 xlarge-9">
-          <h2 class="phead__title">Produkciók</h2>
+        <div class="columns tablet-8 xlarge-9 phead__inner">
+          <h1 class="phead__title">Produkciók</h1>
         </div>
       </div>
     </header>
@@ -128,7 +126,7 @@
               <h4>Produkciók</h4>
               <ul class="menu menu--side vertical">
                 <li><a href="#">Összes produkció</a></li>
-                <li class="active"><a href="#"">Betöltetlen produkciók<span class="badge">12</span></a></li>
+                <li class="active"><a href="#"">Betöltetlen produkciók <span class="badge alert">12</span></a></li>
                 <li><a href="#"">Saját produkciók(x)</a></li>
               </ul>
             </nav>
@@ -138,7 +136,7 @@
               <ul class="inlinelist">
                 <li><a href="#">Protonfilm</a></li>
                 <li><a href="#">HBO</a></li>
-                <li><a href="#">Macskabölcső</a></li>
+                <li class="active"><a href="#">Macskabölcső</a></li>
                 <li><a href="#">MAFILM</a></li>
                 <li><a href="#">Kovács András</a></li>
                 <li><a href="#">Cafe Film</a></li>
@@ -369,7 +367,7 @@
           </div>
         </section>
         <ul class="pagination" role="navigation" aria-label="Pagination">
-          <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+          <li class="pagination-previous disabled">Előző <span class="show-for-sr">oldal</span></li>
           <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
           <li><a href="#" aria-label="Page 2">2</a></li>
           <li><a href="#" aria-label="Page 3">3</a></li>
@@ -377,7 +375,7 @@
           <li class="ellipsis" aria-hidden="true"></li>
           <li><a href="#" aria-label="Page 12">12</a></li>
           <li><a href="#" aria-label="Page 13">13</a></li>
-          <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+          <li class="pagination-next"><a href="#" aria-label="Next page">Következő <span class="show-for-sr">oldal</span></a></li>
         </ul>
       </div>
     </div>
@@ -387,8 +385,14 @@
     <div><!-- /.off-canvas-wrapper -->
     <footer class="sitefooter" role="contentinfo">
       <div class="row">
-        <div class="columns">
+        <div class="columns tablet-6">
         &copy; 2016 &middot; Minden jog fenntartva &middot; <a href="http://mnf.hu" target="_blank">Magyar Nemzeti Filmalap</a>
+        </div>
+        <div class="columns tablet-6 text-right">
+          <ul class="inlinelist">
+            <li><a href="../../producer/dashboard.html">Producer dashboard</a></li>
+            <li><a href="../../login.html">Login page</a></li>
+          </ul>
         </div>
       </div>
     </footer>
