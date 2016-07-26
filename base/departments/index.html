@@ -19,10 +19,14 @@
         <div class="title-bar hide-for-tablet" data-responsive-toggle="widemenu" data-hide-for="tablet">
           <div class="title-bar-left">
             <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-            <span class="title-bar-title">FilmesGyakorn<span>ok</span></span>
+            <span class="title-bar-title">
+              <a href="../../index.html">
+                <img src="../..//assets/img/logo.svg" class="topbarlogo">FilmesGyakorn<span>ok</span>
+              </a>
+            </span>
           </div>
           <nav class="title-bar-right usernav usernav--mobile">
-            <ul class="dropdown menu" data-dropdown-menu>
+            <ul class="dropdown menu " data-dropdown-menu>
               <!-- <li><a href="../../login.html">Bejelentkezés</a></li> -->
               <li>
                 <a href="../../traniee/dashboard.html">Gyakor Nokedli</a>
@@ -59,44 +63,49 @@
             </ul>
           </nav>
     
-        </div>
     
-        <div id="widemenu" class="top-bar dark ashow-for-tablet">
-          <div class="top-bar-title">
-            <a href="../../index.html">FilmesGyakorn<span>ok</span></a>
+        </div>
+        <!-- desktop menu -->
+        <div id="widemenu" class="top-bar dark show-for-tablet">
+          <div class="row">
+            <div class="columns">
+              <div class="top-bar-title">
+                <a href="../../index.html"><img src="../..//assets/img/logo.svg" class="topbarlogo">FilmesGyakorn<span>ok</span></a>
+              </div>
+              <div id="responsive-menu">
+                <nav class="mainnav top-bar-left">
+                  <ul class="dropdown menu " data-dropdown-menu>
+                    <li><a href="../../producer/results/all.html">Gyakornokok</a></li>
+                    <li><a href="../../base/productions/index.html">Produkciók</a></li>
+                    <li><a href="../../base/departments/index.html">Filmszakmák</a></li>
+                    <li><a href="../../base/news/index.html">Hírek</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <nav class="usernav top-bar-right">
+                <ul class="dropdown menu " data-dropdown-menu>
+                  <!-- <li><a href="../../login.html">Bejelentkezés</a></li> -->
+                  <li>
+                    <a href="../../traniee/dashboard.html">Gyakor Nokedli</a>
+                    <ul class="menu vertical">
+                      <li><a href="../../traniee/dashboard.html">Profilom</a></li>
+                      <li><a href="../../traniee/feedback.html">Vélmény az oldalról</a></li>
+                    </ul>
+                  </li>
+                  
+                <!--
+                  <li>
+                    <a href="../../producer/dashboard.html">v. Producer Tamás</a>
+                    <ul class="menu vertical">
+                      <li><a href="../../producer/dashboard.html">Vezérlőpult</a></li>
+                    </ul>
+                  </li>
+                  
+                 -->
+                 </ul>
+              </nav>
+              </div>
           </div>
-          <div id="responsive-menu">
-            <nav class="mainnav top-bar-left">
-              <ul class="dropdown menu " data-dropdown-menu>
-                <li><a href="../../producer/results/all.html">Gyakornokok</a></li>
-                <li><a href="../../base/productions/index.html">Produkciók</a></li>
-                <li><a href="../../base/departments/index.html">Filmszakmák</a></li>
-                <li><a href="../../base/news/index.html">Hírek</a></li>
-              </ul>
-            </nav>
-          </div>
-          <nav class="usernav top-bar-right">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <!-- <li><a href="../../login.html">Bejelentkezés</a></li> -->
-              <li>
-                <a href="../../traniee/dashboard.html">Gyakor Nokedli</a>
-                <ul class="menu vertical">
-                  <li><a href="../../traniee/dashboard.html">Profilom</a></li>
-                  <li><a href="../../traniee/feedback.html">Vélmény az oldalról</a></li>
-                </ul>
-              </li>
-              
-            <!--
-              <li>
-                <a href="../../producer/dashboard.html">v. Producer Tamás</a>
-                <ul class="menu vertical">
-                  <li><a href="../../producer/dashboard.html">Vezérlőpult</a></li>
-                </ul>
-              </li>
-              
-             -->
-             </ul>
-          </nav>
         </div>
     
         <div class="off-canvas-content" data-off-canvas-content>
@@ -226,22 +235,23 @@
       </div>
     </div>
 
+          <footer class="sitefooter" role="contentinfo">
+            <div class="row">
+              <div class="columns tablet-6">
+              &copy; 2016 &middot; Minden jog fenntartva &middot; <a href="http://mnf.hu" target="_blank">Magyar Nemzeti Filmalap</a>
+              </div>
+              <div class="columns tablet-6 text-right">
+                <ul class="inlinelist">
+                  <li><a href="../../producer/dashboard.html">Producer dashboard</a></li>
+                  <li><a href="../../login.html">Login page</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
         </div><!-- /.off-canvas-content -->
       </div><!-- /.off-canvas-wrapper-inner -->
     <div><!-- /.off-canvas-wrapper -->
-    <footer class="sitefooter" role="contentinfo">
-      <div class="row">
-        <div class="columns tablet-6">
-        &copy; 2016 &middot; Minden jog fenntartva &middot; <a href="http://mnf.hu" target="_blank">Magyar Nemzeti Filmalap</a>
-        </div>
-        <div class="columns tablet-6 text-right">
-          <ul class="inlinelist">
-            <li><a href="../../producer/dashboard.html">Producer dashboard</a></li>
-            <li><a href="../../login.html">Login page</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    
     
 
     <script src="../../assets/js/app.js"></script>
