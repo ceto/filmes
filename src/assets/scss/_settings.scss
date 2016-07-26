@@ -50,6 +50,7 @@ $global-width: rem-calc(1400);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #b4271e,
+  //primary: #FFC107,
   secondary: #777,
   success: #00b6ba,
   warning: #ffae00,
@@ -82,7 +83,7 @@ $print-transparent-backgrounds: true;
 $breakpoints: (
   small: 0,
   medium: 480px,
-  tablet: 768px,
+  tablet: 840px,
   large: 1024px,
   xlarge: 1200px,
   xxlarge: 1440px,
@@ -362,10 +363,10 @@ $input-radius: $global-radius;
 // 20. Label
 // ---------
 
-$label-background: $body-font-color;
+$label-background: $dark-gray;
 $label-color: foreground($label-background);
 $label-font-size: 0.875rem;
-$label-padding: 0.5rem 0.5rem 0.333rem;
+$label-padding: 0.5rem 0.5rem 0.25rem;
 $label-radius: 3px;
 
 // 21. Media Object
@@ -380,7 +381,7 @@ $mediaobject-image-width-stacked: 100%;
 
 $menu-margin: 0;
 $menu-margin-nested: 1rem;
-$menu-item-padding: 0.875rem 1rem .666rem;
+$menu-item-padding: 2.666rem 1rem .125rem;
 $menu-item-color-active: $white;
 $menu-item-background-active: map-get($foundation-palette, primary);
 $menu-icon-spacing: 0.25rem;
@@ -563,6 +564,6 @@ $tooltip-radius: $global-radius;
 $topbar-padding: 0.5rem;
 $topbar-background: $black;
 $topbar-submenu-background: $topbar-background;
-$topbar-title-spacing: 2rem;
+$topbar-title-spacing: .75rem;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;

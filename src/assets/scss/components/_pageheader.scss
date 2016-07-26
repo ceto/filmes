@@ -6,14 +6,21 @@
   }
   .button {
     margin:1rem 0 0;
-    background-color:$anchor-color-hover;
-    border:none;
+    //background-color:$anchor-color-hover;
+    //color: $body-font-color;
+    //text-transform: uppercase;
+
+    font-family: $header-font-family;
+    font-weight: $global-weight-bold;
+    border:1px solid rgba($white,.875);
     &:hover, &:focus {
-      background-color:$black;
+      //background-color:$black;
     }
     i {
-      font-size:3rem;
-      //color: $body-font-color;
+      font-size:2rem;
+      margin-right: .25em;
+      display: block;
+
     }
     @include breakpoint(tablet) {
       //position: absolute;

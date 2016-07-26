@@ -5,7 +5,11 @@
     <div class="title-bar hide-for-tablet" data-responsive-toggle="widemenu" data-hide-for="tablet">
       <div class="title-bar-left">
         <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-        <span class="title-bar-title">FilmesGyakorn<span>ok</span></span>
+        <span class="title-bar-title">
+          <a href="{{root}}index.html">
+            <img src="{{root}}/assets/img/logo.svg" class="topbarlogo">FilmesGyakorn<span>ok</span>
+          </a>
+        </span>
       </div>
       <nav class="title-bar-right usernav usernav--mobile">
         {{>usernav}}
@@ -21,20 +25,25 @@
         {{> mainnav vertical=true}}
       </nav>
 
-    </div>
 
-    <div id="widemenu" class="top-bar dark ashow-for-tablet">
-      <div class="top-bar-title">
-        <a href="{{root}}index.html">FilmesGyakorn<span>ok</span></a>
+    </div>
+    <!-- desktop menu -->
+    <div id="widemenu" class="top-bar dark show-for-tablet">
+      <div class="row">
+        <div class="columns">
+          <div class="top-bar-title">
+            <a href="{{root}}index.html"><img src="{{root}}/assets/img/logo.svg" class="topbarlogo">FilmesGyakorn<span>ok</span></a>
+          </div>
+          <div id="responsive-menu">
+            <nav class="mainnav top-bar-left">
+              {{> mainnav}}
+            </nav>
+          </div>
+          <nav class="usernav top-bar-right">
+            {{> usernav}}
+          </nav>
+          </div>
       </div>
-      <div id="responsive-menu">
-        <nav class="mainnav top-bar-left">
-          {{> mainnav}}
-        </nav>
-      </div>
-      <nav class="usernav top-bar-right">
-        {{> usernav}}
-      </nav>
     </div>
 
     <div class="off-canvas-content" data-off-canvas-content>

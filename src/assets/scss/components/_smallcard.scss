@@ -7,6 +7,10 @@
   background-color: $white;
   border:1px solid $medium-gray;
   padding:.875rem;
+  &.smallcard--production {
+   //border:none;
+   //background-color:$light-gray;
+  }
 
   .inlinelist {
     font-size: .875rem;
@@ -29,6 +33,14 @@
   font-weight: $global-weight-normal;
   font-size: 1.333rem;
   margin:0 0 .125em;
+  .smallcard--production & {
+    font-family: $header-font-family;
+    font-weight: $global-weight-bold;
+    a {
+      //color:$dark-gray;
+    }
+
+  }
   a {
     //color:inherit;
     // &:hover, &:focus {
@@ -51,8 +63,9 @@
 .sc__prodfirm {
   font-family: $header-font-family;
   font-weight: $global-weight-bold;
-  color: map-get($foundation-palette, success);
-  //color:$dark-gray;
+  //color: map-get($foundation-palette, success);
+  color:$dark-gray;
+  //color:$primary-color;
   display: inline-block;
   text-transform: uppercase;
   font-size: .875rem;
@@ -68,6 +81,7 @@
   border-top:1px solid $primary-color;
   font-size: .75rem;
   color:$dark-gray;
+  //font-family:$header-font-family;
   font-weight: $global-weight-bold;
   line-height: 1;
   margin-top: .875rem;
