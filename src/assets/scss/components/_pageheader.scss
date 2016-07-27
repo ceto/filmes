@@ -1,23 +1,33 @@
 .phead {
-  @include clearfix();
-  padding:1.75rem 0;
+  position: relative;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url('http://lorempixel.com/g/1280/400');
+  padding:2.75rem 0 2.25rem;
+
+  > .row {
+    position: relative;
+  }
   .breadcrumbs {
-    margin-bottom: 0;
+    //margin-bottom: 1rem;
   }
   .button {
     margin:1rem 0 0;
-    //background-color:$anchor-color-hover;
+    background-color:rgba($black,.125);
+    border:1px solid rgba($white, .5);
     //color: $body-font-color;
     //text-transform: uppercase;
 
     font-family: $header-font-family;
     font-weight: $global-weight-bold;
-    border:1px solid rgba($white,.875);
-    &:hover, &:focus {
-      //background-color:$black;
+    //border:1px solid rgba($white,.875);
+    &:hover{
+      background-color:rgba($black,.25);
+      border:1px solid rgba($white, .75);
     }
     i {
-      font-size:2rem;
+      font-size:2.75rem;
       margin-right: .25em;
       display: block;
 
@@ -26,16 +36,35 @@
       //position: absolute;
       //right:15px;
       //bottom:.5rem;
+      min-height: 5.75rem;
       margin-top:0;
+      padding-top: .75rem;
     }
   }
 }
 
+.phead--high {
+  @include breakpoint(tablet) {
+    padding-top: 25vh;
+    //paddingbottom:4.5rem;
+  }
+}
 .phead--inverse {
   background-color:$primary-color;
   color:$white;
+  &:before {
+    display: block;
+    content:'';
+    position: absolute;
+    left:0;
+    width:100%;
+    top:0;
+    height:100%;
+    //background-color: #000;
+    background-image: linear-gradient(60deg, rgba(#000,.666) 0, rgba(#000,.25) 50% );
+  }
   .breadcrumbs {
-    border-bottom: 1px solid rgba($white,.75);
+    border-bottom: 1px solid rgba($white,.666);
     padding-bottom: .75rem;
     margin-bottom: .5rem;
     a {
@@ -51,6 +80,13 @@
 .phead__title {
   margin-bottom: 0;
   font-weight: $global-weight-bold;
+}
+
+.phead__lead {
+  font-size: 1.25rem;
+  font-family: $header-font-family;
+  font-weight: $global-weight-bold;
+
 }
 
 

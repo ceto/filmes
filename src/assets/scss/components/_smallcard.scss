@@ -29,28 +29,22 @@
 
 }
 .smallcard__title {
-  font-family: $body-font-family;
-  font-weight: $global-weight-normal;
+  //font-family: $body-font-family;
+  //font-weight: $global-weight-normal;
   font-size: 1.333rem;
-  margin:0 0 .125em;
+  margin:.125em 0 0;
+  color: scale-color($body-font-color, $lightness: 15%);
   .smallcard--production & {
-    font-family: $header-font-family;
-    font-weight: $global-weight-bold;
-    a {
-      //color:$dark-gray;
-    }
 
   }
   a {
-    //color:inherit;
-    // &:hover, &:focus {
-    //   color:map-get($foundation-palette, success);
-    // }
+    color:inherit;
+    &:hover, &:focus {
+      color:$primary-color;
+      //color:map-get($foundation-palette, alert);
+    }
   }
   small {
-    //font-weight: $global-weight-bold;
-    //font-family: $header-font-family;
-    //color:$body-font-color;
     color:$dark-gray;
     font-size: 66.666%;
 
