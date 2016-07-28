@@ -48,6 +48,7 @@ html {
 .ps--narrow {
   padding:2rem 0;
 }
+
 .ps--light {
   background-color: $light-gray;
 }
@@ -56,6 +57,10 @@ html {
   color:$white;
 }
 
+.ps--dark {
+  background-color: #000;
+  color:$white;
+}
 
 .box {
   background-color: $light-gray;

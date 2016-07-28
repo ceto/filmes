@@ -11,64 +11,21 @@ description: Hírek, események aktuális információk. Új produkciók satöbb
   </div>
 </header>
 <header class="pageheader">
-  <div class="row">
-    <div class="columns tablet-8">
-      <div class="ps">
-        <div class="nc">
-          <div class="nc__meta"><time>2016. október 7.</time></div>
-          <h3 class="nc__title"><a href="#">Megkezdődőtt az Aranyélet 2. évadának a forgatása</a></h3>
-          <figure class="nc__fig">
-            <a href="#"><img src="http://placehold.it/320x320" alt=""></a>
-          </figure>
-          <div class="nc__excerpt">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius temporibus maxime? Est, distinctio, optio. Sint beatae dolorum, vero a. Recusandae nostrum et ullam ut sunt quisquam repellat aspernatur perspiciatis.</p>
-            <a href="#" class="nc__more">Bővebben</a>
-          </div>
-        </div>
-        <div class="nc">
-          <div class="nc__meta"><time>2016. november 11.</time></div>
-          <h3 class="nc__title"><a href="#">Elindult a filmesgyakornok program magyarországon</a></h3>
-          <figure class="nc__fig">
-            <a href="#"><img src="http://placehold.it/320x320" alt=""></a>
-          </figure>
-          <div class="nc__excerpt">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius temporibus maxime? Est, distinctio, optio. Sint beatae dolorum, vero a. Recusandae nostrum et ullam ut sunt quisquam repellat aspernatur perspiciatis.</p>
-            <a href="#" class="nc__more">Bővebben</a>
-          </div>
-        </div>
-        <div class="nc">
-          <div class="nc__meta"><time>2016. október 7.</time></div>
-          <h3 class="nc__title"><a href="#">Megkezdődőtt az Aranyélet 2. évadának a forgatása</a></h3>
-          <figure class="nc__fig">
-            <a href="#"><img src="http://placehold.it/320x320" alt=""></a>
-          </figure>
-          <div class="nc__excerpt">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius temporibus maxime? Est, distinctio, optio. Sint beatae dolorum, vero a. Recusandae nostrum et ullam ut sunt quisquam repellat aspernatur perspiciatis.</p>
-            <a href="#" class="nc__more">Bővebben</a>
-          </div>
-        </div>
-        <div class="nc">
-          <div class="nc__meta"><time>2016. november 11.</time></div>
-          <h3 class="nc__title"><a href="#">Elindult a filmesgyakornok program magyarországon</a></h3>
-          <figure class="nc__fig">
-            <a href="#"><img src="http://placehold.it/320x320" alt=""></a>
-          </figure>
-          <div class="nc__excerpt">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius temporibus maxime? Est, distinctio, optio. Sint beatae dolorum, vero a. Recusandae nostrum et ullam ut sunt quisquam repellat aspernatur perspiciatis.</p>
-            <a href="#" class="nc__more">Bővebben</a>
-          </div>
-        </div>
-        <div class="nc">
-          <div class="nc__meta"><time>2016. október 7.</time></div>
-          <h3 class="nc__title"><a href="#">Megkezdődőtt az Aranyélet 2. évadának a forgatása</a></h3>
-          <figure class="nc__fig">
-            <a href="#"><img src="http://placehold.it/320x320" alt=""></a>
-          </figure>
-          <div class="nc__excerpt">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius temporibus maxime? Est, distinctio, optio. Sint beatae dolorum, vero a. Recusandae nostrum et ullam ut sunt quisquam repellat aspernatur perspiciatis.</p>
-            <a href="#" class="nc__more">Bővebben</a>
-          </div>
-        </div>
-      </div>
+<div class="row">
+  <div class="columns tablet-8 xlarge-9">
+    <div class="ps">
+      {{#each news-three}}
+        {{>news-card}}
+      {{/each}}
+      {{#each news-three}}
+        {{>news-card}}
+      {{/each}}
     </div>
   </div>
+  <div class="columns tablet-4 xlarge-3">
+    <aside class="sidebar">
+      {{>blogsidenav}}
+    </aside>
+  </div>
+
+</div>

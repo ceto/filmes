@@ -1,7 +1,12 @@
+.lead {
+    font-family: $header-font-family;
+  font-weight: $global-weight-bold;
+}
 blockquote {
   font-style: italic;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   background-color: $light-gray;
+  padding-left: 6%;
 }
 cite {
   font-family: $header-font-family;
@@ -35,4 +40,10 @@ label {
 
 input, textarea, select {
   font-weight: $global-weight-normal;
+}
+
+.button {
+  font-family: $header-font-family;
+  font-weight: $global-weight-bold;
+  //font-style: italic;
 }

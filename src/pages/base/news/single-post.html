@@ -1,28 +1,23 @@
 ---
-title: Hangmérnök
-description: Lorem sound department excerpt ipsum dolor sit amet, consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
+title: Óriási az érdeklódés az filmalap gyakornoki programjára
+description: Gyakornokok lorem sound department excerpt ipsum filmalap gyakornoki programjára dolor sit amet, consectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur filmalap gyakornoki programjára.
 thumbnail: http://placehold.it/480x320
 ---
-<article class="">
+<article class class="">
   <header class="phead phead--inverse phead--high">
     <div class="row">
       <div class="columns tablet-8 xlarge-9 phead--inner">
-        {{> breadcrumbs departments2=true}}
-        <h1 class="phead--title">Filmes szakmák: {{title}}</h1>
-        <!--       <div class="phead__lead">
-          <p>{{description}}</p>
-        </div> -->
+        <ul class="phead__meta">
+          <li class="metacat"><a href="#">Visszhang</a></li>
+          <li class="metadate"><time>2016. szeptember 15.</time></li>
+          <li class="metaauthor"><a href="#">Kovács Imre Lehel</a></li>
+        </ul>
+        <h1 class="phead__title">{{title}}</h1>
       </div>
     </div>
   </header>
   <div class="row">
-    <div class="columns tablet-4 tablet-push-8 tablet-text-center xlarge-3 xlarge-push-9">
-      <aside class="sidebar">
-        <small>Tedd fel a kívánságlistádra</small><br>
-        <a href="#" class="button secondary large expanded">Szivesen dolgoznék benne</a>
-      </aside>
-    </div>
-    <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
+    <div class="columns tablet-8 xlarge-9">
       <div class="ps">
         <p class="lead">{{description}}</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam sed, voluptas reiciendis alias nobis atque autem, libero laboriosam animi voluptatem adipisci soluta aliquid harum vero repellat, labore aut eveniet nostrum.</p>
@@ -37,13 +32,18 @@ thumbnail: http://placehold.it/480x320
           <li>eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod.</li>
         </ul>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere cumque tempora cupiditate consequuntur, quis harum sunt natus numquam dolorem dolor velit, esse dicta eum, ipsa rerum aliquam. Expedita, quis ut.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati doloribus cumque dicta vitae dignissimos nisi consequuntur nobis molestiae et facilis quam dolor libero id voluptatum velit a incidunt veniam, neque.</p>
         <blockquote>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo a filmes gyakornok gyerekek.</p>
           <cite>Szabó István, rendező</cite>
         </blockquote>
+        <p><a href="#">Lorem ipsum dolor</a> sit amet, consectetur adipisicing elit. Obcaecati doloribus cumque dicta vitae dignissimos nisi consequuntur nobis molestiae et facilis quam dolor libero id voluptatum velit a incidunt veniam, neque.</p>
         <p>Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
       </div>
+    </div>
+    <div class="columns tablet-4 xlarge-3">
+      <aside class="sidebar">
+        {{>blogsidenav}}
+      </aside>
     </div>
   </div>
 </article>

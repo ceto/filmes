@@ -1,5 +1,6 @@
 .simplecard {
   margin-bottom: 3.5rem;
+
   &:hover {
     .simplecard__title {
       border-color: $anchor-color-hover;
@@ -15,7 +16,7 @@
 
 .simplecard__title {
   text-transform: uppercase;
-  padding:0 5%;
+  padding:.125em 5% .25em 5%;
   border-bottom: 1px solid $primary-color;
   font-size: 1.125rem;
   margin:0 0 .5rem;

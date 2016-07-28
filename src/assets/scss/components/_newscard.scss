@@ -6,7 +6,7 @@
 }
 
 .nc__title {
-  margin-bottom: .125em;
+  margin-bottom: .2em;
   a {
     color:inherit;
     &:hover, &:focus {
@@ -21,12 +21,34 @@
   }
 }
 .nc__meta {
-  font-size: .75rem;
+  font-size: .875rem;
   text-transform: uppercase;
+  list-style-type: none;
+  margin:0;
+  padding: 0 0 .25em;
+  color:$dark-gray;
+  font-weight: $global-weight-bold;
+  font-family: $header-font-family;
+  > li {
+    display: inline-block;
+    &:not(:last-of-type):after {
+      content: '|';
+      display: inline-block;
+      margin:0 .25em;
+      color:$dark-gray;
+    }
+  }
+  .metacat {
+    color:$body-font-color;
+    color:$primary-color;
+  }
+  a {
+    color:inherit;
+  }
 }
 .nc__fig {
   margin:0;
-  padding:0 2.5% .125rem 0;
+  padding:0 2% .125rem 0;
   float:left;
   width: 20%;
   max-width: 8rem;
@@ -34,12 +56,12 @@
 }
 
 .nc__more {
-  font-family: $header-font-family;
-  font-weight: $global-weight-bold;
-  font-size: .875rem;
+  // font-family: $header-font-family;
+  // font-weight: $global-weight-bold;
+  // font-size: .875rem;
   margin-top: .75rem;
-  display: inline-block;
-  &:hover, &:focus {
-    text-decoration: underline;
-  }
+  // display: inline-block;
+  // &:hover, &:focus {
+  //   text-decoration: underline;
+  // }
 }

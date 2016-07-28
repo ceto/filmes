@@ -128,7 +128,7 @@ $header-sizes: (
   ),
 );
 $header-color: inherit;
-$header-lineheight: 1.4;
+$header-lineheight: 1.125;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
@@ -159,8 +159,8 @@ $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
 $blockquote-color: $dark-gray;
-$blockquote-padding: rem-calc(9 20 0 19);
-$blockquote-border: 1px solid $primary-color;
+$blockquote-padding: rem-calc(22 20 16 19);
+$blockquote-border: 5px solid $primary-color;
 $cite-font-size: rem-calc(16);
 $cite-color: $dark-gray;
 $keystroke-font: $font-family-monospace;
@@ -236,7 +236,7 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: 0.75em 1em .5em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
@@ -245,7 +245,7 @@ $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius;
 $button-sizes: (
-  tiny: 0.6rem,
+  tiny: 0.6666rem,
   small: 0.75rem,
   default: 0.9rem,
   large: 1.25rem,

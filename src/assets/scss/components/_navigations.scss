@@ -118,15 +118,20 @@
 
     }
     > a {
+      font-size: .875rem;
       color:$body-font-color;
       position: relative;
       border-left: .25rem solid transparent;
-      padding:1.125rem 1.25rem;
+      padding:1rem 1.125rem;
       transition:all .2s;
 
       &:hover, &:focus {
         color:$primary-color;
         transform:translateX(.666rem);
+      }
+
+      small {
+        font-size: .75rem;
       }
     }
     + li {
