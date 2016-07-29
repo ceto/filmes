@@ -47,7 +47,11 @@
 }
 
 
-
+.menu {
+  > li {
+    margin-bottom: 0;
+  }
+}
 .mainnav {
   .menu {
     > li {

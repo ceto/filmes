@@ -1,5 +1,35 @@
+figure {
+  text-align: center;
+  margin:$paragraph-margin-bottom * 2 0;
+  padding:0 0;
+
+  img {
+    padding:.5rem;
+    //border:1px solid $medium-gray;
+    background-color: $light-gray;
+  }
+
+  figcaption {
+    color: $dark-gray;
+    font-style: italic;
+    font-size: .875rem;
+    line-height: 1.125;
+    padding-top: $paragraph-margin-bottom /2;
+  }
+}
+p, ul, ol, blockquote {
+  + h2, + h3, + h4, + h5, + h6 {
+    margin-top: $paragraph-margin-bottom * 2;
+  }
+}
+
+ul, ol {
+  li {
+    margin-bottom: $paragraph-margin-bottom / 2;
+  }
+}
 .lead {
-    font-family: $header-font-family;
+  font-family: $header-font-family;
   font-weight: $global-weight-bold;
 }
 blockquote {
@@ -7,6 +37,7 @@ blockquote {
   font-size: 1.25rem;
   background-color: $light-gray;
   padding-left: 6%;
+  margin:$paragraph-margin-bottom * 2 0;
 }
 cite {
   font-family: $header-font-family;
@@ -14,6 +45,22 @@ cite {
   //color:$body-font-color;
   font-style: normal;
 }
+
+
+label {
+  font-family: $header-font-family;
+}
+
+input, textarea, select {
+  font-weight: $global-weight-normal;
+}
+
+.button {
+  font-family: $header-font-family;
+  font-weight: $global-weight-bold;
+  //font-style: italic;
+}
+
 
 .featurelist {
   font-size: 1.333rem;
@@ -34,16 +81,5 @@ cite {
   }
 }
 
-label {
-  font-family: $header-font-family;
-}
 
-input, textarea, select {
-  font-weight: $global-weight-normal;
-}
 
-.button {
-  font-family: $header-font-family;
-  font-weight: $global-weight-bold;
-  //font-style: italic;
-}

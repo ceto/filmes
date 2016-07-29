@@ -12,6 +12,10 @@
 .simplecard__fig {
   margin:0 0 .5rem;
   padding:0;
+  img {
+    border:none;
+    padding:0;
+  }
 }
 
 .simplecard__title {

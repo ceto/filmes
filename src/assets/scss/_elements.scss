@@ -3,11 +3,18 @@
   padding:0;
   margin:0 0 0;
   > li {
+    margin-bottom: 0;
     display: inline-block;
     &:not(:last-of-type):after {
       content:' | ';
       color:$primary-color;
     }
+  }
+}
+
+.breadcrumbs {
+  > li {
+    margin-bottom: 0;
   }
 }
 .xeditable {
@@ -31,20 +38,6 @@
   &:hover:before {
     content:'';
   }
-  // &:hover:after {
-  //   content:'Szerkeszt';
-  //   background-color: $primary-color;
-  //   border-left: .5em solid $light-gray;
-  //   border-bottom: .5em solid $light-gray;
-  //   padding:.5em;
-  //   display: inline-block;
-  //   position: absolute;
-  //   top:-5px;
-  //   right:-5px;
-  //   font-size: .666rem;
-  //   line-height: 1;
-
-  // }
 }
 
 .xeditable__action {
@@ -77,10 +70,9 @@
 }
 
 .sectitle {
-//  border-bottom: 1px solid $primary-color;
-  padding-bottom: 0;
-  margin-bottom: .5em;
-  font-size: 1.5rem
+  border-bottom: 1px solid $primary-color;
+  padding-bottom: .5em;
+  margin-bottom: $paragraph-margin-bottom * 2;
 }
 
 .pagination {

@@ -6,7 +6,7 @@
 }
 
 .nc__title {
-  margin-bottom: .2em;
+  margin:0 0 .2em;
   a {
     color:inherit;
     &:hover, &:focus {
@@ -31,6 +31,7 @@
   font-family: $header-font-family;
   > li {
     display: inline-block;
+    margin-bottom: 0;
     &:not(:last-of-type):after {
       content: '|';
       display: inline-block;
@@ -52,14 +53,18 @@
   float:left;
   width: 20%;
   max-width: 8rem;
+  img {
+    border:none;
+    padding:0;
+  }
 
 }
 
 .nc__more {
   // font-family: $header-font-family;
   // font-weight: $global-weight-bold;
-  // font-size: .875rem;
-  margin-top: .75rem;
+  // font-size: .75rem;
+  margin: .75rem 0 0;
   // display: inline-block;
   // &:hover, &:focus {
   //   text-decoration: underline;

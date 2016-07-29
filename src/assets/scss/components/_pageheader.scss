@@ -107,6 +107,7 @@
     font-family: $header-font-family;
     font-size: 1.333rem;
     margin-right: .25rem;
+    line-height:1rem;
   }
   .metaauthor, .metadate {
     //float:right;
@@ -147,6 +148,8 @@
 
   font-size: $lead-font-size;
   line-height: $lead-lineheight;
+  font-weight:$global-weight-bold;
+  font-family:$header-font-family;
   p:last-of-type {
     margin-bottom: 0;
   }
