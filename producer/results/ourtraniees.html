@@ -25,25 +25,28 @@
               </a>
             </span>
           </div>
-          <nav class="title-bar-right usernav usernav--mobile">
+          <nav class="title-bar-right usernav usernav--mobile show-for-medium">
             <ul class="dropdown menu " data-dropdown-menu>
-              <!-- <li><a href="../../login.html">Bejelentkezés</a></li> -->
-              <li>
-                <a href="../../traniee/dashboard.html">Gyakor Nokedli</a>
+              <!-- <li><a class="gomb" href="../..//login.html">Bejelentkezés</a></li>
+             -->
+              <li class="is-dropdown-submenu-parent">
+                <a class="has-avatar" href="../../traniee/dashboard.html">
+                  <img src="http://lorempixel.com/200/200/people" alt="Horváth Nokedli">
+                    Horváth <span class="show-for-large">Nokedli</span>
+                </a>
                 <ul class="menu vertical">
                   <li><a href="../../traniee/dashboard.html">Profilom</a></li>
                   <li><a href="../../traniee/feedback.html">Vélmény az oldalról</a></li>
                 </ul>
               </li>
               
-            <!--
-              <li>
-                <a href="../../producer/dashboard.html">v. Producer Tamás</a>
-                <ul class="menu vertical">
-                  <li><a href="../../producer/dashboard.html">Vezérlőpult</a></li>
-                </ul>
-              </li>
-              
+              <!-- <li>
+              <a class="framed" href="../../producer/dashboard.html">Kovács <span class="show-for-large">Producer</span></a>
+              <ul class="menu vertical">
+                <li><a href="../../producer/dashboard.html">Vezérlőpult</a></li>
+              </ul>
+            </li>
+            
              -->
              </ul>
           </nav>
@@ -54,6 +57,32 @@
           <button class="close-button" aria-label="Close menu" type="button" data-close>
             <span aria-hidden="true">&times;</span>
           </button>
+          <nav class="usernav usernav--side">
+            <ul class="dropdown menu " data-dropdown-menu>
+              <!-- <li><a class="gomb" href="../..//login.html">Bejelentkezés</a></li>
+             -->
+              <li class="is-dropdown-submenu-parent">
+                <a class="has-avatar" href="../../traniee/dashboard.html">
+                  <img src="http://lorempixel.com/200/200/people" alt="Horváth Nokedli">
+                    Horváth <span class="show-for-large">Nokedli</span>
+                </a>
+                <ul class="menu vertical">
+                  <li><a href="../../traniee/dashboard.html">Profilom</a></li>
+                  <li><a href="../../traniee/feedback.html">Vélmény az oldalról</a></li>
+                </ul>
+              </li>
+              
+              <!-- <li>
+              <a class="framed" href="../../producer/dashboard.html">Kovács <span class="show-for-large">Producer</span></a>
+              <ul class="menu vertical">
+                <li><a href="../../producer/dashboard.html">Vezérlőpult</a></li>
+              </ul>
+            </li>
+            
+             -->
+             </ul>
+          </nav>
+          <hr>
           <nav class="mainnav mainnav--mobile">
             <ul class="dropdown menu vertical" data-dropdown-menu>
               <li><a href="../../producer/results/all.html">Gyakornokok</a></li>
@@ -62,8 +91,6 @@
               <li><a href="../../base/news/index.html">Hírek</a></li>
             </ul>
           </nav>
-    
-    
         </div>
         <!-- desktop menu -->
         <div id="widemenu" class="top-bar dark show-for-tablet">
@@ -84,23 +111,26 @@
               </div>
               <nav class="usernav top-bar-right">
                 <ul class="dropdown menu " data-dropdown-menu>
-                  <!-- <li><a href="../../login.html">Bejelentkezés</a></li> -->
-                  <li>
-                    <a href="../../traniee/dashboard.html">Gyakor Nokedli</a>
+                  <!-- <li><a class="gomb" href="../..//login.html">Bejelentkezés</a></li>
+                 -->
+                  <li class="is-dropdown-submenu-parent">
+                    <a class="has-avatar" href="../../traniee/dashboard.html">
+                      <img src="http://lorempixel.com/200/200/people" alt="Horváth Nokedli">
+                        Horváth <span class="show-for-large">Nokedli</span>
+                    </a>
                     <ul class="menu vertical">
                       <li><a href="../../traniee/dashboard.html">Profilom</a></li>
                       <li><a href="../../traniee/feedback.html">Vélmény az oldalról</a></li>
                     </ul>
                   </li>
                   
-                <!--
-                  <li>
-                    <a href="../../producer/dashboard.html">v. Producer Tamás</a>
-                    <ul class="menu vertical">
-                      <li><a href="../../producer/dashboard.html">Vezérlőpult</a></li>
-                    </ul>
-                  </li>
-                  
+                  <!-- <li>
+                  <a class="framed" href="../../producer/dashboard.html">Kovács <span class="show-for-large">Producer</span></a>
+                  <ul class="menu vertical">
+                    <li><a href="../../producer/dashboard.html">Vezérlőpult</a></li>
+                  </ul>
+                </li>
+                
                  -->
                  </ul>
               </nav>
@@ -142,9 +172,9 @@
           <div class="columns">
             <label for="">Gyakornok keresése név szerint</label>
             <div class="input-group">
-              <input class="input-group-field" type="text" placeholder="Kezdejn el gépelni">
+              <input class="input-group-field" type="text" placeholder="Kezdjen el gépelni">
               <div class="input-group-button">
-                <input type="submit" class="button" value="OK">
+                <input type="submit" class="button" value="Keresés">
               </div>
             </div>
           </div>
@@ -198,7 +228,7 @@
               </div>
             </div>
           </form>
-          <a href="#savedsearches" data-toggle="listnav"><small>Mentett keresések</small></a>
+          <a href="#savedsearches" class="csini" data-toggle="listnav"><i class="fi-magnifying-glass"></i>Mentett keresések</a>
         </div>
       </div>
     </aside>
@@ -210,7 +240,7 @@
     <div class="row">
       <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
         <aside class="sidebar">
-          <a href="#" class="button success expanded hide-for-tablet" data-toggle="listnav">Gyakornoklista szűrése</a>
+          <a href="#" class="button expanded hide-for-tablet" data-toggle="listnav">Gyakornoklista szűrése</a>
           <div id="listnav" class="show-for-tablet" data-toggler="show-for-tablet">
             <nav>
               <h4>Gyakornokok listája</h4>
@@ -225,12 +255,12 @@
             <nav id="savedsearches">
               <h4>Mentett keresések</h4>
               <ul class="menu menu--side vertical">
-                <li><a href="../../producer/results/prodsearchresults.html">Utóélet hangrészleg <small>(4 találat)</small><span class="badge alert">2</span><br><small>20 éves, angol, német</small></a></li>
+                <li><a href="../../producer/results/prodsearchresults.html">Utóélet hangrészleg<br><small>(4 találat)</small><span class="badge alert">2</span><br><small>20 éves, angol, német</small></a></li>
                 <li><a href="../../producer/results/prodsearchresults.html">Csinovnyik gyártásba<br><small>fiú, angol, német</small></a></li>
-                <li><a href="../../producer/results/prodsearchresults.html">Tapasztalt csatakancák <small>(10 találat)</small><br><small>lány, 45-50, sfx, sound, production </small></a></a></li>
+                <li><a href="../../producer/results/prodsearchresults.html">Tapasztalt csatakancák<br><small>(10 találat)</small><br><small>lány, 45-50, sfx, sound, production </small></a></a></li>
               </ul>
             </nav>
-            <a href="#prodfullsearch" data-toggle="listnav prodfullsearch"><small>Új keresés indítása</small></a>
+            <a class="csini" href="#searchblock" data-toggle="searchblock"><i class="fi-plus"></i>Új keresés indítása</a>
           </div>
         </aside>
       </div>

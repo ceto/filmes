@@ -25,25 +25,28 @@
               </a>
             </span>
           </div>
-          <nav class="title-bar-right usernav usernav--mobile">
+          <nav class="title-bar-right usernav usernav--mobile show-for-medium">
             <ul class="dropdown menu " data-dropdown-menu>
-              <!-- <li><a href="login.html">Bejelentkezés</a></li> -->
-              <li>
-                <a href="traniee/dashboard.html">Gyakor Nokedli</a>
+              <!-- <li><a class="gomb" href="/login.html">Bejelentkezés</a></li>
+             -->
+              <li class="is-dropdown-submenu-parent">
+                <a class="has-avatar" href="traniee/dashboard.html">
+                  <img src="http://lorempixel.com/200/200/people" alt="Horváth Nokedli">
+                    Horváth <span class="show-for-large">Nokedli</span>
+                </a>
                 <ul class="menu vertical">
                   <li><a href="traniee/dashboard.html">Profilom</a></li>
                   <li><a href="traniee/feedback.html">Vélmény az oldalról</a></li>
                 </ul>
               </li>
               
-            <!--
-              <li>
-                <a href="producer/dashboard.html">v. Producer Tamás</a>
-                <ul class="menu vertical">
-                  <li><a href="producer/dashboard.html">Vezérlőpult</a></li>
-                </ul>
-              </li>
-              
+              <!-- <li>
+              <a class="framed" href="producer/dashboard.html">Kovács <span class="show-for-large">Producer</span></a>
+              <ul class="menu vertical">
+                <li><a href="producer/dashboard.html">Vezérlőpult</a></li>
+              </ul>
+            </li>
+            
              -->
              </ul>
           </nav>
@@ -54,6 +57,32 @@
           <button class="close-button" aria-label="Close menu" type="button" data-close>
             <span aria-hidden="true">&times;</span>
           </button>
+          <nav class="usernav usernav--side">
+            <ul class="dropdown menu " data-dropdown-menu>
+              <!-- <li><a class="gomb" href="/login.html">Bejelentkezés</a></li>
+             -->
+              <li class="is-dropdown-submenu-parent">
+                <a class="has-avatar" href="traniee/dashboard.html">
+                  <img src="http://lorempixel.com/200/200/people" alt="Horváth Nokedli">
+                    Horváth <span class="show-for-large">Nokedli</span>
+                </a>
+                <ul class="menu vertical">
+                  <li><a href="traniee/dashboard.html">Profilom</a></li>
+                  <li><a href="traniee/feedback.html">Vélmény az oldalról</a></li>
+                </ul>
+              </li>
+              
+              <!-- <li>
+              <a class="framed" href="producer/dashboard.html">Kovács <span class="show-for-large">Producer</span></a>
+              <ul class="menu vertical">
+                <li><a href="producer/dashboard.html">Vezérlőpult</a></li>
+              </ul>
+            </li>
+            
+             -->
+             </ul>
+          </nav>
+          <hr>
           <nav class="mainnav mainnav--mobile">
             <ul class="dropdown menu vertical" data-dropdown-menu>
               <li><a href="producer/results/all.html">Gyakornokok</a></li>
@@ -62,8 +91,6 @@
               <li><a href="base/news/index.html">Hírek</a></li>
             </ul>
           </nav>
-    
-    
         </div>
         <!-- desktop menu -->
         <div id="widemenu" class="top-bar dark show-for-tablet">
@@ -84,23 +111,26 @@
               </div>
               <nav class="usernav top-bar-right">
                 <ul class="dropdown menu " data-dropdown-menu>
-                  <!-- <li><a href="login.html">Bejelentkezés</a></li> -->
-                  <li>
-                    <a href="traniee/dashboard.html">Gyakor Nokedli</a>
+                  <!-- <li><a class="gomb" href="/login.html">Bejelentkezés</a></li>
+                 -->
+                  <li class="is-dropdown-submenu-parent">
+                    <a class="has-avatar" href="traniee/dashboard.html">
+                      <img src="http://lorempixel.com/200/200/people" alt="Horváth Nokedli">
+                        Horváth <span class="show-for-large">Nokedli</span>
+                    </a>
                     <ul class="menu vertical">
                       <li><a href="traniee/dashboard.html">Profilom</a></li>
                       <li><a href="traniee/feedback.html">Vélmény az oldalról</a></li>
                     </ul>
                   </li>
                   
-                <!--
-                  <li>
-                    <a href="producer/dashboard.html">v. Producer Tamás</a>
-                    <ul class="menu vertical">
-                      <li><a href="producer/dashboard.html">Vezérlőpult</a></li>
-                    </ul>
-                  </li>
-                  
+                  <!-- <li>
+                  <a class="framed" href="producer/dashboard.html">Kovács <span class="show-for-large">Producer</span></a>
+                  <ul class="menu vertical">
+                    <li><a href="producer/dashboard.html">Vezérlőpult</a></li>
+                  </ul>
+                </li>
+                
                  -->
                  </ul>
               </nav>
@@ -144,28 +174,30 @@
     <section id="howitworks" class="ps ps--light">
       <div  class="row">
         <div class="columns medium-6">
-          <img src="http://placehold.it/768x320" alt="">
-          <h2>Leendő gyakornokoknak</h2>
-          <p>
-          Leírás arról, hogy mi ez az egész, miért hoztuk létre és mit kap az, aki itt belép. Mondhatjuk úgy is, hogy ez itt egy beköszöntő oldal.</p>
-          <p>
-            Mivel ez ennél több szöveget tartalmaz, innentől ál-latinul folytatjuk: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur.
-          </p>
-          <p>
-            <a href="registration.html" class="button alert">Gyakornoknak jelentkezek</a>
-          </p>
+          <div class="simplecard">
+            <figure class="simplecard__fig">
+              <img src="http://placehold.it/768x320" alt="">
+            </figure>
+            <h2 class="simplecard__title">Leendő gyakornokoknak</h2>
+            <div class="simplecard__body">
+              <p>Leírás arról, hogy mi ez az egész, miért hoztuk létre és mit kap az, aki itt belép. Mondhatjuk úgy is, hogy ez itt egy beköszöntő oldal.</p>
+              <p>Mivel ez ennél több szöveget tartalmaz, innentől ál-latinul folytatjuk: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur.</p>
+              <a href="registration.html" class="button alert small">Gyakornoknak jelentkezek</a>
+            </div>
+          </div>
         </div>
         <div class="columns medium-6">
-          <img src="http://placehold.it/768x320" alt="">
-          <h2>Producereknek</h2>
-          <p>
-          Leírás arról, hogy mi ez az egész, miért hoztuk létre és mit kap az, aki itt belép. Mondhatjuk úgy is, hogy ez itt egy beköszöntő oldal.</p>
-          <p>
-            Mivel ez ennél több szöveget tartalmaz, innentől ál-latinul folytatjuk: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur.
-          </p>
-          <p>
-            <a href="registration.html" class="button">Gyakornokot szeretnék alkalmazni</a>
-          </p>
+          <div class="simplecard">
+            <figure class="simplecard__fig">
+              <img src="http://placehold.it/768x320" alt="">
+            </figure>
+            <h2 class="simplecard__title">Producereknek</h2>
+            <div class="simplecard__body">
+              <p>Leírás arról, hogy mi ez az egész, miért hoztuk létre és mit kap az, aki itt belép. Mondhatjuk úgy is, hogy ez itt egy beköszöntő oldal.</p>
+              <p>Mivel ez ennél több szöveget tartalmaz, innentől ál-latinul folytatjuk: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur.</p>
+              <a href="registration.html" class="button small">Gyakornokot szeretnék alkalmazni</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
