@@ -11,7 +11,7 @@
           </a>
         </span>
       </div>
-      <nav class="title-bar-right usernav usernav--mobile">
+      <nav class="title-bar-right usernav usernav--mobile show-for-medium">
         {{>usernav}}
       </nav>
     </div>
@@ -21,11 +21,13 @@
       <button class="close-button" aria-label="Close menu" type="button" data-close>
         <span aria-hidden="true">&times;</span>
       </button>
+      <nav class="usernav usernav--side">
+        {{> usernav}}
+      </nav>
+      <hr>
       <nav class="mainnav mainnav--mobile">
         {{> mainnav vertical=true}}
       </nav>
-
-
     </div>
     <!-- desktop menu -->
     <div id="widemenu" class="top-bar dark show-for-tablet">

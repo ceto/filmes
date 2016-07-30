@@ -1,38 +1,55 @@
 .off-canvas-wrapper {
   background-color: $black;
 }
-.top-bar-title, .title-bar-title {
-  color:$white;
+.off-canvas {
+  hr {
+    border-color: rgba($primary-color, .75);
+    margin:0;
+  }
+}
+
+.top-bar-title,
+.title-bar-title {
   font-family: $header-font-family;
-  font-weight: $global-weight-bold;
-  padding:2.333rem 0 .333rem .25rem;
-  line-height: 1;
   font-size: 1.333rem;
+  font-weight: $global-weight-bold;
+  line-height: 1;
+
+  padding: 2.333rem 0 .333rem .25rem;
+
+  word-wrap: no-break;
+
+  color: $white;
   a {
-    color:inherit;
     position: relative;
+
     display: block;
+
     padding-left: 2.5rem;
+
+    color: inherit;
   }
   span {
-    color:map-get($foundation-palette, primary);
+    color: map-get($foundation-palette, primary);
   }
-  word-wrap:no-break;
 }
 
 .topbarlogo {
   position: absolute;
-  left:-1.333rem;
-  top:-2rem;
+  top: -2rem;
+  left: -1.333rem;
+
   display: inline-block;
+
   width: 3.5rem;
-  margin:.25rem .5rem 0 0;
-  fill:$primary-color;
+  margin: .25rem .5rem 0 0;
+
+  fill: $primary-color;
 }
 
 .title-bar {
   .menu-icon {
-    margin:0 1.25rem 0 1rem;
+    margin: 0 1.25rem 0 1rem;
   }
 }
 .title-bar-title {
@@ -42,8 +59,26 @@
     padding-left: 4rem;
   }
   .topbarlogo {
-    left:.25rem;
+    left: .25rem;
   }
+}
+
+
+.top-bar ul {
+  background-color: transparent;
+  .is-dropdown-submenu {
+      background-color: $black;
+  }
+}
+
+.is-dropdown-submenu {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  background-color: $black;
+}
+
+.dropdown.menu > li.opens-left > .is-dropdown-submenu {
+  top: 98%;
 }
 
 
@@ -57,18 +92,21 @@
     > li {
       a {
         font-family: $header-font-family;
-        color:$white;
-        font-weight: $global-weight-bold;
-        text-transform: uppercase;
         font-size: .875rem;
-        &:hover, &:focus {
-         color: map-get($foundation-palette, primary);
-         //color:$dark-gray;
+        font-weight: $global-weight-bold;
+
+        text-transform: uppercase;
+
+        color: $white;
+        &:hover,
+        &:focus {
+          color: map-get($foundation-palette, primary);
+          //color:$dark-gray;
         }
       }
       &.active {
         > a {
-          color:$primary-color;
+          color: $primary-color;
         }
       }
     }
@@ -76,87 +114,147 @@
 }
 
 .usernav {
-  margin-top: 2.125rem;
+  margin-top: 2rem;
   &.usernav--mobile {
-    margin-top: 0;
     position: absolute;
-    top:.75rem;
-    right:.5rem;
+    top: .75rem;
+    right: .5rem;
+
+    margin-top: 0;
+
     @include breakpoint(medium) {
       position: static;
+
       margin-top: 2.125rem;
     }
-
   }
   .menu {
     > li {
       > a {
-        font-size: 1rem;
-        padding:.5rem 1rem .125rem;
         font-family: $header-font-family;
+        font-size: 1rem;
         font-weight: $global-weight-bold;
+
+        padding: .5rem 1rem .125rem;
+
         color: $white;
+        &.gomb {
+          font-size: .875rem;
+
+          padding: .5rem .875rem .25rem;
+
+          border: 1px solid rgba($primary-color,.75);
+          &:hover,
+          &:focus {
+            border: 1px solid $primary-color;
+          }
+        }
+        &.framed {
+          border: 1px solid rgba($primary-color,.75);
+        }
+        &.has-avatar {
+          min-height: 1.75rem;
+          padding-left: 2rem;
+
+          border: 1px solid rgba($primary-color,.75);
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 1.666rem;
+            margin: 0;
+            padding: 2px;
+          }
+          span {
+            vertical-align: baseline;
+          }
+        }
       }
       li > a {
-        padding:.75rem 1rem .666rem;
+        //padding: .75rem 1rem .666rem 2rem;
+        &:hover,
+        &:focus {
+          color: $primary-color;
+        }
       }
     }
   }
 }
+
+.usernav--side {
+  margin: 1.5rem 1rem 1.666rem;
+}
 .menu--side {
   > li {
-    border-top:1px solid transparent;
-    border-bottom:1px solid transparent;
     position: relative;
+
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     &:first-child {
-      border-top-color:transparent;
+      border-top-color: transparent;
     }
     &:before {
-      content:'';
       position: absolute;
-      left:0;
-      top:-1px;
-      bottom:-1px;
-      width:.25rem;
-      background-color: transparent;
+      top: -1px;
+      bottom: -1px;
+      left: 0;
 
+      width: .25rem;
+
+      content: '';
+
+      background-color: transparent;
     }
     > a {
       font-size: .875rem;
-      color:$body-font-color;
+
       position: relative;
+
+      padding: 1rem 1.125rem;
+
+      transition: all .2s;
+
+      color: $body-font-color;
       border-left: .25rem solid transparent;
-      padding:1rem 1.125rem;
-      transition:all .2s;
+      &:hover,
+      &:focus {
+        transform: translateX(.666rem);
 
-      &:hover, &:focus {
-        color:$primary-color;
-        transform:translateX(.666rem);
+        color: $primary-color;
       }
-
       small {
+        display: inline-block;
+        //font-family: $header-font-family;
+        //font-weight: $global-weight-bold;
+        //color:$medium-gray;
         font-size: .75rem;
+        &:first-of-type {
+          margin-top:.5em;
+        }
       }
     }
     + li {
-      border-top:1px solid $medium-gray;
+      border-top: 1px solid $medium-gray;
     }
-
     &.active {
       border-color: $medium-gray;
       &:before {
-        background-color: $primary-color;
         z-index: 1;
+
+        background-color: $primary-color;
       }
       + li {
         border-top-color: transparent;
       }
       > a {
-        background-color: transparent;
         font-weight: $global-weight-bold;
-        color:inherit;
-        &:hover, &:focus {
-          transform:translateX(0);
+
+        color: inherit;
+        background-color: transparent;
+        &:hover,
+        &:focus {
+          transform: translateX(0);
         }
       }
     }

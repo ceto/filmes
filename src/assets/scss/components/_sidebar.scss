@@ -4,12 +4,12 @@
       padding:4rem 0;
   }
 
-  .button {
-    margin-bottom: 0;
+  > .button {
+    margin-bottom: 2rem;    
   }
 
   nav {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     h4 {
       font-weight: $global-weight-bold;
       text-transform: uppercase;

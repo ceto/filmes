@@ -1,3 +1,13 @@
+.csini {
+  display: inline-block;
+  font-size: .875rem;
+  line-height: 1;
+  font-weight: $global-weight-bold;
+  font-family: $header-font-family;
+  i {
+    margin-right: .25em;
+  }
+}
 .inlinelist {
   list-style-type: none;
   padding:0;
