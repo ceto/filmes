@@ -156,11 +156,10 @@
         </div>
       </div>
     </section> -->
-    <div class="row">
-      <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
-        <aside class="sidebar">
-          <a href="#" class="button success expanded hide-for-tablet" data-toggle="listnav">Produkciók szűrése</a>
-          <div id="listnav" class="show-for-tablet" data-toggler="show-for-tablet">
+    <div id="searchwithsidebar" class="row">
+      <div data-sticky-container class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9 show-for-tablet">
+        <aside class="sidebar" class="sticky" data-sticky data-sticky-on="tablet" data-top-anchor="searchwithsidebar:top" data-btm-anchor="searchwithsidebar:bottom" data-margin-top="0">
+          <div id="listnav">
             <nav>
               <h4>Produkciók</h4>
               <ul class="menu menu--side vertical">
@@ -196,7 +195,7 @@
       </div>
       <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
         <section class="mosaic">
-          <div class="row small-up-1 medium-up-1 tablet-up-1 xlarge-up-2">
+          <div class="row small-up-1 medium-up-2">
             <div class="column">
               <div class="smallcard smallcard--production">
                 <span class="sc__prodfirm">Café Film</span>

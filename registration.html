@@ -142,111 +142,124 @@
     
     
 
-    <div class="ps">
-    <div class="row">
-      <div class="columns tablet-6 large-6">
-      <h1 class="box__title text-center">Jelentkezés a Filmesgyakornok programba</h1>
-        <div class="box">
-           <a href="#" class="button expanded secondary">Regisztráció Facebookal</a>
-            <form>
-              <div class="row">
-                <div class="small-12 columns">
-                  <label>Név
-                    <input type="text" placeholder=".small-12.columns">
-                  </label>
+    <!-- <header class="phead phead--inverse">
+      <div class="row">
+        <div class="columns tablet-8 xlarge-9 phead__inner">
+          <h1 class="phead__title">Regisztráció</h1>
+        </div>
+      </div>
+    </header> -->
+    <div class="ps ps--high">
+        <div class="row">
+          <div class="columns tablet-6 large-6">
+            <h1 class="box__title text-center">Jelentkezés a Filmesgyakornok programba</h1>
+            <div class="box">
+              <a href="#" class="button expanded large secondary">Regisztráció Facebookal</a>
+              <form class="registerform"  data-abide novalidate>
+                <p class="has-lines">vagy</p>
+                <div data-abide-error class="alert callout" style="display: none;">
+                  <p><i class="fi-alert"></i> There are some errors in your form.</p>
                 </div>
-                <div class="small-12 columns">
-                  <label>E-mail
-                    <input type="text" placeholder=".small-12.columns">
-                  </label>
+                <div class="row">
+                  <div class="small-12 columns">
+                    <label>Név
+                      <input type="text" required placeholder="Add meg nevedet">
+                    </label>
+                  </div>
+                  <div class="small-12 columns">
+                    <label>E-mail
+                      <input type="text" required placeholder="E-mail címedet">
+                    </label>
+                  </div>
+                  <div class="small-6 columns">
+                    <label>Jelszó
+                      <input type="password" required placeholder="Jelszó">
+                    </label>
+                  </div>
+                  <div class="small-6 columns">
+                    <label>Jelszó újra
+                      <input type="password" required placeholder="Jelszó">
+                    </label>
+                  </div>
                 </div>
-                <div class="small-6 columns">
-                  <label>Jelszó
-                    <input type="password" placeholder=".small-12.columns">
-                  </label>
+                <p class="has-lines">Válassz szerepkört</p>
+                <div class="row">
+                  <fieldset class="small-12 columns">
+                    <legend>Alábbi szerepkörben kívánok részt venni a programban</legend>
+                    <input adata-toggle-focus="tranieedata" type="radio" name="regtype" value="tranie" id="regtypeTraniee"><label for="regtypeTraniee">Gyakornok szeretnék lenni</label>
+                    <input adata-toggle-focus="proddata" type="radio" name="regtype" value="producer" id="regtypeProducer" required><label for="regtypeProducer">Producer vagyok</label>
+                  </fieldset>
                 </div>
-                <div class="small-6 columns">
-                  <label>Jelszó újra
-                    <input type="password" placeholder=".small-12.columns">
-                  </label>
+                <div id="tranieedata" class="row is-hidden" data-toggler="is-hidden">
+                  <div class="small-12 columns">
+                    <hr>
+                    <h3>Az alábbi adatokra még szükség van</h3>
+                  </div>
+                  <div class="small-12 columns">
+                    <label>Születésnap
+                      <input type="text" placeholder="Mikor születtél">
+                    </label>
+                  </div>
+                  <div class="small-12 columns">
+                    <label>Telefon
+                      <input type="text" placeholder="Add meg a számodat">
+                    </label>
+                  </div>
+                  <div class="small-12 columns">
+                    <label>Skype
+                      <input type="text" placeholder="Skype ID">
+                    </label>
+                  </div>
+                  <fieldset class="small-12 columns">
+                    <legend>Nem</legend>
+                    <input type="radio" name="gender" value="boy" id="genderBoy"><label for="genderBoy">Fiú vagyok</label>
+                    <input type="radio" name="gender" value="girl" id="genderGirl" required><label for="genderGirl">Lány vagyok</label>
+                    <input type="radio" name="gender" value="other" id="genderOther" required><label for="genderOther">Egyéb</label>
+                  </fieldset>
                 </div>
-                <hr>
-                <fieldset class="small-12 columns">
-                  <legend>Alábbi szerpkörben kívánok részt venni a programban</legend>
-                  <input data-toggle-focus="tranieedata" type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Gyakornok szeretnék lenni</label>
-                  <input data-toggle-focus="proddata" type="radio" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Producer vagyok</label>
-                </fieldset>
-              </div>
-              <div id="tranieedata" class="row is-hidden" data-toggler="is-hidden">
-                <div class="small-12 columns">
-                  <h4>Az alábbi adatokra még szükség van</h4>
+                <div id="proddata" class="row is-hidden" data-toggler="is-hidden">
+                  <div class="small-12 columns">
+                    <hr>
+                    <h3>Az alábbi adatokra még szükség van</h3>
+                  </div>
+                  <div class="small-12 columns">
+                    <label>Képviselt cég
+                      <input type="text" placeholder=".small-12.columns">
+                    </label>
+                  </div>
+                  <div class="small-12 columns">
+                    <label>Beosztás
+                      <input type="text" placeholder=".small-12.columns">
+                    </label>
+                  </div>
+                  <div class="small-12 columns">
+                    <label>Telefon
+                      <input type="text" placeholder=".small-12.columns">
+                    </label>
+                  </div>
                 </div>
-                <div class="small-12 columns">
-                  <label>Születésnap
-                    <input type="text" placeholder="Mikor születtél">
-                  </label>
+                <div class="row">
+                  <div class="small-12 columns">
+                  <!-- <hr> -->
+                    <button class="button expanded large" type="submit" value="Submit">Regisztráció elküldése</button>
+                  </div>
                 </div>
-                <div class="small-12 columns">
-                  <label>Telefon
-                    <input type="text" placeholder="Add meg a számodat">
-                  </label>
-                </div>
-                <div class="small-12 columns">
-                  <label>Skype
-                    <input type="text" placeholder="Skype ID">
-                  </label>
-                </div>
-                <fieldset class="small-12 columns">
-                  <legend>Nem</legend>
-                  <input type="radio" name="gender" value="boy" id="genderBoy"><label for="genderBoy">Fiú vagyok</label>
-                  <input type="radio" name="gender" value="girl" id="genderGirl" required><label for="genderGirl">Lány vagyok</label>
-                  <input type="radio" name="gender" value="other" id="genderOther" required><label for="genderOther">Egyéb</label>
-                </fieldset>
-              </div>
-              <div id="proddata" class="row is-hidden" data-toggler="is-hidden">
-                <hr>
-                <div class="small-12 columns">
-                  <h3>Az alábbi adatokra még szükség van</h3>
-                </div>
-                <div class="small-12 columns">
-                  <label>Képviselt cég
-                    <input type="text" placeholder=".small-12.columns">
-                  </label>
-                </div>
-                <div class="small-12 columns">
-                  <label>Beosztás
-                    <input type="text" placeholder=".small-12.columns">
-                  </label>
-                </div>
-                <div class="small-12 columns">
-                  <label>Telefon
-                    <input type="text" placeholder=".small-12.columns">
-                  </label>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="small-12 columns">
-                  <button class="button expanded" type="submit" value="Submit">Regisztráció elküldése</button>
-                </div>
-              </div>
-            </form>
-          
+              </form>
+            </div>
           </div>
+          <div class="columns tablet-6 large-6">
+            <h2>A regisztráció menete</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod molestias vero voluptatem omnis similique nihil illo amet consequatur, expedita, quae cupiditate fugit culpa aliquam? Dicta expedita quasi facilis recusandae voluptatibus.</p>
+            <h3>Tudnivalók leendő gyakornokoknak</h3>
+            Mivel ez ennél több szöveget tartalmaz, innentől ál-latinul folytatjuk: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur.
+          </p>
+          <hr>
+          <h3>Tudnivalók Producereknek</h3>
+          <p>
+            Mivel ez ennél több szöveget tartalmaz, innentől ál-latinul folytatjuk: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur.
+          </p>
+        </div>
       </div>
-      <div class="columns tablet-6 large-6">
-        <h2>A regisztráció menete</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod molestias vero voluptatem omnis similique nihil illo amet consequatur, expedita, quae cupiditate fugit culpa aliquam? Dicta expedita quasi facilis recusandae voluptatibus.</p>
-        <h3>Tudnivalók leendő gyakornokoknak</h3>
-          Mivel ez ennél több szöveget tartalmaz, innentől ál-latinul folytatjuk: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur.
-        </p>
-        <hr>
-        <h3>Tudnivalók Producereknek</h3>
-        <p>
-          Mivel ez ennél több szöveget tartalmaz, innentől ál-latinul folytatjuk: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur.
-        </p>
-      </div>
-    </div>
     </div>
 
           <footer class="sitefooter" role="contentinfo">

@@ -174,7 +174,7 @@
             <div class="input-group">
               <input class="input-group-field" type="text" placeholder="Kezdjen el gépelni">
               <div class="input-group-button">
-                <input type="submit" class="button" value="Keresés">
+                <input type="submit" class="button secondary" value="Keresés">
               </div>
             </div>
           </div>
@@ -187,7 +187,7 @@
         <div class="columns">
           <hr>
           <h5>Keresés paraméterek szerint</h5>
-          <form action="post">
+          <form action="post" class="">
             <div class="row">
               <fieldset class="small-6 tablet-3 large-2 columns">
                 <legend>Nem</legend>
@@ -196,7 +196,7 @@
               </fieldset>
               <fieldset class="small-6 tablet-2 large-2 columns">
                 <legend>Kor</legend>
-                <div class="row">
+                <div class="row collapse agefilter">
                   <div class="columns small-6 ">
                     <input type="text" name="minage" >
                   </div>
@@ -237,11 +237,10 @@
           </button>
     </div>
     
-    <div class="row">
-      <div class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9">
-        <aside class="sidebar">
-          <a href="#" class="button expanded hide-for-tablet" data-toggle="listnav">Gyakornoklista szűrése</a>
-          <div id="listnav" class="show-for-tablet" data-toggler="show-for-tablet">
+    <div id="searchwithsidebar" class="row">
+      <div data-sticky-container class="columns tablet-4 tablet-push-8 xlarge-3 xlarge-push-9 show-for-tablet">
+        <aside class="sidebar" class="sticky" data-sticky data-sticky-on="tablet" data-top-anchor="searchwithsidebar:top" data-btm-anchor="searchwithsidebar:bottom" data-margin-top="0">
+          <div id="listnav">
             <nav>
               <h4>Gyakornokok listája</h4>
               <ul class="menu menu--side vertical">
@@ -265,6 +264,9 @@
         </aside>
       </div>
       <div class="columns tablet-8 tablet-pull-4 xlarge-9 xlarge-pull-3">
+    
+    
+    
         <section class="mosaic">
           <div class="row small-up-1 medium-up-2">
             <div class="column">
@@ -689,7 +691,6 @@
         </ul>
       </div>
     </div>
-    
 
           <footer class="sitefooter" role="contentinfo">
             <div class="row">
