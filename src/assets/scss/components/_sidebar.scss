@@ -1,11 +1,12 @@
 .sidebar {
+  @include clearfix();
   padding:1rem 0;
   @include breakpoint(tablet){
       padding:4rem 0;
   }
 
   > .button {
-    margin-bottom: 2rem;    
+    margin-bottom: 2rem;
   }
 
   nav {

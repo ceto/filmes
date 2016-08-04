@@ -1,8 +1,6 @@
 $(document).foundation();
 
-
 $(document).ready(function() {
-
     $('.xeditable').append('<div class="xeditable__action"><i class="fi-pencil"></i><a href="#">Módosítás</a></div>');
 
     $('.tr_name.xeditable').editable({
@@ -101,8 +99,34 @@ $(document).ready(function() {
             $(this).html(html);
         }
     });
+    //Register Type selection
+    $('input[name="regtype"]').on('change', function(e) {
+      if ($(this).val() === 'tranie') {
+        $('#tranieedata').foundation('toggle');
+        $('#proddata').addClass('is-hidden');
+      } else if ($(this).val() === 'producer') {
+        $('#proddata').foundation('toggle');
+        $('#tranieedata').addClass('is-hidden');
+      }
+    });
 
 
+    ///// listnav mobile
+
+    if ($('#listnav').length>0) {
+      $('.mosaic').prepend('<p class="hide-for-tablet"><a class="csini" data-open="mobilistnav"><i class="fi-list"></i>Lista a szűrése</a></p>');
+      var $mlistnav = new Foundation.Reveal(
+        $(
+          '<div id="mobilistnav" class="reveal reveal--semitransp">'
+            + '<h1>Lista szűrése</h1>'
+            + $('#listnav').html()
+            + '<button class="close-button" data-close aria-label="Szűrőlista bezárása" type="button">'
+            + '<span aria-hidden="true">&times;</span></button>'
+            + '</div>'
+        ), {
+        fullScreen: true
+      });
+    }
 
 
 });

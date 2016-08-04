@@ -1,20 +1,21 @@
 figure {
+  margin: $paragraph-margin-bottom * 2 0;
+  padding: 0 0;
+
   text-align: center;
-  margin:$paragraph-margin-bottom * 2 0;
-  padding:0 0;
-
   img {
-    padding:.5rem;
+    //padding:.5rem;
     //border:1px solid $medium-gray;
-    background-color: $light-gray;
+    //background-color: $light-gray;
   }
-
   figcaption {
-    color: $dark-gray;
-    font-style: italic;
     font-size: .875rem;
+    font-style: italic;
     line-height: 1.125;
+
     padding-top: $paragraph-margin-bottom /2;
+
+    color: $dark-gray;
   }
 }
 p, ul, ol, blockquote {
@@ -33,11 +34,13 @@ ul, ol {
   font-weight: $global-weight-bold;
 }
 blockquote {
-  font-style: italic;
   font-size: 1.25rem;
-  background-color: $light-gray;
+  font-style: italic;
+
+  margin: $paragraph-margin-bottom * 2 0;
   padding-left: 6%;
-  margin:$paragraph-margin-bottom * 2 0;
+
+  background-color: $light-gray;
 }
 cite {
   font-family: $header-font-family;
@@ -63,23 +66,65 @@ input, textarea, select {
 
 
 .featurelist {
-  font-size: 1.333rem;
   font-family: $header-font-family;
+  font-size: 1.333rem;
   font-weight: $global-weight-bold;
-  color:rgba($white,.333);
-  strong {
-    display: block;
-    font-size: 2.5rem;
-    line-height: 1;
-    font-family: $body-font-family;
-    font-weight: $global-weight-bold;
-    color:rgba($white,.75);
 
+  color: rgba($white,.333);
+  strong {
+    font-family: $body-font-family;
+    font-size: 2.5rem;
+    font-weight: $global-weight-bold;
+    line-height: 1;
+
+    display: block;
+
+    color: rgba($white,.75);
   }
   .column {
     margin-top: .5rem;
   }
 }
 
+.pagination {
+    font-family: $header-font-family;
+    font-weight: $global-weight-bold;
+  a {
 
+    &:hover,&:focus {
+      color:#fff;
+    }
+  }
+}
 
+.has-lines {
+
+  display: flex;
+
+  text-align: center;
+
+  align-items: center;
+  // IE10
+  justify-content: center;
+  &:before, &:after {
+    // IE10
+    display: inline-block;
+
+    min-width: rem-calc(20);
+    height: 1px;
+
+    content: '';
+
+    vertical-align: middle;
+
+    background: $medium-gray;
+
+    flex-grow: 1;
+  }
+  &:before {
+    margin-right: rem-calc(20);
+  }
+  &:after {
+    margin-left: rem-calc(20);
+  }
+}

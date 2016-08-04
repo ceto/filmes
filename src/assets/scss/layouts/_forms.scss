@@ -1,0 +1,31 @@
+.is-invalid-input:not(:focus) {
+ background-color: rgba(#fff, 1);
+}
+form {
+  .has-lines {
+      font-size: .875rem;
+      margin-bottom: .5rem;
+  }
+}
+.registerform {
+  fieldset {
+    margin-top: .5rem;
+    legend {
+      font-family: $header-font-family;
+      font-weight: $global-weight-bold;
+    }
+    label {
+      font-family: $body-font-family;
+      font-weight: $global-weight-normal;
+      //color:$dark-gray;
+    }
+  }
+  h3 {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+  }
+  .button[type="submit"] {
+    margin-top: 1rem;
+  }
+}

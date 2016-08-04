@@ -1,6 +1,8 @@
 .sitefooter {
-  padding:1rem 0;
+  padding:1.25rem 0 1rem 0;
   background-color: $black;
   color:$white;
   font-size: .875rem;
+  font-family: $header-font-family;
+  font-weight: $global-weight-bold;
 }

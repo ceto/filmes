@@ -260,3 +260,28 @@
     }
   }
 }
+
+.reveal {
+  nav {
+      margin-top: 2rem
+  }
+}
+.reveal--semitransp {
+  background-color: rgba(#fff,.95);
+  border:.875rem solid $black;
+}
+.mainnav--mobile {
+  margin-bottom: 2.5rem;
+}
+.sidefilter {
+  overflow: hidden;
+  background-color: #fff;
+
+  h4 {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .inlinelist {
+    margin-left: 1.5rem;
+  }
+}

@@ -1,23 +1,22 @@
-  <a href="#" class="button large expanded secondary">Belépés Facebookal</a>
-  <form>
-    <div class="row">
-      <div class="small-12 columns">
-        <label>E-mail cím
-          <input type="text" placeholder=".small-12.columns">
-        </label>
-      </div>
-      <div class="small-12 columns">
-        <label>Jelszó
-          <input type="password" placeholder=".small-12.columns">
-        </label>
-      </div>
+<a href="#" class="button large expanded secondary">Belépés Facebookal</a>
+<form data-abide novalidate>
+  <p class="has-lines">vagy</p>
+  <div class="row">
+    <div class="small-12 columns">
+      <label>E-mail cím
+        <input type="text" required placeholder="Add meg e-mail címedet">
+      </label>
     </div>
-    <div class="row">
-      <div class="small-12 columns">
-        <button class="button expanded alert" type="submit" value="Submit">Belépés</button>
-
-      </div>
+    <div class="small-12 columns">
+      <label>Jelszó
+        <input type="password" required placeholder="Add meg jelszavadat">
+      </label>
     </div>
-  </form>
-
-  <p class="text-center"><label>Még nem vagy tag? <a href="{{root}}registration.html">Regisztrálj itt</a></label><small><a href="#">Elfelejtett jelszó</a></small></p>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <button class="button expanded large alert" type="submit" value="Submit">Belépés</button>
+    </div>
+  </div>
+</form>
+<p class="text-center"><label>Még nem vagy tag? <a href="{{root}}registration.html">Regisztrálj itt</a></label><small><a href="#">Elfelejtett jelszó</a></small></p>

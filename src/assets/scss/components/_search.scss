@@ -6,25 +6,73 @@
 .simplesearch {
   padding:3rem 0 2rem;
   //background-color: $white;
+  label {
+    font-size:1.125rem;
+  }
+  input[type="text"] {
+    //background-color:$light-gray;
+    font-size:1.5rem;
+    padding:1.75rem 1rem;
+  }
+  .input-group-button  {
+    width:15%;  
+  }
+  .button {
+    width:100%;
+    padding-top:1.25rem;
+    height:3.666rem;
+    font-size:1.333rem;
+  }
 }
 
 
 .complexsearch {
   padding:0 0 3rem;
-  //background-color: $light-gray;
-
+  
   hr {
     border-color: $primary-color;
     margin:0 auto 2rem;
   }
+  h5 {
+    margin-bottom:1.5rem;
+    //color:$primary-color;
+  }
   legend {
     margin-bottom: 0;
-    font-size: .875rem;
+    //font-size: .875rem;
     line-height: 1.5;
     font-family: $header-font-family;
     font-weight: $global-weight-bold;
   }
   .button {
     margin-top: 1.25rem;
+    padding-top:.875rem;
+    padding-bottom:.666rem;
+  }
+}
+
+.agefilter {
+  input[name="minage"] {
+    //margin-right:25%;
+  }
+  input[name="maxage"] {
+    //margin-left:25%;
+  }
+  .columns:first-of-type() {
+    padding-right:8%;
+    position:relative;
+    &:before {
+      content:'-';
+      display:inline-block;
+      position:absolute;
+      right:-5%;
+      top:.666rem;
+      font-family:$header-font-family;
+      font-weight:$global-weight-bold;
+      color:$medium-gray;
+    }
+  }
+  .columns:last-of-type() {
+    padding-left:8%;
   }
 }

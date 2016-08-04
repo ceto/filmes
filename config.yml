@@ -31,6 +31,9 @@ PATHS:
     # Libraries requried by Foundation
     - "bower_components/jquery/dist/jquery.js"
     - "bower_components/what-input/what-input.js"
+    # Full Foundation javascript
+    # - "bower_components/foundation-sites/dist/foundation.js"
+
     # Core Foundation files
     - "bower_components/foundation-sites/js/foundation.core.js"
     - "bower_components/foundation-sites/js/foundation.util.*.js"
@@ -55,7 +58,7 @@ PATHS:
     - "bower_components/foundation-sites/js/foundation.tabs.js"
     - "bower_components/foundation-sites/js/foundation.toggler.js"
     - "bower_components/foundation-sites/js/foundation.tooltip.js"
-    # vendor scripts: poshytip x-editable select2
+    # Vendor scripts: poshytip x-editable select2
     - "bower_components/poshytip/src/jquery.poshytip.js"
     - "bower_components/x-editable/dist/jquery-editable/js/jquery-editable-poshytip.js"
     - "bower_components/select2/dist/js/select2.full.js"

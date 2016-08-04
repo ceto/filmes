@@ -26,7 +26,7 @@
   list-style-type: none;
   margin:0;
   padding: 0 0 .25em;
-  color:$dark-gray;
+  //color:$dark-gray;
   font-weight: $global-weight-bold;
   font-family: $header-font-family;
   > li {
@@ -35,16 +35,19 @@
     &:not(:last-of-type):after {
       content: '|';
       display: inline-block;
-      margin:0 .25em;
-      color:$dark-gray;
+      margin:0 .25em 0 .5em;
+      color:$primary-color;
     }
   }
   .metacat {
-    color:$body-font-color;
-    color:$primary-color;
+    //color:$body-font-color;
+    //color:$primary-color;
   }
   a {
     color:inherit;
+    &:hover, &:focus {
+      color:$primary-color;
+    }
   }
 }
 .nc__fig {

@@ -7,10 +7,10 @@ thumbnail: http://placehold.it/480x320
   <div class="row">
     <div class="columns medium-8">
       <h1>Gyakornokokat a magyar filmgyártásba</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quo tempore deleniti delectus rem voluptate quisquam cupiditate mollitia ea omnis distinctio atque illum at, tenetur dolorum ullam. Assumenda alias, amet!</p>
-      <p>
-        <a href="#howitworks" class="button secondary">Hogyan működik</a>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quo tempore deleniti delectus rem voluptate quisquam cupiditate mollitia ea omnis distinctio atque illum at, tenetur dolorum ullam. Assumenda alias, amet!</p>
+      <p class="hero__actions">
         <a href="{{root}}registration.html" class="button">Regisztrálok a programba</a>
+        <a href="#howitworks" class="button secondary">Hogyan működik</a>
       </p>
     </div>
   </div>
@@ -30,7 +30,6 @@ thumbnail: http://placehold.it/480x320
       <strong>8</strong>produkciós iroda
     </div>
   </div>
-
 </aside>
 <section id="howitworks" class="ps ps--light">
   <div  class="row">
@@ -67,7 +66,7 @@ thumbnail: http://placehold.it/480x320
     <div class="columns medium-6 large-8">
       <h3>Hírek</h3>
       {{#each news-three}}
-        {{>news-card}}
+      {{>news-card}}
       {{/each}}
     </div>
     <div class="columns medium-6 large-4">

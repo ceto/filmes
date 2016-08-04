@@ -35,6 +35,9 @@ html {
   padding:4rem 0;
   position: relative;
 }
+.ps--high {
+  min-height: calc(100vh - 7rem);
+}
 .ps--full {
   min-height: calc(100vh - 7rem);
   height:40rem;

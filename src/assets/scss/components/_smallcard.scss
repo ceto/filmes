@@ -1,5 +1,8 @@
 .mosaic {
-  padding: 3rem 0;
+  padding: 1em 0;
+  @include breakpoint(tablet) {
+    padding: 3rem 0;
+  }
 }
 
 .smallcard {
